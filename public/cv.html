@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismail Bettoumi — Resume / Curriculum Vitae</title>
+    <meta name="description" content="Resume of Ismail Bettoumi, Digital Marketing Account Manager based in Doha, Qatar." />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --text-primary: #111827;
+        --text-secondary: #374151;
+        --text-muted: #4b5563;
+        --accent: #0284c7;
+        --border-color: #e5e7eb;
+        --bg-page: #f8fafc;
+        --bg-card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: var(--text-primary);
+        background: var(--bg-page);
+        line-height: 1.45;
+        font-size: 13px;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Top Action Bar (Hidden on Print) */
+      .cv-bar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(15, 23, 42, 0.92);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .cv-bar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #e2e8f0;
+      }
+
+      .cv-bar-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .btn-print {
+        background: #2c6fff;
+        color: #ffffff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 7px;
+        font-weight: 700;
+        font-size: 12.5px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        box-shadow: 0 0 16px rgba(44, 111, 255, 0.3);
+        transition: all 0.2s ease;
+      }
+
+      .btn-print:hover {
+        background: #3b7bff;
+        transform: translateY(-1px);
+        box-shadow: 0 0 24px rgba(44, 111, 255, 0.45);
+      }
+
+      .btn-back {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-size: 12.5px;
+        font-weight: 500;
+        padding: 7px 12px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all 0.2s ease;
+      }
+
+      .btn-back:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      /* Resume Paper Container */
+      .cv-container {
+        max-width: 820px;
+        margin: 32px auto 60px;
+        background: var(--bg-card);
+        padding: 44px 50px;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+        border: 1px solid var(--border-color);
+      }
+
+      /* Header */
+      .cv-header {
+        text-align: center;
+        border-bottom: 2px solid #0f172a;
+        padding-bottom: 14px;
+        margin-bottom: 16px;
+      }
+
+      .cv-name {
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        margin-bottom: 3px;
+      }
+
+      .cv-role {
+        font-size: 15px;
+        font-weight: 700;
+        color: #0284c7;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+      }
+
+      .cv-contact-line {
+        font-size: 12px;
+        color: #4b5563;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .cv-contact-line a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .cv-contact-line a:hover {
+        color: #0284c7;
+        text-decoration: underline;
+      }
+
+      .cv-bullet-sep {
+        color: #9ca3af;
+      }
+
+      /* Section */
+      .cv-section {
+        margin-bottom: 16px;
+      }
+
+      .cv-sec-title {
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #0f172a;
+        border-bottom: 1px solid #cbd5e1;
+        padding-bottom: 3px;
+        margin-bottom: 8px;
+      }
+
+      /* Professional Summary */
+      .cv-summary {
+        font-size: 12px;
+        line-height: 1.55;
+        color: #334155;
+        text-align: justify;
+      }
+
+      /* Skills */
+      .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+      }
+
+      .skill-item {
+        line-height: 1.45;
+        color: #334155;
+      }
+
+      .skill-label {
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      /* Experience Entries */
+      .exp-item {
+        margin-bottom: 14px;
+      }
+
+      .exp-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 4px;
+      }
+
+      .exp-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .exp-company {
+        font-weight: 600;
+        color: #0284c7;
+      }
+
+      .exp-meta {
+        font-size: 11.5px;
+        color: #64748b;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+      }
+
+      .exp-bullets {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .exp-bullets li {
+        position: relative;
+        padding-left: 16px;
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #334155;
+      }
+
+      .exp-bullets li::before {
+        content: "▪";
+        position: absolute;
+        left: 2px;
+        top: 0px;
+        color: #0284c7;
+        font-size: 13px;
+      }
+
+      .exp-bullets strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+
+      /* Duo Columns: Education & Certifications */
+      .cv-duo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+
+      .edu-item, .cert-item {
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .edu-degree, .cert-title {
+        font-weight: 700;
+        color: #0f172a;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .edu-school, .cert-issuer {
+        color: #475569;
+        font-size: 11.5px;
+      }
+
+      .edu-year, .cert-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 600;
+        color: #64748b;
+        font-size: 11.5px;
+      }
+
+      .edu-extra, .cert-extra {
+        font-size: 11px;
+        color: #64748b;
+        margin-top: 1px;
+      }
+
+      /* Print Optimizations */
+      @media print {
+        @page {
+          margin: 7mm 11mm 7mm 11mm;
+          size: letter portrait;
+        }
+
+        body {
+          background: #fff;
+          font-size: 10.5px;
+          line-height: 1.35;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .cv-bar {
+          display: none !important;
+        }
+
+        .cv-container {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+          border: none;
+          box-shadow: none;
+          border-radius: 0;
+        }
+
+        .cv-header {
+          padding-bottom: 5px;
+          margin-bottom: 8px;
+          border-bottom-width: 1.5px;
+        }
+
+        .cv-name {
+          font-size: 20px;
+          margin-bottom: 2px;
+        }
+
+        .cv-role {
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
+
+        .cv-contact-line {
+          font-size: 10px;
+          gap: 6px;
+        }
+
+        .cv-section {
+          margin-bottom: 7px;
+        }
+
+        .cv-sec-title {
+          font-size: 10px;
+          margin-bottom: 4px;
+          padding-bottom: 2px;
+        }
+
+        .cv-summary {
+          font-size: 9.8px;
+          line-height: 1.38;
+        }
+
+        .skills-list {
+          gap: 3px;
+          font-size: 9.8px;
+        }
+
+        .skill-item {
+          line-height: 1.32;
+        }
+
+        .exp-item {
+          margin-bottom: 6px;
+        }
+
+        .exp-header {
+          margin-bottom: 2px;
+        }
+
+        .exp-title {
+          font-size: 10.5px;
+        }
+
+        .exp-company {
+          font-size: 10.5px;
+        }
+
+        .exp-meta {
+          font-size: 9.5px;
+        }
+
+        .exp-bullets li {
+          margin-bottom: 2px;
+          font-size: 9.6px;
+          line-height: 1.32;
+          padding-left: 13px;
+        }
+
+        .exp-bullets li::before {
+          font-size: 11px;
+        }
+
+        .cv-duo {
+          gap: 16px;
+        }
+
+        .edu-item, .cert-item {
+          margin-bottom: 4px;
+          font-size: 9.6px;
+          line-height: 1.32;
+        }
+
+        .edu-degree, .cert-title {
+          font-size: 9.8px;
+        }
+
+        .edu-school, .cert-issuer, .edu-year, .cert-date {
+          font-size: 9.2px;
+        }
+
+        .edu-extra, .cert-extra {
+          font-size: 8.8px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .cv-container {
+          margin: 16px 12px 40px;
+          padding: 24px 20px;
+        }
+
+        .cv-duo {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+
+        .exp-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Action Toolbar -->
+    <div class="cv-bar">
+      <div class="cv-bar-brand">
+        <span>Ismail Bettoumi · Curriculum Vitae</span>
+      </div>
+      <div class="cv-bar-actions">
+        <a class="btn-back" href="/">← Return to Portfolio</a>
+        <button class="btn-print" onclick="window.print()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span>Print / Save as PDF</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Resume Document -->
+    <main class="cv-container">
+      <header class="cv-header">
+        <h1 class="cv-name">Ismail Bettoumi</h1>
+        <p class="cv-role">Digital Marketing Account Manager</p>
+        <div class="cv-contact-line">
+          <span>Doha, Qatar</span>
+          <span class="cv-bullet-sep">•</span>
+          <a href="tel:+97470773838">+974 7077 3838</a>
+          <span class="cv-bullet-sep">•</span>
+          <a href="mailto:bettoumi001@gmail.com">bettoumi001@gmail.com</a>
+          <span class="cv-bullet-sep">•</span>
+          <a href="https://www.linkedin.com/in/ismail-bettoumi-868b04402/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ismail-bettoumi-868b04402</a>
+        </div>
+      </header>
+
+      <!-- Professional Summary -->
+      <section class="cv-section">
+        <h2 class="cv-sec-title">Professional Summary</h2>
+        <p class="cv-summary">
+          Client-focused Digital Marketing Account Manager with 3+ years of experience managing multi-client accounts, developing data-driven marketing strategies, and scaling B2B & B2C brands across Google Ads, Meta Ads, and e-commerce. Proven expertise in client relationship management, account growth, retention, and executive KPI reporting, complemented by hands-on proficiency in AEO/SEO and AI-automated reporting (Claude API, GA4) to maximize campaign efficiency, client satisfaction, and ROAS.
+        </p>
+      </section>
+
+      <!-- Key Skills -->
+      <section class="cv-section">
+        <h2 class="cv-sec-title">Key Skills</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-label">Client & Account Management:</span> Client Relationship Management, Primary Point of Contact, Account Strategy & Growth, Client Retention, Upselling & Cross-Selling, Client Presentations, Issue Resolution, Client Satisfaction.
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Paid Media & Acquisition:</span> Google Ads, Meta Ads (FB/IG), Audience Segmentation & Retargeting, Multi-variant A/B Testing, Quality Score Optimization, ROAS & CAC Control.
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">SEO & Generative Search (AEO):</span> Technical SEO, Schema & Structured Data (FAQ/HowTo/Speakable), Google AI Overviews & Perplexity Optimization, Position-Zero Capture, Google Search Console.
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">E-Commerce, Analytics & Lifecycle:</span> Shopify Store Architecture & CRO, HubSpot, Mailchimp Email Drips, GA4 Attribution & Executive Dashboards, Claude API Automated Reporting Workflows.
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Experience -->
+      <section class="cv-section">
+        <h2 class="cv-sec-title">Professional Experience</h2>
+
+        <!-- Role 1 -->
+        <article class="exp-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Digital Marketing Account Manager & Consultant</span> | <span class="exp-company">Independent</span>
+            </div>
+            <span class="exp-meta">Doha, Qatar (Remote) | Jan 2025 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Manage a portfolio of <strong>4 cross-sector client accounts</strong> (retail, F&B, professional services) as primary point of contact, developing account strategies aligned with client objectives while maintaining a <strong>100% client retention rate</strong>.</li>
+            <li>Drove account growth by identifying upselling and cross-selling opportunities; expanded 6 retail accounts into Shopify CRO, lifting average conversion rates from <strong>1.8% to 2.4% (+31%)</strong>.</li>
+            <li>Established structured <strong>content calendars and campaign briefs</strong> to coordinate creative and technical teams, ensuring on-time delivery of client deliverables and ad assets.</li>
+            <li>Conducted monthly cross-channel attribution audits, scaling average e-commerce client <strong>ROAS from 1.8x to 3.9x</strong> over 12 months to secure sustained contract renewals and budget expansions.</li>
+            <li>Engineered automated reporting pipelines leveraging <strong>Claude and GA4</strong>, saving 5+ hours of manual reporting per client monthly, while resolving tracking and campaign issues promptly to maintain high <strong>client satisfaction</strong>.</li>
+            <li>Architected Answer Engine Optimization (AEO) strategies for 7 clients utilizing structured data and conversational schema, driving a <strong>36% average increase</strong> in impressions from zero-click and AI-cited sources.</li>
+          </ul>
+        </article>
+
+        <!-- Role 2 -->
+        <article class="exp-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Senior Marketing Specialist</span> | <span class="exp-company">Andalus Smart Way</span>
+            </div>
+            <span class="exp-meta">Algeria | Jan 2024 – Dec 2024</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Served as trusted point of contact for clients and brand stakeholders, synchronizing campaign messaging across paid, email, and organic with sales product launch schedules to drive a <strong>29% revenue uplift</strong> during key release windows.</li>
+            <li>Developed monthly <strong>content calendars and creative briefs</strong> to coordinate cross-functional teams, expanding monthly organic traffic by <strong>+47%</strong> within 6 months through topic-cluster SEO and technical site hygiene.</li>
+            <li>Executed comprehensive AEO tactics (FAQ schema, entity-based markup, speakable tags), capturing featured snippets for <strong>41% of targeted commercial keywords</strong>.</li>
+            <li>Optimized digital footprint for generative search engines (Google AI Overviews, Perplexity), lifting tracked <strong>brand citation share by 28%</strong> across key product discovery queries.</li>
+            <li>Restructured Google Ads account architecture and bid strategies, elevating average <strong>Quality Score from 4 to 8</strong> and eliminating <strong>34% in wasted ad spend</strong>.</li>
+            <li>Conducted regular client performance meetings and presentations to review KPIs, identify improvement opportunities, and resolve campaign delivery issues promptly.</li>
+          </ul>
+        </article>
+
+        <!-- Role 3 -->
+        <article class="exp-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Marketing Specialist</span> | <span class="exp-company">Zer</span>
+            </div>
+            <span class="exp-meta">Algeria | Jan 2023 – Dec 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built and executed an integrated B2B acquisition strategy across paid search, SEO, and email, increasing <strong>qualified inbound leads by 42%</strong> (from 85 to 120+/quarter) within two quarters.</li>
+            <li>Launched and multivariate-tested 14 PPC campaigns across Google and Meta Ads, decreasing blended <strong>customer acquisition cost (CAC) by 23%</strong> on top-converting creatives.</li>
+            <li>Refined editorial and content distribution around audience segment engagement data, reducing <strong>cost-per-click (CPC) by 27%</strong>.</li>
+            <li>Deployed automated lifecycle email drip workflows, achieving a <strong>34% open rate</strong> (13 points above the 21% industry benchmark) and converting email into a sustained revenue channel.</li>
+            <li>Managed a <strong>$9,500 monthly ad budget</strong> with 100% on-target ROAS and zero overruns, while engineering automated GA4 dashboards that eliminated <strong>6 hours/week</strong> of manual reporting.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Education & Certifications -->
+      <div class="cv-duo">
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Education</h2>
+          <div class="edu-item">
+            <div class="edu-degree">
+              <span>Master’s Degree in Physics Education</span>
+              <span class="edu-year">| 2025</span>
+            </div>
+            <div class="edu-school">Higher School of Teachers, Algeria</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree">
+              <span>Bachelor’s Degree in Science & Technology</span>
+              <span class="edu-year">| 2020</span>
+            </div>
+            <div class="edu-school">Higher School of Teachers, Algeria</div>
+            <div class="edu-extra">Secondary School Teaching Certificate included</div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Certifications</h2>
+          <div class="cert-item">
+            <div class="cert-title">
+              <span>Google Digital Marketing & E-commerce Certificate</span>
+              <span class="cert-date">| March 2026</span>
+            </div>
+            <div class="cert-issuer">Google (via Coursera)</div>
+            <div class="cert-extra">8-course credential: Full-Funnel Omnichannel Strategy, SEO/SEA, E-commerce Store Management, Analytics & Marketing Automation.</div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
