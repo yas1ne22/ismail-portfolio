@@ -1,0 +1,66 @@
+/* Component showcase: a calm comparison surface with a separate HTML view. */
+.component-studio.nq-explorer{--studio-selection:var(--nq-action);border:0;border-radius:24px;background:var(--nq-surface);box-shadow:0 14px 48px #17233a09;overflow:hidden;min-inline-size:0}
+.component-studio .component-studio-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 24px;min-block-size:76px;border:0;background:transparent;font-size:14px}
+.component-view-tabs{display:flex;align-items:center;gap:8px}
+.component-view-tabs>button{position:relative;padding:10px 14px;min-block-size:40px;background:transparent;border:0;border-radius:9px;color:var(--nq-muted);font:600 14px/1.5 var(--nq-font-body);cursor:pointer}
+.component-view-tabs>button[aria-selected=true]{background:var(--nq-surface-subtle);color:var(--nq-text)}
+.component-view-tabs>button:hover{color:var(--nq-text);background:var(--nq-surface-hover)}
+.component-studio-actions{display:flex;align-items:center;gap:8px}
+.component-studio-actions :is(button,.text-button){font:500 14px/1.5 var(--nq-font-body);color:var(--nq-muted);background:transparent;border:0;border-radius:8px;padding:10px 12px;min-block-size:40px;text-decoration:none;cursor:pointer}
+.component-studio-actions button:hover{color:var(--nq-text);background:var(--nq-surface-hover)}
+.component-studio [data-showcase-panel][hidden]{display:none!important}
+.component-studio .component-studio-workspace{display:grid;grid-template-columns:minmax(0,1fr) 224px;min-block-size:0;gap:32px;padding:8px 28px 32px}
+.component-studio .component-canvas-viewport{background:transparent;min-inline-size:0;display:block}
+.component-studio .component-canvas-scroll{padding:0;min-block-size:0;max-block-size:none;overflow:visible;background:none}
+.component-studio .component-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:24px;align-items:start;transform:none;inline-size:100%;padding:0}
+.component-frame{min-inline-size:0;position:relative}
+.component-studio .component-frame-name{display:inline-flex;align-items:center;gap:8px;min-block-size:44px;margin:0 0 8px;padding:6px 4px;border:0;background:transparent;color:var(--nq-muted);font:500 14px/1.5 var(--nq-font-body);cursor:pointer;text-align:start}
+.component-studio .component-frame.is-selected .component-frame-name{color:var(--nq-action);font-weight:600}
+.component-studio .component-frame-surface{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-block-size:156px;padding:32px 28px;background:var(--nq-surface-subtle);color:var(--nq-text);border:0;border-radius:18px;outline:0!important;overflow-wrap:anywhere;position:relative;transition:background-color 160ms}
+.component-studio .component-frame.is-selected .component-frame-surface{background:color-mix(in srgb,var(--nq-selected) 34%,var(--nq-surface-subtle))}
+.component-studio .component-frame-surface::before,.component-studio .component-frame-surface::after{content:none!important}
+.component-frame-surface :is(.nq-field,.nq-card,.nq-alert,.nq-faq,section,[data-tabs]){inline-size:100%;min-inline-size:0;max-inline-size:100%}
+.component-frame-surface :is(.nq-input,.nq-select){inline-size:100%;min-inline-size:0;max-inline-size:100%}
+.component-frame-surface .nq-button{max-inline-size:100%;white-space:normal;min-inline-size:0}
+.component-frame-surface .nq-field p{margin:0}
+.component-frame-surface .nq-radio-group{inline-size:100%;min-inline-size:0}
+.component-frame-surface .nq-radio-group legend{margin-block-end:12px}
+.component-frame-surface .nq-tabs{max-inline-size:100%;flex-wrap:nowrap}
+.component-frame-surface [role=tabpanel]{min-block-size:56px;font-size:16px}
+.component-frame-surface .nq-progress-summary,.component-frame-surface .nq-progress{inline-size:100%}
+.component-frame-surface .nq-tooltip-wrap{margin-block:16px}
+.component-frame-surface .nq-tooltip{z-index:5;white-space:normal;min-inline-size:140px}
+.component-frame-surface :is(.nq-spinner,.nq-skeleton){animation:none}
+.component-studio .component-properties{border:0;background:transparent;min-inline-size:0;align-self:start;padding:8px 0 0;font-size:14px}
+.component-studio .component-properties-heading{display:block;padding:0 0 24px;border:0}
+.component-studio .component-properties-heading strong{font-size:14px;font-weight:600;color:var(--nq-text)}
+.component-studio .component-property-group{display:grid;grid-template-columns:1fr;gap:24px;padding:0;border:0}
+.component-studio .explore-field{display:grid;gap:10px;min-inline-size:0}
+.component-studio .explore-field>label{font-size:14px;font-weight:400;color:var(--nq-muted)}
+.component-studio .component-properties :is(.nq-input,.nq-select){font-size:16px;min-block-size:46px;border-color:var(--nq-border);background:var(--nq-surface);border-radius:10px;padding-inline:14px}
+.component-studio .component-properties :is(.nq-input,.nq-select):hover{border-color:var(--nq-border-strong)}
+.component-studio .component-properties :is(.nq-input,.nq-select):focus{border-color:var(--nq-focus)}
+.component-studio [data-showcase-panel=code]{padding:0 24px 24px}
+.component-studio [data-showcase-panel=code]>.nq-code-editor{margin:0}
+.component-token-inspect{margin-block-start:20px}
+.component-token-inspect>summary{font-size:14px;color:var(--nq-muted);cursor:pointer;min-block-size:44px;padding-block:10px}
+.component-token-inspect .explore-token-list{font-size:14px;border:0;padding:16px 0 0}
+.component-studio :is(button,input,select,summary,.nq-code-scroll):focus-visible{outline:2px solid var(--nq-focus);outline-offset:3px}
+.component-studio .component-frame-name:focus-visible{border-radius:5px}
+.component-studio.is-expanded{position:fixed;inset:20px;z-index:100;display:flex;flex-direction:column;max-inline-size:none;box-shadow:0 0 0 30px #17233a70;overflow:auto}
+.component-studio.is-expanded .component-studio-bar{position:sticky;top:0;z-index:6;background:var(--nq-surface)}
+.component-studio.is-expanded .component-studio-workspace{grid-template-columns:minmax(0,1fr) 240px;overflow:visible;min-block-size:0;flex:1}
+.component-studio.is-expanded .component-canvas-scroll{min-block-size:0;max-block-size:none}
+.component-studio.is-expanded .component-board{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:28px;padding:0}
+.component-studio.is-expanded .component-properties{overflow:visible}
+.component-studio.is-expanded [data-showcase-panel=code]{flex:1}
+.component-studio.is-expanded .nq-code-scroll{max-height:none}
+@media(max-width:1100px){.component-studio .component-studio-workspace{gap:24px;grid-template-columns:minmax(0,1fr) 200px;padding-inline:24px}.component-studio .component-frame-surface{padding:28px 24px}}
+@media(max-width:760px){.component-studio .component-studio-workspace,.component-studio.is-expanded .component-studio-workspace{display:flex;flex-direction:column;gap:28px}.component-studio .component-properties{inline-size:100%;padding:0}.component-studio .component-properties-heading{padding-block-end:20px}.component-studio .component-property-group{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.component-studio .component-canvas-viewport{inline-size:100%}}
+@media(max-width:480px){.component-studio.nq-explorer{border-radius:18px}.component-studio .component-studio-bar{gap:12px;padding:12px;min-block-size:68px}.component-view-tabs{gap:2px}.component-view-tabs>button,.component-studio-actions button{padding-inline:10px;font-size:14px}.component-studio-actions{gap:0}.component-studio .component-studio-workspace{padding:0 18px 24px}.component-studio .component-frame-surface{padding:28px 22px;min-block-size:140px}.component-studio [data-showcase-panel=code]{padding:0 12px 16px}.component-studio .component-property-group{grid-template-columns:1fr}.component-studio.is-expanded{inset:8px}}
+@media(prefers-reduced-motion:reduce){.component-studio *{transition:none!important}}
+@media(forced-colors:active){.component-studio .component-frame.is-selected .component-frame-name{outline:1px solid Highlight}}
+
+.component-studio :is(.nq-input,.nq-select):focus-visible{outline:none}
+
+@media(forced-colors:active){.component-studio :is(.nq-input,.nq-select):focus-visible{outline:2px solid Highlight;outline-offset:2px}}

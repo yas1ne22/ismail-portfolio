@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Qatar",
+  "scope": "Resumed native Opera GX review of the existing Flex, Nexus and Promptilo portfolio studies. No product-code changes or deployment.",
+  "previousGoalTurn": "Progress: Voicy setup/draft recovery and one-attempt behavior were strengthened, with two reproduced regressions and 147 passing workspace tests. Starting audit counts were 69 Done, 40 In progress, 71 Needs evidence.",
+  "closedActions": [
+    "A08.04",
+    "A12.07",
+    "A15.07"
+  ],
+  "advancedActions": [
+    "A05.02",
+    "A05.05",
+    "A12.05"
+  ],
+  "counts": {
+    "Done": 72,
+    "In progress": 37,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "preview": {
+    "origin": "http://127.0.0.1:3011",
+    "serverPid": 9879,
+    "server": "Python http.server, --directory dist",
+    "processCwd": "/Users/reb/Desktop/ISMUX/ISMUX",
+    "builtPublicSourcesMatch": true
+  },
+  "nativeReview": {
+    "browser": "Opera GX, native macOS accessibility and screenshots through cua_repl. Browser and OS versions were not read.",
+    "zoom": {
+      "initialCleanup": "Selected View > Actual Size and read the native zoom popup as 100%.",
+      "flex": "Eight native Zoom In actions, popup explicitly read 400%; after the two routes, Actual Size and popup explicitly read 100%.",
+      "promptilo": "Eight native Zoom In actions, popup explicitly read 400%; after the task, Actual Size and popup explicitly read 100%.",
+      "pendingZoomCleanup": false,
+      "exactCssViewportRead": false
+    },
+    "flex": {
+      "artifact": "flex-portfolio-2026-10-22-r2; visible date 22 October 2026. Current shared runtime/CSS match the built source hashes.",
+      "observed": [
+        "At verified 400% zoom, entered Sample Visitor, sample@example.com and Find a starting sequence, reached review and sample webinar confirmation, then canceled with details retained.",
+        "Changed route to operator, retained name/email, changed goal to Improve operating systems, selected Nov 5 2026 12:00 PM Asia/Qatar, reached the sample call confirmation, then canceled with details and goal retained.",
+        "New step headings received native focus and were visible at the top of the enlarged task view. Text, inputs and confirmation content wrapped; proof was stacked. Prototype tools stayed collapsed.",
+        "Visible confirmation text said no approved webinar time, no email sent and no real event/appointment booked."
+      ],
+      "limits": "The two main narrow routes were completed in a desktop browser at 400%, not on a physical phone. Exact CSS dimensions, increased OS text, a full screen-reader pass and all narrow failure variants were not tested in this resumed pass."
+    },
+    "nexus": {
+      "zoom": "100% after the Flex reset.",
+      "observed": [
+        "Opened Save a website using keyboard activation and saved Example reference at https://example.org in Work without configuring an account/provider.",
+        "Searching Example returned the saved item. Its native title link opened Example Domain in a new tab; closing that owned extra tab returned to the same Nexus query.",
+        "Moved the item from Work to Learn, removed it and used Undo removal. The restored item retained its URL and Learn destination.",
+        "Downloaded nexus-sample-workspace.json through the actual Export action. The completed download contains version 1, four categories and four saved sites, including Example reference in Learn.",
+        "Removed the exported Example item again. Pasted the same exported data with compacted whitespace, validated it and observed a three-current-to-four-validated replacement preview with all four titles/URLs/destinations. No replacement occurred before explicit confirmation.",
+        "Confirmed replacement and observed Example reference restored in Learn alongside the original three sites. Visible copy retained refresh-reset, no-sync/provider and unsaved-draft export limits."
+      ],
+      "limits": "The public example URL was opened once deliberately to verify saved-link behavior. No provider, account, real browser-extension permission, production persistence or full accessibility was verified."
+    },
+    "promptilo": {
+      "observed": [
+        "At verified 400% zoom, entered query form and selected Workflow. One matching Accessible form checklist result remained; format buttons wrapped within the narrowed card.",
+        "Opened source details. Native focus moved to the resource title. Creator/catalog, reviewed-example state, W3C source context, reuse limits and non-live freshness were readable by vertical paging inside the modal.",
+        "Native Escape closed the modal and restored focus to the original Inspect source and limits action. Query form and the Workflow selection remained unchanged.",
+        "Saved the evaluated resource and observed Saved plus one saved resource while the same query/filter remained.",
+        "Restored Actual Size and read 100% in the native zoom popup."
+      ],
+      "limits": "This establishes the bounded sample narrow task, not physical-phone ergonomics, screen-reader interpretation, real user trust/findability, full-catalog ranking or useful return over time."
+    },
+    "evidenceLocation": "Native accessibility states and screenshots are in this chat tool history. No additional screenshot files are claimed.",
+    "finalOwnedTab": "Promptilo study, query form, Workflow selected, one saved sample resource, browser zoom verified 100%."
+  },
+  "completionScope": {
+    "A08.04": "The original narrow-layout design demonstration is now observed end to end for both routes. Physical-phone/system-text/global accessibility remain separate open criteria.",
+    "A12.07": "The original safe-browser-demo option is complete for its main capture/retrieval/open/move/recovery tasks, with truthful page-local/configuration boundaries. Native-product delivery/adoption are not established.",
+    "A15.07": "The bounded query/filter/evaluate/detail/return/save task is legible and inspectable in the observed narrowed browser layout with preserved context. Real-phone, full-catalog and research claims remain open."
+  },
+  "sourceChecks": {
+    "lastWorkspaceTests": 147,
+    "failuresInRecordedRun": 0,
+    "lastProductionBuild": "passed",
+    "testBuildSnapshotProductHashesStillMatch": true,
+    "testsRerunThisTurn": false,
+    "reason": "Only audit/report/workbook metadata changed; product files still match the prior passing test/build snapshot.",
+    "staticPages": 45,
+    "localReferences": 630,
+    "scriptSyntaxChecks": 28,
+    "staticIssues": 0,
+    "currentFlexManifestHashesMatch": true,
+    "builtPublicSourcesMatch": true,
+    "originalHomepageActive": true
+  },
+  "exportEvidence": {
+    "path": "/Users/reb/Downloads/nexus-sample-workspace.json",
+    "sha256": "951850747c4a4f372bc63848331c4c97fb37b264eabae2250b65444286c7ff7e",
+    "version": 1,
+    "destinations": 4,
+    "savedSites": 4,
+    "restoredSampleTitle": "Example reference",
+    "restoredSampleDestination": "Learn"
+  },
+  "pendingApproval": {
+    "action": "Temporarily enable macOS Reduce motion, review the portfolio, then restore the prior setting.",
+    "status": "A concise permission question is pending; no setting was changed.",
+    "reason": "The computer-use policy requires confirmation for this macOS preference change."
+  },
+  "followUp": [
+    "Return to Timer Gym: source inspection suggests phase-boundary rerenders may replace a focused checkbox, and page-cache return may retain a stale running view. These are investigation targets, not yet reproduced findings; no timer code changed this turn.",
+    "Native walkthroughs of the new PrepFlow/Voicy states and visual review of the Andalus timeline/blueprint remain to do.",
+    "Physical phones, increased system text, complete keyboard/screen-reader paths, authoritative design parity, original delivery facts, research and outcome criteria remain open."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "f054c9e7044bc4597478bf34932057ac63df6de1ed865a9fcdb847baa6bc29d4",
+    "docs/portfolio-verification.json": "857db4e7cd18c7c17f19c0376f6d8a96f8b18dd83a7d7ecfcb7211908f5d0193",
+    "scripts/update-review-progress.mjs": "a2d51d16aab7fa575ca2538c3ebb0723fd5a2450452c8a55eea6a7b42c147b93",
+    "index.html": "1bb5a9aa6a504078482b464d11d166a28c2d7d3722a2217e91eb1bab884c11da",
+    "src/main.js": "f0ffbb13fdffd8b2b6667104bbd6565f6b46d08b9154a953822ad83196e7e1bc",
+    "public/projects/flex-academy/study.html": "0357329545072b05427c356c7fd89f8546a928ea901ae4a57e522c327c7f7ec5",
+    "public/projects/flex-academy/journey.css": "c76aa4e236220e4fe0c1e396f7c0f042057859cfd6037747b40ba42187b4e63b",
+    "public/projects/flex-academy/delivery-status.json": "76b03a8d5fecb72c09696e349137c5cd8507f0fecb278d112bf87e6fe66f80be",
+    "public/projects/flex-events.js": "6eb5c7a3a2e345ff9cee67d57ef889e2aa88a6785ed59ea5f2a2e3b062326158",
+    "public/projects/nexus/study.html": "56099988f9e792b6ae8d4e5d2201b17827046cd4dc70e911d4b923330b6089c6",
+    "public/projects/workspace-study.js": "933f053c054624d1a2dec943caf68a7dda70c67b97d8f1f1eff12ec90f5f1ea8",
+    "public/projects/enhancement-models.js": "748dfd8c719e23ebd009999c36a28bc72e6e564d64c6a73688e398690e6cd723",
+    "public/projects/study-models.js": "f0656fe1dcb2aab0247b9697a67002796c9f2abc8851dd1f86ad67f864da1743",
+    "public/projects/promptilo/study.html": "5b7830f9d3fd0cf6b382f88a2d8066a5caed977aab868e023a83c602e4bdbff8",
+    "public/projects/promptilo-study.js": "7e9f66670dd665e80eb3c1442c8099287e9399a4c6ff6860fa989a9f10a26eed",
+    "public/projects/experience-lab.js": "4fd794bc8450c4c21f20218772451040dfe870f587e8ae04ce92d3321a5563c1",
+    "public/projects/experience-lab.css": "37856c96cfca000c667521836222edac8b560921dd798313234fe6f8e373b181"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "e0913f6a1d84294c7efd6e8dff85d1d36b55ee9c5ebe6ca357dfdff24c810690",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 72,
+      "In progress": 37,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "editableStatusRecalculationChecked": true,
+    "changedRangesVisuallyReviewed": true,
+    "builtPublicSourcesMatch": true
+  },
+  "verificationStatus": "Historical native-browser snapshot from earlier 24 October. Its observations, source hashes, export and 100% zoom cleanup are retained. Timer recovery work later changed the shared study runtime/CSS, Timer pages and live workbook. No native walkthrough of those later changes is claimed. See timer-recovery-verification.json for the current source/DOM/build snapshot."
+}

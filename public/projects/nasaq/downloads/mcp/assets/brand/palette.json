@@ -1,0 +1,12 @@
+{
+  "cobalt": "#1D4ED8",
+  "graphite": "#151A22",
+  "canvas": "#F4F6F8",
+  "surface": "#FFFFFF",
+  "ink": "#18202B",
+  "muted": "#566171",
+  "steel": "#D6DCE5",
+  "selected": "#E9EFFF",
+  "success": "#226047",
+  "error": "#AD263C"
+}

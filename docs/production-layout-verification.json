@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-20",
+  "scope": "Built stylesheet loading and source order only. This does not prove rendered layout, accessibility or initial-load performance.",
+  "checks": {
+    "reviewRulesBundled": true,
+    "naturalTimelineOrderWins": true,
+    "compactWindowRulesBundled": true
+  },
+  "stylesheets": [
+    "/assets/index-C0fsBl2p.css"
+  ]
+}

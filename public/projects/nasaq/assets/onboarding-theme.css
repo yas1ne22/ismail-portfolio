@@ -1,0 +1,65 @@
+/* Generated from tokens.json by scripts/build.py. */
+.nasaq-language-dialog,.nasaq-entry-page{
+ --nq-bg:rgb(244,246,248);
+ --nq-surface:rgb(255,255,255);
+ --nq-text:rgb(24,32,43);
+ --nq-muted:rgb(86,97,113);
+ --nq-border:rgb(214,220,229);
+ --nq-action:rgb(29,78,216);
+ --nq-on-action:rgb(255,255,255);
+ --nq-accent:rgb(29,78,216);
+ --nq-link:rgb(29,78,216);
+ --nq-focus:rgb(29,78,216);
+ --nq-surface-subtle:rgb(237,240,244);
+ --nq-surface-hover:rgb(233,237,243);
+ --nq-surface-pressed:rgb(222,229,239);
+ --nq-border-strong:rgb(125,138,155);
+ --nq-action-hover:rgb(23,63,174);
+ --nq-action-pressed:rgb(18,51,142);
+ --nq-selected:rgb(233,239,255);
+ --nq-on-selected:rgb(23,63,174);
+ --nq-disabled:rgb(227,231,237);
+ --nq-on-disabled:rgb(86,97,113);
+ --nq-track:rgb(214,220,229);
+ --nq-success:rgb(34,96,71);
+ --nq-error:rgb(173,38,60);
+ --nq-info:rgb(29,78,216);
+ --nq-inverse:rgb(21,26,34);
+ --nq-on-inverse:rgb(243,245,248);
+ --nq-inverse-muted:rgb(182,192,206);
+ --nq-inverse-border:rgb(52,61,74);
+ --nq-inverse-selected:rgb(39,46,56);
+ --nq-inverse-accent:rgb(142,178,255);
+}
+[data-theme="dark"] .nasaq-language-dialog,[data-theme="dark"] .nasaq-entry-page,.nasaq-language-dialog[data-theme="dark"]{
+ --nq-bg:rgb(16,19,24);
+ --nq-surface:rgb(27,32,40);
+ --nq-text:rgb(237,241,247);
+ --nq-muted:rgb(170,183,200);
+ --nq-border:rgb(56,67,83);
+ --nq-action:rgb(142,178,255);
+ --nq-on-action:rgb(16,33,75);
+ --nq-accent:rgb(142,178,255);
+ --nq-link:rgb(179,203,255);
+ --nq-focus:rgb(142,178,255);
+ --nq-surface-subtle:rgb(36,43,53);
+ --nq-surface-hover:rgb(40,51,65);
+ --nq-surface-pressed:rgb(52,66,83);
+ --nq-border-strong:rgb(113,128,150);
+ --nq-action-hover:rgb(172,199,255);
+ --nq-action-pressed:rgb(120,162,242);
+ --nq-selected:rgb(35,52,77);
+ --nq-on-selected:rgb(179,203,255);
+ --nq-disabled:rgb(42,50,62);
+ --nq-on-disabled:rgb(170,183,200);
+ --nq-track:rgb(56,67,83);
+ --nq-success:rgb(160,214,186);
+ --nq-error:rgb(255,176,187);
+ --nq-info:rgb(179,203,255);
+ --nq-inverse:rgb(10,14,20);
+ --nq-on-inverse:rgb(243,245,248);
+ --nq-inverse-muted:rgb(182,192,206);
+ --nq-inverse-border:rgb(52,61,74);
+ --nq-inverse-selected:rgb(37,45,56);
+ --nq-inverse-accent:rgb(142,178,255);
+}

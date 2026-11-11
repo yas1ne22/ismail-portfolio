@@ -1,0 +1,186 @@
+[
+  {
+    "project": "nexus",
+    "asset": "screen-b7bca2fea4a8.webp",
+    "originalBytes": 18736,
+    "outputBytes": 13018,
+    "width": 1600,
+    "height": 583
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-7fff71ec5eb3.webp",
+    "originalBytes": 57516,
+    "outputBytes": 39772,
+    "width": 1600,
+    "height": 756
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-4c0c2c8fadc8.webp",
+    "originalBytes": 55588,
+    "outputBytes": 53980,
+    "width": 1500,
+    "height": 1491
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-183dc2db21b8.webp",
+    "originalBytes": 98860,
+    "outputBytes": 59692,
+    "width": 1600,
+    "height": 420
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-f671ed4995f0.webp",
+    "originalBytes": 185660,
+    "outputBytes": 105248,
+    "width": 1600,
+    "height": 609
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-183dc2db21b8.webp",
+    "originalBytes": 98860,
+    "outputBytes": 59692,
+    "width": 1600,
+    "height": 420
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-6c3671bf01b0.webp",
+    "originalBytes": 93946,
+    "outputBytes": 54588,
+    "width": 1600,
+    "height": 616
+  },
+  {
+    "project": "nexus",
+    "asset": "screen-8782d2ea645b.webp",
+    "originalBytes": 108832,
+    "outputBytes": 68698,
+    "width": 1600,
+    "height": 663
+  },
+  {
+    "project": "prepflow",
+    "asset": "screen-9507d5c7f5bf.webp",
+    "originalBytes": 2488116,
+    "outputBytes": 235694,
+    "width": 1448,
+    "height": 1086
+  },
+  {
+    "project": "prepflow",
+    "asset": "screen-48a3a60e94d2.webp",
+    "originalBytes": 2395837,
+    "outputBytes": 213574,
+    "width": 1448,
+    "height": 1086
+  },
+  {
+    "project": "prepflow",
+    "asset": "screen-82d23f189cc1.webp",
+    "originalBytes": 2541875,
+    "outputBytes": 246594,
+    "width": 1448,
+    "height": 1086
+  },
+  {
+    "project": "promptilo",
+    "asset": "screen-840f8bb45aa5.webp",
+    "originalBytes": 1574100,
+    "outputBytes": 124740,
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "project": "promptilo",
+    "asset": "screen-840f8bb45aa5.webp",
+    "originalBytes": 1574100,
+    "outputBytes": 124740,
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "project": "promptilo",
+    "asset": "screen-c6c952f2f7aa.webp",
+    "originalBytes": 1001526,
+    "outputBytes": 60844,
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "project": "promptilo",
+    "asset": "screen-39502b1c666e.webp",
+    "originalBytes": 1018441,
+    "outputBytes": 86688,
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "project": "promptilo",
+    "asset": "screen-aa9504b73506.webp",
+    "originalBytes": 1017181,
+    "outputBytes": 58530,
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "project": "promptilo",
+    "asset": "screen-c69a10d62bdb.webp",
+    "originalBytes": 277029,
+    "outputBytes": 66172,
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "project": "timer-gym",
+    "asset": "screen-74f4acda502c.webp",
+    "originalBytes": 1625647,
+    "outputBytes": 123864,
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "project": "timer-gym",
+    "asset": "screen-24af0ee35598.webp",
+    "originalBytes": 171329,
+    "outputBytes": 23560,
+    "width": 736,
+    "height": 1600
+  },
+  {
+    "project": "timer-gym",
+    "asset": "screen-7693d942424f.webp",
+    "originalBytes": 588424,
+    "outputBytes": 32156,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "project": "timer-gym",
+    "asset": "screen-a30bf1a7bc72.webp",
+    "originalBytes": 881041,
+    "outputBytes": 63260,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "project": "timer-gym",
+    "asset": "screen-5cc468dc11ac.webp",
+    "originalBytes": 80454,
+    "outputBytes": 51108,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "project": "timer-gym",
+    "asset": "screen-0d94119a404e.webp",
+    "originalBytes": 71173,
+    "outputBytes": 44306,
+    "width": 1280,
+    "height": 720
+  }
+]

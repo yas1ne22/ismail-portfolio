@@ -1,0 +1,10 @@
+Nasaq 1.3 — Arabic / English
+Open index.html (Arabic) or en.html (English) in the complete documentation.
+Portable examples: components.html, components-en.html, motion.html, motion-en.html.
+Keep nasaq.css/nasaq.js beside assets/. Use class="nq" with lang="ar" dir="rtl"
+or lang="en" dir="ltr". Arabic uses Almarai; English uses Inter.
+Typed tokens include 19 typography styles per language, shared colors and motion.
+The npm tarball nasaq-ui-1.3.0.tgz installs @nasaq/ui locally; it is not registry-published.
+Font notices: assets/almarai-OFL.txt and assets/inter-OFL.txt.
+Lucide/Feather notices: assets/lucide/LICENSE.
+Examples are illustrative and have no AI/billing backend.

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import fs from 'node:fs';
 import path from 'node:path';
+import { publicPath } from './lib/publicPath.js';
 
 const mimeTypes = {
   '.html': 'text/html; charset=utf-8',
@@ -14,6 +15,9 @@ const mimeTypes = {
   '.webp': 'image/webp',
   '.ico': 'image/x-icon',
   '.woff2': 'font/woff2',
+  '.ttf': 'font/ttf',
+  '.zip': 'application/zip',
+  '.pdf': 'application/pdf',
 };
 
 export default defineConfig({
@@ -36,18 +40,26 @@ export default defineConfig({
           }
 
           if (cleanUrl.startsWith('/aeokiller/')) {
-            const distBase = path.join(process.cwd(), 'Product-Case-Study-Library', '..', '..', 'Desktop', 'AEO agent', 'dist');
-            const targetDist = fs.existsSync(distBase) ? distBase : path.join(process.cwd(), 'public', 'aeokiller');
+            // Development and production serve the same reviewed prototype.
+            const targetDist = path.join(process.cwd(), 'public', 'aeokiller');
             
             const relPath = cleanUrl.replace(/^\/aeokiller\/?/, '');
-            let filePath = path.join(targetDist, relPath);
+            let filePath = publicPath(targetDist, relPath);
+            if (!filePath) {
+              res.writeHead(404);
+              return res.end('Not found');
+            }
 
             if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
               filePath = path.join(filePath, 'index.html');
             }
 
             // Fallback for SPA routing inside aeokiller
-            if (!fs.existsSync(filePath) || (!path.extname(filePath) && !fs.existsSync(filePath))) {
+            if (!fs.existsSync(filePath)) {
+              if (path.extname(filePath)) {
+                res.writeHead(404);
+                return res.end('Not found');
+              }
               filePath = path.join(targetDist, 'index.html');
             }
 
@@ -63,11 +75,22 @@ export default defineConfig({
           // 2. Handle Case Studies
           if (cleanUrl.startsWith('/projects/')) {
             const rel = cleanUrl.replace(/^\/projects\/?/, '');
-            const targetDir = path.join(process.cwd(), 'Product-Case-Study-Library', 'projects', rel);
+            const publicProjectDir = publicPath(path.join(process.cwd(), 'public', 'projects'), rel);
+            const libraryProjectDir = publicPath(path.join(process.cwd(), 'Product-Case-Study-Library', 'projects'), rel);
+            if (!publicProjectDir || !libraryProjectDir) {
+              res.writeHead(404);
+              return res.end('Not found');
+            }
+            const targetDir = fs.existsSync(publicProjectDir) ? publicProjectDir : libraryProjectDir;
             
             if (fs.existsSync(targetDir)) {
               const stat = fs.statSync(targetDir);
               if (stat.isDirectory()) {
+                if (!cleanUrl.endsWith('/')) {
+                  const query = req.url.slice(cleanUrl.length);
+                  res.writeHead(301, { Location: `${cleanUrl}/${query}` });
+                  return res.end();
+                }
                 const indexFile = path.join(targetDir, 'index.html');
                 if (fs.existsSync(indexFile)) {
                   res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -81,6 +104,8 @@ export default defineConfig({
                 return fs.createReadStream(targetDir).pipe(res);
               }
             }
+            res.writeHead(404);
+            return res.end('Not found');
           }
 
           next();

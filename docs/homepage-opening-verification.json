@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-21",
+  "scope": "Original homepage presentation, dated maturity summaries and English Nasaq access. Local build only; no deployment.",
+  "previousGoalTurn": "Progress: native Chrome observation established that the new role/domain/case-link introduction and first contribution summary rendered in the original layout. Its English navigation attempt reached the URL but lacked a readable page snapshot. This turn completed final-build Opera observations instead of treating that earlier attempt as a pass.",
+  "closedActions": [
+    "A01.02",
+    "A01.03",
+    "A02.03",
+    "A02.04",
+    "A02.05",
+    "A02.08"
+  ],
+  "counts": {
+    "Done": 57,
+    "In progress": 52,
+    "Needs evidence": 71
+  },
+  "changes": [
+    "Retain original window/timeline, project selection and collapsed assistant. Alternate homepage remains inactive.",
+    "Two-sentence introduction names customer journeys and Arabic-first systems, with direct Andalus and English Nasaq case links.",
+    "Seven project summaries state the design contribution and workflow; compact maturity labels have an explicit status-review date. The review date does not claim a release date.",
+    "Visible timeline sections now read 01, 02, 03, 04; employment years remain 2025, 2024, 2023."
+  ],
+  "sourceChecks": {
+    "projects": [
+      {
+        "id": "andalus",
+        "href": "/projects/andalus/index.html",
+        "summary": "I designed a cart-recovery journey that keeps trip context across web, app and email.",
+        "status": "Client program · Retrospective case · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-andalus-preview-note",
+          "work-andalus-status"
+        ]
+      },
+      {
+        "id": "nasaq",
+        "href": "/projects/nasaq/explore.html",
+        "summary": "I designed an Arabic-first component library and an Icon Studio conversation flow.",
+        "status": "Independent system · Local release 1.4 · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-nasaq-preview-note",
+          "work-nasaq-status"
+        ]
+      },
+      {
+        "id": "flex",
+        "href": "/projects/flex-academy/index.html",
+        "summary": "I designed separate landing-page routes for beginner webinars and established operators.",
+        "status": "Client project · Design prototype · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-flex-preview-note",
+          "work-flex-status"
+        ]
+      },
+      {
+        "id": "veyra",
+        "href": "/projects/veyra/index.html",
+        "summary": "I designed a map-first planner for building, reordering and recovering a day route.",
+        "status": "Independent prototype · Version 2 · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-veyra-status"
+        ]
+      },
+      {
+        "id": "design-handoff",
+        "href": "/projects/design-handoff/index.html",
+        "summary": "I designed a findings-to-report workflow for reviewing handoff risks in Figma.",
+        "status": "Development plugin · Working source · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-design-handoff-status"
+        ]
+      },
+      {
+        "id": "design-system-doctor",
+        "href": "/projects/design-system-doctor/index.html",
+        "summary": "I designed a scan-and-repair workflow that distinguishes system drift from intentional variation.",
+        "status": "Figma utility · Working source · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-design-system-doctor-status"
+        ]
+      },
+      {
+        "id": "nexus",
+        "href": "/projects/nexus/index.html",
+        "summary": "I designed a capture-and-return workspace for saved websites and design references.",
+        "status": "Browser product · Working implementation · Status reviewed 21 Oct 2026",
+        "reviewDate": "2026-10-21",
+        "descriptionReferences": [
+          "work-nexus-status"
+        ]
+      }
+    ],
+    "sectionNumbers": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "uniqueIds": true,
+    "directEnglishEntry": "/projects/nasaq/case-study-en.html",
+    "primaryNasaqEntry": "/projects/nasaq/explore.html",
+    "sourceHashes": {
+      "index.html": "fddaa84293cdcdd55dc5a9b92b0e95350136a933c51d9e0cdddbb00407418a1a",
+      "src/main.js": "6048005ac1136f40fe2b1983492237c7469abf8656b67237cce92dde28bbea0a",
+      "src/classicPortfolio.js": "a4a1a5e5bf591a851576b6210d9928e5be0ebf78255aa2a508161761b6b65d41",
+      "src/portfolioContent.js": "f0bc1890ccff2817efa67787474a4c9f45efee734e8997ff28b5fd95a6363f54",
+      "src/nasaqOnboarding.js": "13583183825ba20e0aa7dc005696c74106f2a87f86bf196446f66b717479ceaa",
+      "public/classic-review.css": "e5270c30c4977fa889bcf9f3697d4e3f3c2e70f4736bdb87f944945294e15970",
+      "public/projects/nasaq/case-study-en.html": "2bb7629f91f58fc069c992e0e51b54d38905b8633325e26ae28810a748fe5858",
+      "public/projects/nasaq/case-study.html": "76415b1a2b71f11308aed096af17c4f1b31df5d26bd148365bcd6b62599ff067",
+      "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00"
+    }
+  },
+  "checks": {
+    "fullWorkspaceTestsPassed": 115,
+    "fullWorkspaceTestsFailed": 0,
+    "productionBuildPassed": true,
+    "staticPagesChecked": 44,
+    "localReferencesChecked": 608,
+    "scriptSyntaxChecks": 20,
+    "staticIssues": [],
+    "staticFragmentPages": 16,
+    "missingStaticFragments": 0,
+    "dynamicDocumentationLinksDeferred": 38
+  },
+  "browserObservations": [
+    {
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/",
+      "version": "Final built original homepage with the new status labels",
+      "observed": "Normal native laptop-sized window, device toolbar closed. Before any page scroll, Product Designer, the two-sentence promise and direct links, Andalus title, explicit cart-recovery design contribution, dated retrospective status, and a meaningful portion of the recovery wireframes were visible. The original window and collapsed assistant remained.",
+      "capture": "3024 × 1900 native screenshot including browser chrome. Exact CSS viewport was not queried.",
+      "result": "Passed the stated opening criterion in this observed window"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/projects/nasaq/case-study-en.html",
+      "observed": "Clicked the Nasaq link in the homepage introduction. The English hero, description, four chapters and project brief rendered directly. Switched to the Arabic case through its visible link, observed its Arabic heading and English return link, and switched back.",
+      "result": "Passed this direct-entry and language path"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/#work-nasaq",
+      "observed": "Used the English case’s Portfolio link. The original timeline returned with focus around the Nasaq entry and its readable contribution/maturity line. Opened that primary entry: the language chooser appeared. Escape dismissed it and restored focus to the primary Nasaq link.",
+      "result": "Passed this return and preserved-entry path"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/#work-nasaq",
+      "observed": "Scrolled through the lower timeline. Veyra, Design Handoff and Design System Doctor contribution/status lines were readable; the static template check covers all seven entries. The desktop footer blur obscured the lowest partially visible row until further scrolling, so this is not a full reflow or accessibility pass.",
+      "result": "Scoped reading observation only"
+    }
+  ],
+  "unsuccessfulAttempts": [
+    "Earlier Chrome English navigation and Opera refresh snapshots intermittently showed a blank page body. HTTP source/assets responded. Those attempts were not counted as passes; subsequent Opera snapshots showed the final homepage and the English/Arabic case path.",
+    "A prior Chrome responsive-width input attempt did not establish the requested dimensions. No 1440 × 900 or 1280 × 720 emulation pass is claimed."
+  ],
+  "remaining": [
+    "Smaller laptop and physical-phone layouts; complete keyboard, screen-reader, rendered contrast and enlarged-text review.",
+    "Public deployment and the separate full Nasaq documentation-route audit.",
+    "Project-specific participant, adoption, hiring and commercial evidence required by the original open criteria."
+  ],
+  "workbookVerification": {
+    "all180OriginalRowsUnchanged": true,
+    "completionCountDependencyChecked": true,
+    "all18AreaCountsChecked": true,
+    "formulaErrorMatches": 0,
+    "changedViewsVisuallyReviewed": true,
+    "exportedWorkbookSha256": "2169e932bf5006a4f3539da94d8e73c0913962c169d75ee6b6bc6fb11d2060e5",
+    "xlsxArchiveValid": true
+  }
+}

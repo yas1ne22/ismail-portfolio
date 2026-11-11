@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-20",
+  "method": "sRGB relative luminance using the unrounded ratio for the threshold comparison",
+  "source": "public/projects/experience-lab.css",
+  "sourceDeclarationsChecked": 12,
+  "scope": "The six listed active local-study states; archived reference is retained as a known earlier issue. This is not a complete rendered accessibility audit.",
+  "checks": [
+    {
+      "label": "Documented earlier action token",
+      "state": "Archived design-system reference",
+      "foreground": "#ffffff",
+      "background": "#5070fe",
+      "minimum": 4.5,
+      "source": "Saved Flex Academy design-system document; live Figma usage is unverified.",
+      "rules": [],
+      "ratio": 4.125806210024227,
+      "meetsCriterion": false
+    },
+    {
+      "label": "Current action label",
+      "state": "Active / default; hover keeps the same colors",
+      "foreground": "#ffffff",
+      "background": "#254dd7",
+      "minimum": 4.5,
+      "rules": [
+        {
+          "selector": ".lab-button,.lab-option",
+          "property": "color",
+          "expected": "#ffffff"
+        },
+        {
+          "selector": ".lab-button,.lab-option",
+          "property": "background",
+          "expected": "#254dd7"
+        }
+      ],
+      "ratio": 6.727592719710713,
+      "meetsCriterion": true
+    },
+    {
+      "label": "Secondary action label",
+      "state": "Active / default",
+      "foreground": "#172a23",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "rules": [
+        {
+          "selector": ".lab-button.secondary",
+          "property": "color",
+          "expected": "#172a23"
+        },
+        {
+          "selector": ".lab-button.secondary",
+          "property": "background",
+          "expected": "#ffffff"
+        }
+      ],
+      "ratio": 15.087428734117644,
+      "meetsCriterion": true
+    },
+    {
+      "label": "Form error",
+      "state": "Invalid field feedback",
+      "foreground": "#982d22",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "rules": [
+        {
+          "selector": ".lab-error",
+          "property": "color",
+          "expected": "#982d22"
+        },
+        {
+          "selector": ".lab-card",
+          "property": "background",
+          "expected": "#ffffff"
+        }
+      ],
+      "ratio": 7.682365375182254,
+      "meetsCriterion": true
+    },
+    {
+      "label": "Input boundary",
+      "state": "Active / default",
+      "foreground": "#6f806b",
+      "background": "#ffffff",
+      "minimum": 3,
+      "rules": [
+        {
+          "selector": ".lab-field",
+          "property": "border",
+          "expected": "#6f806b"
+        },
+        {
+          "selector": ".lab-card",
+          "property": "background",
+          "expected": "#ffffff"
+        }
+      ],
+      "ratio": 4.220361185606269,
+      "meetsCriterion": true
+    },
+    {
+      "label": "Secondary action boundary",
+      "state": "Active / default",
+      "foreground": "#6f806b",
+      "background": "#ffffff",
+      "minimum": 3,
+      "rules": [
+        {
+          "selector": ".lab-button.secondary",
+          "property": "border-color",
+          "expected": "#6f806b"
+        },
+        {
+          "selector": ".lab-button.secondary",
+          "property": "background",
+          "expected": "#ffffff"
+        }
+      ],
+      "ratio": 4.220361185606269,
+      "meetsCriterion": true
+    },
+    {
+      "label": "Keyboard focus outline",
+      "state": "Focus-visible on the white form surface",
+      "foreground": "#254dd7",
+      "background": "#ffffff",
+      "minimum": 3,
+      "rules": [
+        {
+          "selector": "button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible",
+          "property": "outline",
+          "expected": "#254dd7"
+        },
+        {
+          "selector": ".lab-card",
+          "property": "background",
+          "expected": "#ffffff"
+        }
+      ],
+      "ratio": 6.727592719710713,
+      "meetsCriterion": true
+    }
+  ]
+}

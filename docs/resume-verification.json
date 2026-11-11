@@ -1,0 +1,11 @@
+{
+  "source": "public/cv.html",
+  "output": "public/Ismail_Bettoumi_CV.pdf",
+  "updated": "2026-11-11",
+  "pages": 1,
+  "preservedTextBlocks": 39,
+  "textParity": true,
+  "sourceSha256": "d8f7963e40bfa11278a093764a931f112f222b7bb3a3dec324fd42892c79771b",
+  "pdfSha256": "add4506f89a798070ee73fddcbf8aa5f38b0031fa93cdb4b773dfa45d0b7c057",
+  "visualReview": "passed"
+}

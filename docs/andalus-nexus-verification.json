@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Qatar",
+  "scope": "Andalus delivery boundaries and proposed service handoff; Nexus capture, duplicate and workspace recovery. Existing homepage retained. Local only, not deployed.",
+  "previousGoalTurn": "Progress: added responsive context to the existing Flex study and a reduced-motion boarding entry, with four new handler contracts. Native review stopped before completion and zoom restoration.",
+  "closedActions": [
+    "A06.07",
+    "A12.05"
+  ],
+  "counts": {
+    "Done": 65,
+    "In progress": 44,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "changes": [
+    "A three-stage Andalus timeline distinguishes the reported 2024 role, current portfolio reconstruction and unexecuted next steps. Original delivery facts remain open.",
+    "A proposed six-step Andalus service blueprint assigns logical owners, required states and failure fallbacks, tied together by an illustrative Algiers\u2013London scenario. It does not claim actual team approval or connected systems.",
+    "Nexus keeps capture/edit drafts and the form\u2019s open state through unrelated panel, search, filter and destination rerenders. Destination rename/removal and undo update the draft destination coherently.",
+    "Saved Nexus titles now open their valid URLs in a new tab with explicit accessible naming and noopener/noreferrer.",
+    "Duplicate feedback reveals and focuses the existing saved site while retaining the attempted capture draft.",
+    "Restore displays the saved-site contents and replacement counts before explicit confirmation. Editing reviewed JSON removes stale preview/confirmation. The UI explains refresh reset and the exclusion of unsaved drafts from exports."
+  ],
+  "sourceChecks": {
+    "workspaceTests": 127,
+    "failures": 0,
+    "nexusShippedHandlerContracts": 6,
+    "newContracts": 4,
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 630,
+    "scriptSyntaxChecks": 24,
+    "staticIssues": 0,
+    "staticFragmentPages": 17,
+    "dynamicNasaqLinksDeferred": 38,
+    "generatorIdempotent": true,
+    "casePagesChanged": 2,
+    "andalusTimelineStages": 3,
+    "andalusHandoffStages": 6,
+    "allHandoffStagesHaveOwnerStateFallback": true
+  },
+  "regressions": {
+    "before": "Two tests reproduced draft loss in the previous real handler: an unfinished capture vanished after optional-discovery rerender, and edited title/URL vanished through destination rename.",
+    "after": "Both regression tests and four other Nexus handler contracts pass. Added contracts verify focus/preserved draft after duplicate recovery and round-tripping the actual exported Blob through a fresh validated review and explicit replacement."
+  },
+  "completionScope": {
+    "A06.07": "The requested proposed design artifact is complete: one end-to-end scenario names logical owners, states and failure fallbacks. Actual team assignments, production integration and approval remain unconfirmed.",
+    "A12.05": "The browser demo demonstrates all listed recovery conditions and the original criterion\u2019s explicit-data-loss-limits alternative. This does not certify original-product persistence, synchronization, native browser accessibility or participant understanding."
+  },
+  "nativeBrowserReview": {
+    "newNativeChecksPassed": 0,
+    "latestAttempt": "Opera GX binding returned cgWindowNotFound. Surface inventory returned no apps/browsers and a native-app timeout. No visual or browser-flow pass was inferred.",
+    "visualReviewOfNewCaseSections": false,
+    "pendingCleanup": "The prior enlarged Flex preview\u2019s zoom reset remains unverified. Restore View > Actual Size when native access is available."
+  },
+  "missingInformation": [
+    "For Andalus, actual 2024 deliverables, approximate rollout dates, approval record and actual owners of booking checks, recovery messages and support. A concise user question is pending.",
+    "Original Nexus delivery dates, contributor responsibilities and product adoption/retrieval evidence remain unavailable."
+  ],
+  "remaining": [
+    "Native walkthrough of the revised Nexus capture/open/duplicate/export/restore paths and visual review of the Andalus additions.",
+    "Complete both narrow Flex journeys, inspect updated heading focus, restore preview zoom and perform the actual reduced-motion browser review.",
+    "Physical-device, complete keyboard, screen-reader, user-research, client-feedback and outcome criteria remain open as recorded in the 180-action audit."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "5203174c558ef74d21abf5aa1e2f1b5aa34e8fa9ca38e1b664307cce2a202fb9",
+    "src/andalusDeliveryContent.js": "cd773bac8c9c504d1fd729b3743dcbc531bf1203081cd8509be553b36bc6c62a",
+    "src/caseEnhancementContent.js": "66bf86aece9759b6c0ffabbdea415aadb7767fa4ab0d71f1c3124f78abb91538",
+    "scripts/enrich-cases.mjs": "b07739d3b0abbb5f64c9f990ce3cdde72e7ea4da30eef837fc554f2a28a76300",
+    "scripts/update-review-progress.mjs": "07fad3aca847ef44b6ab825915eec902beb832161c19f0e6d45102d2bb857dc5",
+    "scripts/verify-portfolio.py": "8f0b1458a21923e5a12f44ef7148cee5ff4294ecd75ac85895b3507ff1808641",
+    "public/projects/andalus/index.html": "34c6e279305371383d4b443ede828cd90dc9edf0d84b59c938d52a1247b9322d",
+    "public/projects/andalus/readability.css": "95b281d59226e1b794595bfbe3a7163fdb852d0545504ed7aaa36c0dfd6e5352",
+    "public/projects/nexus/index.html": "4e56999779f2a9e930495bf2eba92c998b20861aba9f66941e7cf3b9bc1394a7",
+    "public/projects/nexus/study.html": "56099988f9e792b6ae8d4e5d2201b17827046cd4dc70e911d4b923330b6089c6",
+    "public/projects/workspace-study.js": "933f053c054624d1a2dec943caf68a7dda70c67b97d8f1f1eff12ec90f5f1ea8",
+    "public/projects/enhancement-models.js": "748dfd8c719e23ebd009999c36a28bc72e6e564d64c6a73688e398690e6cd723",
+    "public/projects/experience-lab.css": "e18973bb0e837b54ec6711f8ebbddc5fd9fdf24193f882955473f7b1c6eb1218",
+    "public/projects/flex-academy/delivery-status.json": "055ac9277b035bdab843db70d228e1f369f2944160ef93e6e99c044d521ac5f1",
+    "tests/study-ui.test.mjs": "c10930c988eb4281e2f33c0f58543e31725c46ff53f4bbe0b7d47077ea60b0f9"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "18ca80ae93bdd3201d39068d9cec34baefa5d026a06a7b7c4db85f27fbed77f7",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 65,
+      "In progress": 44,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "changedRangesVisuallyReviewed": true,
+    "sourceHashesMatch": true,
+    "builtSourcesMatch": true
+  },
+  "verificationStatus": "Historical 23 October snapshot. Later PrepFlow work changed shared study files and the live audit/workbook; original hashes and observations retain their historical scope. Current checks are in prepflow-recovery-verification.json."
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Nexus Website Manager</title>
+  <desc id="desc">A bold N monogram formed from two panels and a connecting path.</desc>
+  <rect width="512" height="512" rx="112" fill="#7857FF"/>
+  <path d="M126 386V126h70l120 158V126h70v260h-70L196 228v158z" fill="#F7F4EC"/>
+  <rect x="126" y="94" width="70" height="16" rx="8" fill="#C8FF6B"/>
+  <rect x="316" y="402" width="70" height="16" rx="8" fill="#17131F"/>
+</svg>

@@ -1,0 +1,56 @@
+body[data-project="flex-academy"]{background:#fffdf6}
+.flex-study .lab-boundary{max-width:none;margin:0 0 24px}
+.flex-offer{padding:42px 44px 34px;background:#163f3b;color:#fffdf6;border-radius:16px}
+.flex-wordmark{font-size:25px;font-weight:750;letter-spacing:-.055em;margin:0 0 42px}
+.flex-eyebrow{font-size:11px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;margin:0 0 12px}
+.flex-offer h1{font-size:clamp(36px,5vw,62px);font-weight:550;line-height:1.08;letter-spacing:-.045em;margin:0;max-width:760px}
+.flex-offer-lede{font-size:20px;line-height:1.55;max-width:600px;margin:22px 0 0}
+.flex-offer-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:28px}
+.flex-primary-link{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:48px;padding:12px 18px;background:#fffdf6;color:#163f3b;border:1px solid #fffdf6;border-radius:5px;text-decoration:none;font-size:14px;font-weight:650;line-height:1.5}
+.flex-context-link{display:inline-flex;align-items:center;min-height:44px;color:#fffdf6;font-size:13px}
+.flex-offer a:focus-visible{outline-color:#fffdf6}
+.flex-offer-note{font-size:12px;line-height:1.7;max-width:650px;margin:22px 0 0;color:#fffdf6}
+.flex-proof{padding-block:38px;scroll-margin-top:20px}
+.flex-proof-intro{max-width:660px}
+.flex-proof-intro h2{font-size:30px;font-weight:550;letter-spacing:-.03em;line-height:1.2;margin:0 0 14px}
+.flex-proof-intro>p:last-child{font-size:14px;color:#4c625e}
+.flex-proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:24px;border-block:1px solid #cbd5cb}
+.flex-proof-grid article{padding:24px 22px;min-width:0;border-inline-end:1px solid #cbd5cb}
+.flex-proof-grid article:first-child{padding-inline-start:0}
+.flex-proof-grid article:last-child{padding-inline-end:0;border-inline-end:0}
+.flex-proof-stage{font-size:11px;color:#4c625e;margin:0 0 8px}
+.flex-proof-grid h3{font-size:21px;font-weight:650;letter-spacing:-.025em;line-height:1.3;margin:0 0 12px}
+.flex-proof-grid article>p:not(.flex-proof-stage){font-size:14px;line-height:1.7;margin:0 0 12px;color:#4c625e}
+.flex-proof-grid a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.7;overflow-wrap:anywhere}
+.flex-source-date{font-size:11px;line-height:1.8;color:#4c625e;margin:16px 0 0}
+.flex-task-layout{grid-template-columns:minmax(0,1fr) minmax(240px,300px);align-items:start}
+.flex-study .lab-field{font-size:16px}
+.flex-study .lab-card p,.flex-study .lab-context dd{font-size:14px;line-height:1.75}
+.flex-study .lab-button,.flex-study .lab-option{font-size:14px;line-height:1.5}
+.flex-study .lab-choices small{font-size:12px;line-height:1.7}
+.flex-review-tools>summary{min-height:44px;font-size:13px;font-weight:650;cursor:pointer;line-height:1.7}
+.flex-review-tools[open]>summary{margin-bottom:20px}
+.flex-review-tools h2{font-size:16px}
+.flex-study #experience-app:focus{outline:3px solid #254dd7;outline-offset:4px}
+@media(max-width:760px){
+ .flex-offer{padding:28px 24px 26px;border-radius:10px}
+ .flex-wordmark{font-size:24px;margin-bottom:30px}
+ .flex-offer h1{font-size:38px}
+ .flex-offer-lede{font-size:17px;line-height:1.65}
+ .flex-offer-actions{align-items:stretch;flex-direction:column;gap:10px;margin-top:24px}
+ .flex-primary-link{gap:16px;width:100%}
+ .flex-context-link{justify-content:flex-start}
+ .flex-proof{padding-block:30px}
+ .flex-proof-intro h2{font-size:27px}
+ .flex-proof-grid{grid-template-columns:1fr;gap:0;margin-top:18px}
+ .flex-proof-grid article,.flex-proof-grid article:first-child,.flex-proof-grid article:last-child{padding:20px 0;border-inline-end:0}
+ .flex-proof-grid article+article{border-top:1px solid #cbd5cb}
+ .flex-proof-grid h3{font-size:20px;margin-bottom:8px}
+ .flex-proof-grid article>p:not(.flex-proof-stage){margin-bottom:4px}
+ .flex-task-layout{grid-template-columns:1fr;gap:18px}
+ .flex-study .lab-actions{align-items:stretch;flex-direction:column}
+ .flex-study .lab-actions>.lab-button{width:100%}
+ .flex-study .lab-confirmation{padding:16px}
+ .flex-study .lab-measurement{padding:18px}
+}
+@media(max-width:380px){.flex-offer{padding:24px 20px}.flex-offer h1{font-size:34px}}

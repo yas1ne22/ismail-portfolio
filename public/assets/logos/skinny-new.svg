@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">Skinny</title><desc id="d">A calm daily skincare ritual represented by a droplet and timeline</desc>
+  <rect width="64" height="64" rx="18" fill="#F6EEE9"/>
+  <path d="M32 10c7 9 11 15 11 21a11 11 0 1 1-22 0c0-6 4-12 11-21Z" fill="#8D4C79"/>
+  <path d="M32 22c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10Z" fill="#F6EEE9"/>
+  <path d="M19 50h26" stroke="#D4A9BB" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="24" cy="50" r="4" fill="#8D4C79"/>
+</svg>

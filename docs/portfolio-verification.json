@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-24",
+  "scope": "Static source, local link targets and JavaScript syntax. This does not certify runtime accessibility or user outcomes.",
+  "pages": 45,
+  "localReferencesChecked": 667,
+  "scriptsSyntaxChecked": 29,
+  "issues": []
+}

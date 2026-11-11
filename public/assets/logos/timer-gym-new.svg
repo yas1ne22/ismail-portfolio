@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">Timer Gym</title><desc id="d">A tactical interval timer with a bolt-shaped hand</desc>
+  <rect width="64" height="64" rx="13" fill="#11140F"/>
+  <path d="M26 9h12" stroke="#B8FF63" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="35" r="19" fill="none" stroke="#B8FF63" stroke-width="4" stroke-dasharray="5 4"/>
+  <path d="m34 19-9 17h8l-3 15 11-20h-8l1-12Z" fill="#F7F8F2" stroke="#11140F" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

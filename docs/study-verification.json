@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "command": "node --test tests/study-models.test.mjs tests/study-ui.test.mjs",
+  "tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "scope": "Domain calculations and the real local-study event handlers in a simulated DOM.",
+  "covered": [
+    "Equivalent and invalid website URLs; organizer duplicates, move, remove and undo",
+    "Meal swap, serving validation, pantry subtraction and paused preparation",
+    "Timer delayed phase transitions, exact boundaries, pause/resume and confirmed restart",
+    "Both Flex audience paths, invalid email, service failure, retained details, timezone and unavailable slots",
+    "Handoff/Doctor correction and rescan, partial and unavailable scope, strict-mode intentional exception",
+    "Promptilo empty results, retained saves and unapproved-source detail",
+    "Skinny accidental-log undo and independent previous-day records",
+    "Voicy provider failure, retained transcript/proposal and changed-target insertion boundary",
+    "Veyra time conflict, adjustable visit estimates, invalid-value timing retention, weather replacement, preserved other stops and undo"
+  ],
+  "limits": "DOM shims cover native form/select/dialog methods only to exercise handlers. These tests do not verify rendered layout, real browser validation, focus/assistive technology, native applications, physical context, participant comprehension or business outcomes."
+}

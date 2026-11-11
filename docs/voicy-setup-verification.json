@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Qatar",
+  "scope": "In-place Voicy setup and writing recovery demonstration. Original travel homepage retained. No real permissions, native shortcut, provider call, app insertion or deployment.",
+  "previousGoalTurn": "Progress: Promptilo editorial/public consistency and canonical return were fixed, with two reproduced regressions and 140 passing workspace tests. This turn continues from 68/41/71.",
+  "closedActions": [
+    "A18.04"
+  ],
+  "strengthenedActions": [
+    "A18.05",
+    "A18.06",
+    "A18.10"
+  ],
+  "counts": {
+    "Done": 69,
+    "In progress": 40,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "changes": [
+    "Text works immediately. Choosing a voice activation exposes proposed microphone rationale before simulated capture. Denial preserves the text route and is not repeatedly prompted; explicit simulated restoration never starts capture automatically.",
+    "A conflicting sample shortcut retains visible menu/text activation and a menu voice route. The page does not replace a shortcut or request keyboard access.",
+    "App-control rationale appears only after approving insertion into an available target. Denial retains approved text for selectable/copy fallback. A simulated grant returns to review for another explicit approval and target check.",
+    "Unsubmitted transcript edits survive activation/cancel. An unchanged source retains the edited proposal; a changed source requires an explicit keep/replace decision and each proposal shows its actual source.",
+    "Provider failure has an in-flow retry that retains text; unsupported actions preserve the original. Seeded wrappers are explicitly not transcription or translation.",
+    "Successful or uncertain insertion consumes the one-attempt record across review/edit/regeneration. A separate sample is explicit and retains earlier uncertainty context. UI and handler both reject repeated attempts.",
+    "Current study date, proposed design boundaries and Apple permission references are visible in the existing case/demo. Native build, device behavior, exact mechanisms and user outcomes remain unverified."
+  ],
+  "regressions": {
+    "before": "Two new actual-handler tests reproduced loss of an unsubmitted transcript after Cancel and overwrite of a human-edited proposal after revisiting its unchanged transcript.",
+    "after": "Both regressions and seven other Voicy contracts pass, including just-in-time simulated rationale, denied access, menu recovery, restored-access revalidation, clipboard failure, one-attempt enforcement and explicit proposal replacement."
+  },
+  "sourceChecks": {
+    "workspaceTests": 147,
+    "failures": 0,
+    "voicyActualHandlerContracts": 9,
+    "newContracts": 7,
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 630,
+    "scriptSyntaxChecks": 28,
+    "staticIssues": 0,
+    "currentFlexManifestHashesMatch": true,
+    "changedBuiltSourcesMatch": true,
+    "originalHomepageActive": true
+  },
+  "completionScope": {
+    "A18.04": "The requested design demonstration exposes proposed permission timing/rationale, denial recovery, shortcut conflict and alternate activation while the first useful text task remains available. It does not establish native OS permission implementation, registration, device success or user comprehension.",
+    "A18.10": "Advanced but open: the dated local study and reported native architecture are explicitly separate. Current native source/build, original delivery facts and actual device/user evidence are still required."
+  },
+  "platformReferences": [
+    {
+      "url": "https://developer.apple.com/documentation/avfoundation/requesting-authorization-to-capture-and-save-media",
+      "supports": "Microphone authorization before capture, explicit permission and purpose explanation. Search content was read; the canonical page resolves with a JavaScript/Markdown entry.",
+      "inference": "Using voice activation as the rationale point is a proposed Voicy design decision, not evidence of its native implementation."
+    },
+    {
+      "url": "https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185/mac",
+      "supports": "App control through accessibility needs explicit access and can be reviewed in privacy settings.",
+      "inference": "Deferring app-control setup until approved insertion is the demonstrated design choice; the actual insertion mechanism still needs native source/build evidence."
+    },
+    {
+      "url": "https://support.apple.com/guide/mac-help/control-access-to-the-microphone-on-mac-mchla1b1e1fe/mac",
+      "supports": "Microphone access can be reviewed in Mac privacy settings.",
+      "inference": "The page models restoration only; no settings are opened or changed."
+    }
+  ],
+  "nativeBrowserReview": {
+    "newNativeChecksPassed": 0,
+    "latestAttempt": "The current Opera GX binding returned cgWindowNotFound. No native visual, mobile, assistive-technology or device pass inferred.",
+    "pendingCleanup": "Prior enlarged Flex preview zoom reset remains unverified; restore View > Actual Size when native access returns."
+  },
+  "missingInformation": [
+    "A current Voicy macOS source folder, build or repository link. The targeted Desktop search found portfolio case assets/copies, not a native project. A concise path/link question is pending.",
+    "Original delivery timeline, collaborator/ownership boundaries and actual device/user findings."
+  ],
+  "remaining": [
+    "Native activation/speak/review/edit/insert recording, real permission/shortcut behavior and full keyboard/focus/device checks.",
+    "Actual initial user/task, mixed-language recognition, comparative writing/correction effort and feedback-led motion evidence.",
+    "Other portfolio browser/device, ownership, research and outcome criteria remain open."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "89a07700a14358036bac17d45a10f1acfc55492319706aa2bda70b9a335a4c68",
+    "docs/portfolio-verification.json": "857db4e7cd18c7c17f19c0376f6d8a96f8b18dd83a7d7ecfcb7211908f5d0193",
+    "src/caseEnhancementContent.js": "2995f8c1aa9327ddd1fd8cd90fc78fab11a8495f83945b6e9675c06c27785a0e",
+    "src/caseReviewContent.js": "92d942784044200dbd8ea37408296c4c5cacecdd5c4a67a2579fbec68221d04f",
+    "src/studyContent.js": "0044919087946635528edfa1c3e65fc0c97872ccd8a67f0e0276d45ce307b89b",
+    "scripts/update-review-progress.mjs": "e41106f890dcda22d48cc5bfeac670011f7eb324712925fbfa980f8ab1d8ec7c",
+    "scripts/verify-portfolio.py": "754048bfa6ae73fa6f06679353c83abe178cf3a801dfc5f8a50b9e62a5529116",
+    "tests/study-ui.test.mjs": "3a5c8e575c21b8b4b1e3f1524afb26d9c5e1da933e2cd7915bd366124273fae9",
+    "public/projects/voicy/study.html": "49829f5f704030ebb726710497d9dc0ee79b0946fdb6623e1bf74abe40310c66",
+    "public/projects/voicy/index.html": "e6ea58ebe913750031181144631827dffcc8252a1bcf36678b31b9aa8bdabee7",
+    "public/projects/voicy-study.js": "018d7d067d35caa21681a5f0953cf7de2548771dc686ea479c95ee77a2e59267",
+    "public/projects/experience-lab.js": "4fd794bc8450c4c21f20218772451040dfe870f587e8ae04ce92d3321a5563c1",
+    "public/projects/experience-lab.css": "37856c96cfca000c667521836222edac8b560921dd798313234fe6f8e373b181",
+    "public/projects/flex-academy/delivery-status.json": "76b03a8d5fecb72c09696e349137c5cd8507f0fecb278d112bf87e6fe66f80be"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "662937d11528e22856db7e1f58ec14ef2b9c4bc7c19b0620c44c7de7c2e86b81",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 69,
+      "In progress": 40,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "editableStatusRecalculationChecked": true,
+    "changedRangesVisuallyReviewed": true,
+    "builtSourcesMatch": true
+  },
+  "verificationStatus": "Earlier 24 October implementation snapshot. Product source hashes remain unchanged in the resumed native-browser review, which supersedes its browser-unavailable/zoom-cleanup status and live audit/workbook counts. See browser-validation-2026-10-24.json for current native observations."
+}

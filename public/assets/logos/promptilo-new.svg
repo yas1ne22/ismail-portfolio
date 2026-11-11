@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">Promptilo</title><desc id="d">A prompt cursor framed by modular brackets</desc>
+  <rect width="64" height="64" rx="15" fill="#FFF5E8"/>
+  <path d="M23 16h-7v32h7M41 16h7v32h-7" fill="none" stroke="#17151B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m27 25 10 7-10 7" fill="none" stroke="#FF5F45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 42h8" stroke="#17151B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="47" cy="15" r="4" fill="#7A65FF"/>
+</svg>

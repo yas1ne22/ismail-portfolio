@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Qatar",
+  "scope": "In-place PrepFlow study improvements. Existing original travel homepage retained. Local only, not deployed.",
+  "closedActions": [
+    "A14.05",
+    "A14.06"
+  ],
+  "counts": {
+    "Done": 67,
+    "In progress": 42,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "changes": [
+    "An immediate three-dinner week makes the first useful task available without an account or questionnaire; optional preferences can be skipped and later affect unstarted meals only.",
+    "Weekly ingredient totals aggregate before one deduction of sample opening pantry stock. The list is an initial shopping calculation, not live purchases or consumption.",
+    "Each day retains its own completed stages and elapsed timer state. Day switching, interruption, oven loss and restored equipment use explicit pause/resume recovery.",
+    "Serving changes recalculate remaining estimates. Completed stages trigger a quantity review with unestimated rework; reverting quantities preserves progress.",
+    "A started-meal change retains the existing meal and groceries until explicit review, then resets only that day. Other planned days are preserved.",
+    "The timer updates in place without replacing the active field, uses elapsed time, stops at an elapsed estimate without completing a stage and restores a paused display after browser-cache return."
+  ],
+  "sourceChecks": {
+    "workspaceTests": 136,
+    "failures": 0,
+    "prepflowModelContracts": 5,
+    "prepflowActualHandlerContracts": 6,
+    "newContracts": 9,
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 630,
+    "scriptSyntaxChecks": 26,
+    "staticIssues": 0,
+    "currentFlexManifestHashesMatch": true,
+    "changedBuiltSourcesMatch": true,
+    "originalHomepageActive": true
+  },
+  "regression": {
+    "before": "The actual-handler regression reproduced a new salmon recipe incorrectly inheriting the chicken recipe\u2019s completed stage.",
+    "after": "Explicit change review preserves the current recipe and groceries until confirmation, then resets only its session. The regression and full suite pass."
+  },
+  "completionScope": {
+    "A14.05": "The requested portfolio design demonstration is complete: goal capture, optional/skippable preferences, immediate useful plan and later refinement. This does not establish participant onboarding success.",
+    "A14.06": "The bounded local demonstration exposes revised stage estimates and all requested progress-retaining recovery conditions. This does not establish native alarm behavior, validated recipe timing or observed kitchen understanding."
+  },
+  "nativeBrowserReview": {
+    "newNativeChecksPassed": 0,
+    "status": "Unavailable. This turn\u2019s Opera binding reported locked Mac/automatic unlock failure and later cgWindowNotFound. No new rendered or physical-device pass inferred.",
+    "pendingCleanup": "Prior enlarged Flex preview zoom reset remains unverified; restore View > Actual Size when native access returns."
+  },
+  "remaining": [
+    "Native walkthrough and responsive/keyboard review of the updated PrepFlow flow.",
+    "Observed household context, real planning/shopping/prep evidence and longitudinal use.",
+    "Configured real native-app walkthrough, production release facts and original ownership/timeline.",
+    "Previously recorded narrow Flex, reduced-motion, Nexus and Andalus native checks; full accessibility and outcome evidence."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "1f598cf8c4bcb975e7d6f98409b202660a5fe750f4a31013c80d03dc262a012d",
+    "docs/portfolio-verification.json": "d92932d160d71707f701a3d7fdcdae3bd4b08b7e4e76230e388a30e1d02cc585",
+    "src/caseEnhancementContent.js": "8577de4e4e22f0ff21aff66e762e886433473f95802470e2aa2086b160a8a115",
+    "src/caseReviewContent.js": "e59cb468bf5c9da189ba80004d53d489a06fa510e50daf26347e535bea7d1414",
+    "src/studyContent.js": "f6572a06a1489e5ff4f8197f6fc35ecd646990a94bc7b92a945a0228141ec46f",
+    "scripts/update-review-progress.mjs": "ab2ffad2bed9eeaa4d1d09f934b6d432f0fb84c3e88464d00954840b75bd48d2",
+    "scripts/verify-portfolio.py": "d25d66fdd9da741b1cd296c1492a69f5dd29ec217a4f157f4dab103ac23283ad",
+    "tests/prepflow-model.test.mjs": "7c4d030ae79e1b1a34276161e2f8fd59dbc04a18a534556d7ec3b6d041bdf0a3",
+    "tests/study-ui.test.mjs": "c16966c8b622e2e4d3eabfe60b3e75fa9854be095972d9ff583057a4c5b867d5",
+    "public/projects/prepflow/index.html": "e935abc4ea85deb28aa64e319a979c6c3464da0393d7d635ee747cf5719e1ba5",
+    "public/projects/prepflow/study.html": "8436414f2d04667cc2a8fd11f2f8fda980ccb4daf8549a964b022568b6f28772",
+    "public/projects/prepflow-model.js": "fe368e9f36443d30d39fe9b9495cacb66060aaffd8472f7c6cff70a67f4cee7e",
+    "public/projects/prepflow-study.js": "13a42488094bf373faf5deb1caf78cb2ce8cffd3561bb7f77abd7e89cf475716",
+    "public/projects/experience-lab.js": "ea7ba791d26391c4e3f35d56f678113a9d423d9f0509b0c9308fd7b3bb6baea3",
+    "public/projects/experience-lab.css": "78dcdce4d1ccf1e8ad18077bd9ed72c61971584d4452f6e407704542f9a4cb1d",
+    "public/projects/flex-academy/delivery-status.json": "08c0c66f1f3a2a5774e698c6b8f8399a8fb1226d7e04f75482c953333f1cf15f"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "b8db6621f0d91937cfaac3decc29f981bc1662e2dd8fa54c87da8ed1d7b2abef",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 67,
+      "In progress": 42,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "editableStatusRecalculationChecked": true,
+    "changedRangesVisuallyReviewed": true,
+    "builtSourcesMatch": true
+  },
+  "verificationStatus": "Earlier 24 October PrepFlow snapshot. Subsequent Promptilo work changed shared files and the live audit/workbook. Original hashes and scoped observations remain historical; current checks are in promptilo-editorial-verification.json."
+}

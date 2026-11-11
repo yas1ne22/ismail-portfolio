@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-21",
+  "scope": "Three featured-project previews inside the existing homepage. Local workspace only; no deployment.",
+  "closedActions": [
+    "A02.02"
+  ],
+  "checks": {
+    "workspaceTestsPassed": 113,
+    "staticPagesChecked": 44,
+    "localReferencesChecked": 606,
+    "scriptsSyntaxChecked": 20,
+    "staticIssues": [],
+    "realHomepageDOMProbe": {
+      "previews": 3,
+      "assetsExist": true,
+      "labelAndDescriptionReferencesResolve": true,
+      "noNestedControls": true,
+      "imageFailureRetainsLink": true
+    },
+    "buildPassed": true,
+    "activeHomepageEntry": "/src/main.js",
+    "alternateHomepageActive": false
+  },
+  "artifacts": [
+    {
+      "project": "Andalus",
+      "source": "public/projects/andalus/wireframes-algeria-v7.png",
+      "kind": "Case-study recovery wireframe reconstruction",
+      "nativeReview": "Desktop three-panel crop and narrow changed-fare crop at 300% zoom"
+    },
+    {
+      "project": "Nasaq",
+      "source": "public/assets/previews/nasaq-icon-studio.png",
+      "kind": "Unmodified native browser capture of the current local Icon Studio demonstration",
+      "captureRoute": "http://127.0.0.1:3011/projects/nasaq/case-study-en.html#icon-studio",
+      "nativeReview": "Desktop conversation, six-icon family, refinement actions and composer"
+    },
+    {
+      "project": "Flex Academy",
+      "source": "public/assets/flex/figma-desktop.png",
+      "kind": "Saved desktop design reference",
+      "nativeReview": "Desktop landing-page headline, supporting panel and primary action"
+    }
+  ],
+  "browserObservations": [
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/#selected-work",
+      "version": "Original window-and-timeline homepage with project previews",
+      "observed": "All three featured entries retained the original timeline and short headings. Andalus shows the recovery wireframes and reconstruction caption; Nasaq shows its current conversation, six-icon family, refinement choices and composer with a local-demo caption; Flex shows its saved landing-page headline, supporting panel and primary action. At 300% browser zoom, the narrow Andalus crop focused the changed-fare screen and the Nasaq crop stayed within its frame. The existing footer blur covers content near the lower viewport edge, particularly at high zoom; these crops were inspected by scrolling them into the clearer area. Zoom was restored to 100%. Clicking Nasaq opened its existing language dialog, and closing returned focus to the same Nasaq entry.",
+      "result": "Observed this desktop preview change and limited high-zoom reflow. Physical mobile, full accessibility, opening-viewport proof and hiring comprehension remain open."
+    }
+  ],
+  "limits": [
+    "A01.03 opening-viewport proof remains open. This review began at Selected work and does not establish first-fold project visibility.",
+    "A02.04 contribution/result summaries remain open; short homepage copy was preserved.",
+    "High-zoom review is not physical-device or assistive-technology testing. Existing lower-viewport blur remains a separate layout concern.",
+    "Artifacts do not establish shipped client results, participant findings or hiring outcomes.",
+    "Images retain their existing full source files. Performance and image-payload optimization remain open."
+  ],
+  "commands": [
+    "npm test",
+    "npm run verify:portfolio",
+    "npm run build"
+  ],
+  "sources": {
+    "src/main.js": "0fb234f7ca2deb72095cd467c124bcbd0b30b7daf83c1ec9665206a6a3bc83d4",
+    "src/classicPortfolio.js": "1e92d7859134341d586591ee3a69c9300c7b40965e0b8b81187003d6ec134b27",
+    "src/classicPreviews.js": "ca1a246669195a400b117ac152d635361451df7eae3025a2970c2a361d5271bf",
+    "public/classic-review.css": "37cf7e4f44453290479e9735289f2d2b48c03fcf63cb47f05f559f86cd36775d",
+    "classic-review-entry.css": "eaf8a5cf71b1ee4d6fab62ceb2b48c255d011d9bf796b2202c3a6ce0e5273640",
+    "index.html": "8316feee6a495abac83886f1d601c2c6b4300dd39938d807bc02de6b468118ef",
+    "public/projects/andalus/wireframes-algeria-v7.png": "3bb634f7d61a243daffc71c1ca51a2fdd19fa5dac02233d2e1be3c5982d0b997",
+    "public/assets/previews/nasaq-icon-studio.png": "8d59e7e5ddbb653d6d7b263788191e3db204543402be12d16655f283a4e6b48b",
+    "public/assets/flex/figma-desktop.png": "2265d2fd6ddb9d3b0d83cb7eead31c31fff1f6676ac13e7e59b850bc4ae536e3"
+  }
+}

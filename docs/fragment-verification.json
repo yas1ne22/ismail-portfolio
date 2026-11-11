@@ -1,0 +1,196 @@
+{
+  "checkedPages": 17,
+  "missingStaticFragments": [],
+  "dynamicNasaqRoutesRequiringRuntimeCheck": [
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#overview",
+      "label": "Nasaq"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#overview",
+      "label": "Design system"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#typography",
+      "label": "Inspect the implementation"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#typography",
+      "label": "Inspect the implementation"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#dialog",
+      "label": "Inspect the implementation"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#quality",
+      "label": "Arabic and accessibility"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#buttons",
+      "label": "View the button"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#icon-studio",
+      "label": "Open the full studio"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#icon-studio",
+      "label": "One intent. A whole family.Explore the experience"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#icon-studio",
+      "label": "Enter Icon Studio"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#buttons",
+      "label": "ComponentsStates you can test."
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#design-code",
+      "label": "Design & codeTrace the connections."
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#workflow",
+      "label": "A connected workflowTry failure and recovery."
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#quality",
+      "label": "Read the verification record"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#workflow",
+      "label": "Try failure and recovery"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#design-code",
+      "label": "Inspect the Figma-to-code map"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#quality",
+      "label": "Open the review protocol"
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#overview",
+      "label": "KEEP EXPLORINGEnter the Nasaq system."
+    },
+    {
+      "file": "public/projects/nasaq/case-study-en.html",
+      "href": "en.html#overview",
+      "label": "Explore the system"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#overview",
+      "label": "نسق"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#overview",
+      "label": "نظام التصميم"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#typography",
+      "label": "افحص التنفيذ"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#typography",
+      "label": "افحص التنفيذ"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#dialog",
+      "label": "افحص التنفيذ"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#quality",
+      "label": "العربية وإمكانية الوصول"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#buttons",
+      "label": "عرض الزر"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#icon-studio",
+      "label": "افتح الاستوديو كاملًا"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#icon-studio",
+      "label": "فكرة واحدة. عائلة متكاملة.استكشف التجربة"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#icon-studio",
+      "label": "ادخل استوديو الأيقونات"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#buttons",
+      "label": "المكوّناتحالات يمكنك تجربتها."
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#design-code",
+      "label": "التصميم والكودتتبّع العلاقات."
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#workflow",
+      "label": "مسار متكاملجرّب الخطأ والتعافي."
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#quality",
+      "label": "اقرأ سجل التحقق"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#workflow",
+      "label": "جرّب الفشل والاسترداد"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#design-code",
+      "label": "افحص خريطة التصميم والكود"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#quality",
+      "label": "افتح بروتوكول المراجعة"
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#overview",
+      "label": "واصل الاستكشافادخل نظام نسق."
+    },
+    {
+      "file": "public/projects/nasaq/case-study.html",
+      "href": "index.html#overview",
+      "label": "استكشف النظام"
+    }
+  ]
+}

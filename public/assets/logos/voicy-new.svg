@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">Voicy</title><desc id="d">A compact voice waveform becoming a text cursor</desc>
+  <rect width="64" height="64" rx="20" fill="#151326"/>
+  <rect x="10" y="18" width="44" height="28" rx="14" fill="#806CFF"/>
+  <path d="M20 34v-4m6 9V25m6 12V27m6 7v-4" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M43 25v14M39 25h8M39 39h8" fill="none" stroke="#8CFFD5" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

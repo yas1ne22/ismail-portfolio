@@ -1,0 +1,219 @@
+/* Nasaq 1.4: documentation, workbench and studio share the UI token contract. */
+html {scroll-padding-top:96px;scroll-behavior:auto}
+body {background:var(--nq-bg);color:var(--nq-text)}
+.topbar {height:72px;padding-inline:24px;gap:36px;background:var(--nq-surface);border-color:var(--nq-border);box-shadow:0 1px 8px #151A2203}
+.brand {gap:10px}
+.brand>img {padding:6px;inline-size:36px;block-size:36px;background:var(--nq-selected);border-radius:10px}
+.brand span {font-size:24px;letter-spacing:-.04em}
+.brand small {font-family:Almarai,sans-serif;font-size:14px}
+.topbar nav {gap:24px;font-size:14px}
+.topbar nav a {display:flex;align-items:center;min-height:44px}
+.topbar nav a:first-child {color:var(--nq-link)}
+.header-actions {gap:8px}
+.header-actions>.nq-button {font-size:14px;min-height:40px;padding-inline:16px;border-radius:9px}
+.icon-button {border:1px solid transparent;border-radius:9px;min-inline-size:40px;min-block-size:40px;font-size:14px;transition:background-color 120ms}
+.icon-button:hover,.locale-link:hover {background:var(--nq-surface-hover);border-color:var(--nq-border)}
+#search-open {border-color:var(--nq-border);background:var(--nq-bg);padding-inline:12px;gap:10px}
+#search-open:hover {background:var(--nq-surface-hover);border-color:var(--nq-border-strong)}
+.locale-link {padding:8px 10px;border:1px solid var(--nq-border);border-radius:9px;font-size:14px;min-height:40px}
+kbd {border-color:var(--nq-border);background:var(--nq-surface);padding:2px 4px}
+.sidebar {top:72px;width:248px;padding:20px 16px;background:var(--nq-surface);border-color:var(--nq-border);overscroll-behavior:contain}
+.nasaq-portfolio-link {font-size:14px;min-height:36px;margin:0 8px 16px;color:var(--nq-muted)}
+.nasaq-portfolio-link:hover {color:var(--nq-link)}
+.version {gap:10px;padding-inline:8px;margin-bottom:28px}
+.version .nq-badge {padding:3px 10px;border:1px solid var(--nq-border);font-size:14px}
+.version small {font-size:14px}
+.nav-group {margin-bottom:26px}
+.nav-group h2 {font-size:14px;line-height:1.5;letter-spacing:.08em;font-weight:700;margin:0 12px 10px;color:var(--nq-muted)}
+.nav-group a {min-height:36px;padding:6px 12px;border:1px solid transparent;border-radius:8px;font-size:14px;line-height:1.7;margin-bottom:3px;box-shadow:none}
+.nav-group a:hover {background:var(--nq-surface-hover);color:var(--nq-text)}
+.nav-group a.active,[dir=rtl] .nav-group a.active {background:var(--nq-selected);color:var(--nq-on-selected);border-color:var(--nq-border);font-weight:700;box-shadow:none}
+.nav-group a.active::after {content:"";inline-size:5px;block-size:5px;border-radius:50%;background:var(--nq-action);flex-shrink:0}
+.sidebar-skill {padding:16px;background:var(--nq-surface-subtle);border:1px solid var(--nq-border);border-radius:12px;font-size:14px}
+.sidebar-skill:hover {background:var(--nq-surface-hover);border-color:var(--nq-border-strong)}
+#main {margin-inline-start:248px;margin-inline-end:184px;max-width:1260px;min-width:0;padding:36px 40px 56px;min-height:calc(100dvh - 72px)}
+#main:focus {outline:none}
+.toc {top:112px;width:168px;padding:0 20px;border-color:var(--nq-border);font-size:14px}
+.toc p {font-weight:700;color:var(--nq-text);margin-bottom:16px}
+.toc a {line-height:1.7;padding-block:6px;margin:8px 0;color:var(--nq-muted)}
+.toc a:hover {color:var(--nq-link)}
+.page-head {margin:0 0 32px;padding-bottom:28px;border-bottom:1px solid var(--nq-border)}
+.breadcrumb {font-size:14px;margin-bottom:20px;color:var(--nq-muted)}
+.page-head h1 {font-size:44px;letter-spacing:-.04em;line-height:1.2;margin:0 0 14px}
+.page-head p {font-size:15px;line-height:1.8;max-width:64ch}
+.section {margin-block:36px;scroll-margin-top:100px}
+.section>h2,.section-head h2 {font-size:23px;letter-spacing:-.025em;line-height:1.4;margin-bottom:12px}
+.section>p {font-size:14px;color:var(--nq-muted);margin-top:0;line-height:1.8}
+.section-head p {font-size:14px}
+.preview {background:var(--nq-surface);border-radius:14px;padding:28px}
+.state-grid {gap:16px}
+.state-cell {background:var(--nq-surface);border-radius:12px;padding:22px;min-width:0}
+.state-cell>small {color:var(--nq-muted)}
+.code-block {border:1px solid #494052;border-radius:12px;background:#151A22;color:#EDF1F7}
+.code-block button {min-height:32px;border-color:#877797;color:#E0CFFF}
+.spec-table th {background:var(--nq-surface-subtle);font-size:14px}
+.spec-table td {background:var(--nq-surface);vertical-align:top}
+.table-scroll {border:1px solid var(--nq-border);border-radius:12px}
+.note {border-radius:0 10px 10px 0;background:var(--nq-selected);border-color:var(--nq-action);color:var(--nq-on-selected)}
+[dir=rtl] .note {border-radius:10px 0 0 10px}
+.footer-note {font-size:14px;gap:20px;line-height:1.8}
+.footer-note a {text-decoration:underline;text-underline-offset:3px}
+
+/* The overview shows the system through real native components. */
+.system-hero {display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:center;margin-bottom:28px}
+.system-hero-copy {min-width:0;padding-block:8px}
+.system-kicker {display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:700;letter-spacing:.09em;color:var(--nq-on-selected);text-transform:uppercase}
+.system-kicker::before {content:"";inline-size:6px;block-size:6px;border-radius:50%;background:var(--nq-action)}
+.system-hero h1 {font-size:clamp(36px,3.4vw,54px);line-height:1.12;letter-spacing:-.05em;margin:20px 0 18px}
+.system-hero h1 span {color:var(--nq-action)}
+.system-hero-copy>p {font-size:14px;line-height:1.85;color:var(--nq-muted);max-width:42ch;margin-bottom:24px}
+.system-hero .row {gap:10px}
+.system-hero .nq-button {font-size:14px;min-height:42px;padding:9px 15px}
+.system-preview {padding:20px;border:1px solid var(--nq-border);border-radius:20px;background:var(--nq-surface-subtle);background-image:radial-gradient(var(--nq-border) .8px,transparent .8px);background-size:14px 14px;min-width:0}
+.system-preview-label {display:flex;justify-content:space-between;gap:12px;margin-bottom:14px;font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--nq-muted)}
+.system-preview-card {padding:20px;border:1px solid var(--nq-border);border-radius:14px;background:var(--nq-surface);box-shadow:0 8px 24px #151A2208}
+.system-preview-card .nq-tabs {margin-bottom:20px}
+.system-preview-card .nq-tabs button {flex:1;padding:8px;font-size:14px;min-height:36px}
+.system-preview-card h3 {font-size:17px;margin:4px 0 6px;line-height:1.6}
+.system-preview-card p {font-size:14px;color:var(--nq-muted);margin:0 0 18px;line-height:1.7}
+.system-preview-card .nq-check {justify-content:space-between;min-height:44px;font-size:14px;margin-bottom:16px;padding-block:8px;border-bottom:1px solid var(--nq-border)}
+.system-preview-card .nq-progress-summary {font-size:14px}
+.system-preview-card .nq-progress {margin:10px 0 0}
+.system-preview-card [role=tabpanel] {min-height:178px}
+.system-preview-card pre {direction:ltr;text-align:left;font:14px/2 monospace;color:var(--nq-on-selected);white-space:pre-wrap}
+.system-facts {display:flex;align-items:center;gap:24px;padding:16px 0;border-block:1px solid var(--nq-border);margin-bottom:32px;font-size:14px;color:var(--nq-muted);flex-wrap:wrap}
+.system-facts b {color:var(--nq-text);font-weight:700}
+.system-facts span:last-child {margin-inline-start:auto;color:var(--nq-on-selected)}
+#explore-system {margin-block:28px 40px}
+.nasaq-directory-intro {font-size:14px!important;margin-bottom:20px}
+.nasaq-area-grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.nasaq-area-card {background:var(--nq-surface);color:var(--nq-text);border-color:var(--nq-border);border-radius:14px;transition:border-color 120ms,box-shadow 120ms,transform 120ms}
+.nasaq-area-card>.nasaq-artwork {height:136px}
+.nasaq-area-card .nasaq-artwork img {height:136px;width:100%;object-fit:cover}
+.nasaq-area-card-copy {background:var(--nq-surface);border-color:var(--nq-border);padding:18px;gap:7px}
+.nasaq-area-card .nasaq-art-label {color:var(--nq-muted);font-size:14px;letter-spacing:.08em}
+.nasaq-area-card-title {color:var(--nq-text);font-size:16px;line-height:1.5}
+.nasaq-area-card-title>span {color:var(--nq-action);font-size:18px}
+.nasaq-area-card-desc {color:var(--nq-muted);font-size:14px;line-height:1.75}
+.nasaq-area-card:hover {border-color:var(--nq-action);box-shadow:0 6px 20px #151A220C;transform:translateY(-2px)}
+.nasaq-area-card:hover .nasaq-area-card-copy {background:var(--nq-selected)}
+.nasaq-topic-card {border-radius:12px;transition:background-color 120ms,border-color 120ms}
+.nasaq-topic-card:hover {background:var(--nq-selected);border-color:var(--nq-action)}
+.nasaq-visual--page {max-height:280px;border-radius:16px;margin-bottom:28px}
+.nasaq-visual--page .nasaq-artwork img {max-height:280px;object-fit:cover}
+.nasaq-visual--page .nasaq-glass-caption {padding:20px;margin:18px;margin-inline-start:-16px}
+.nasaq-visual--page .nasaq-glass-caption strong {font-size:24px}
+.nasaq-visual--page .nasaq-glass-caption p {font-size:14px}
+
+/* Workbench: neutral canvas, raised specimen, separated property controls. */
+.nq-explorer {border:1px solid var(--nq-border);border-radius:16px;box-shadow:0 4px 16px #151A2204}
+.explore-bar {padding:8px 20px;background:var(--nq-surface);font-size:14px}
+.explore-live-dot {width:7px;height:7px;box-shadow:0 0 0 3px var(--nq-surface-subtle)}
+.explore-bar .text-button {font-size:14px;color:var(--nq-link);text-decoration:none;border-radius:7px;padding-inline:8px}
+.explore-bar .text-button:hover {background:var(--nq-surface-hover)}
+.explore-workspace {grid-template-columns:200px minmax(0,1fr)}
+.explore-controls {padding:24px 20px;background:var(--nq-surface);gap:20px}
+.explore-field>label {color:var(--nq-muted);font-size:14px;letter-spacing:.01em}
+.explore-controls .nq-input,.explore-controls .nq-select {font-size:14px;min-height:42px;border-radius:8px;padding-inline:10px}
+.explore-canvas {padding:32px;min-height:320px;background:var(--nq-surface-subtle);background-image:radial-gradient(var(--nq-border) .8px,transparent .8px);background-size:16px 16px}
+.explore-preview {padding:28px;border:1px solid var(--nq-border);border-radius:14px;background:var(--nq-surface);box-shadow:0 5px 20px #151A2207}
+.explore-preview .nq-tabs {margin-bottom:16px}
+.explore-preview [role=tabpanel] {min-height:72px;padding:4px 4px 0}
+.explore-preview [role=tabpanel] p {font-size:14px;color:var(--nq-muted)}
+.explore-preview .nq-card {border:1px solid var(--nq-border);padding:var(--nq-component-card-padding);border-radius:var(--nq-component-card-radius);background:var(--nq-surface);box-shadow:none}
+.explore-preview .explore-editorial{padding:0;overflow:hidden}
+.explore-preview .nq-card h3 {font-size:24px}
+.explore-preview .nq-button {font-size:14px}
+.explore-status {background:var(--nq-surface);padding:12px 20px;margin:0;font-size:14px;border-top:1px solid var(--nq-border);color:var(--nq-muted)}
+.explore-inspect {background:var(--nq-surface-subtle)}
+.explore-inspect>summary {padding:18px 20px;font-size:14px;color:var(--nq-on-selected)}
+.nq-reference {border:1px solid var(--nq-border);border-radius:12px;background:var(--nq-surface);padding:0 24px}
+.nq-reference>summary {padding-block:20px;font-size:14px;line-height:1.8}
+.nq-reference .section {margin-block:28px}
+
+/* Studio has a conversation status, without a fabricated percentage. */
+main:has(.icon-studio) {margin-inline-end:0;max-width:none;padding:36px 40px 56px}
+.studio-heading {max-width:820px;margin-bottom:24px!important}
+.studio-heading h1 {font-size:32px!important;letter-spacing:-.04em}
+.studio-heading>p {font-size:14px!important}
+.icon-studio {max-width:820px;padding:28px;background:var(--nq-surface);border:1px solid var(--nq-border);border-radius:20px;box-shadow:0 8px 24px #151A2205}
+.studio-session-status {display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--nq-border);padding-bottom:18px;margin-bottom:24px;font-size:14px;color:var(--nq-muted)}
+.studio-session-status>span:first-child {display:flex;align-items:center;gap:8px;font-weight:700;color:var(--nq-on-selected)}
+.studio-session-status>span:first-child::before {content:"";width:6px;height:6px;background:var(--nq-action);border-radius:50%}
+.studio-welcome {padding:8px 0 28px}
+.studio-welcome-mark {background:var(--nq-selected);color:var(--nq-on-selected);border:1px solid var(--nq-border);width:56px;height:56px;font-size:36px;border-radius:16px;margin-bottom:20px}
+.studio-welcome h2 {font-size:27px!important;line-height:1.4!important;letter-spacing:-.035em}
+.studio-welcome>p {font-size:14px!important;max-width:42ch}
+.studio-starting-points {margin-top:24px}
+.studio-starting-points button {border-color:var(--nq-border-strong);background:var(--nq-surface);font-size:14px}
+.studio-starting-points button:hover,.studio-choice:hover {background:var(--nq-surface-hover);border-color:var(--nq-action);color:var(--nq-text)}
+.studio-choice[data-studio-choice=approve]:hover {background:var(--nq-action-hover);color:var(--nq-on-action)}
+.studio-composer {border-color:var(--nq-border-strong);background:var(--nq-bg);box-shadow:none;margin-top:8px}
+.studio-composer:focus-within {border-color:var(--nq-focus);box-shadow:0 0 0 3px var(--nq-selected)}
+.studio-composer textarea {font-size:14px;min-height:64px}
+.studio-send {width:44px;height:44px;min-width:44px}
+.studio-send:hover {opacity:1;background:var(--nq-action-hover)}
+.studio-footnote {font-size:14px;line-height:1.8;margin-top:16px}
+.studio-turn-user .studio-turn-content {background:var(--nq-selected);color:var(--nq-on-selected)}
+.studio-avatar,.studio-small-avatar {background:var(--nq-selected);color:var(--nq-on-selected)}
+.studio-icon-tile {background:var(--nq-bg)}
+.studio-error {color:var(--nq-error)}
+#document-workflow {border-radius:16px;box-shadow:0 4px 20px #151A2205}
+.workflow-top {background:var(--nq-surface-subtle)}
+[data-theme=dark] :is(.icon-button img,.nasaq-topic-icon img) {filter:invert(1)}
+[data-theme=dark] .nasaq-topic-icon img {filter:none}
+[lang=ar] :is(.system-hero h1,.page-head h1,.section>h2,.studio-heading h1,.studio-welcome h2) {letter-spacing:0;line-height:1.5}
+
+@media(min-width:1600px) {#main{padding-inline:56px}.system-hero{gap:48px}.nasaq-area-card>.nasaq-artwork,.nasaq-area-card .nasaq-artwork img{height:168px}}
+@media(max-width:1280px) {#main{margin-inline-end:0}.toc{display:none}.topbar nav{display:none}.nasaq-area-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1000px) {.system-hero{grid-template-columns:1fr}.system-hero-copy>p{max-width:60ch}.system-preview{max-width:520px}.nasaq-area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.explore-workspace{grid-template-columns:180px minmax(0,1fr)}.explore-canvas{padding:22px}.explore-preview{padding:22px}#main,main:has(.icon-studio){padding-inline:28px}.topbar{gap:16px}}
+@media(max-width:800px) {
+ .topbar{height:64px;padding-inline:16px}.brand span{font-size:22px}.brand small{display:none}.brand>img{width:32px;height:32px;padding:4px}.header-actions>.nq-button{display:none}.header-actions{gap:4px}#search-open{padding:8px;border-color:transparent;background:transparent}#search-open span,#search-open kbd{display:none}.locale-link{min-height:40px;font-size:14px}
+ .sidebar{top:64px;display:none;width:260px;box-shadow:12px 0 30px #151A2215;z-index:30}.sidebar.open{display:block}#main,main:has(.icon-studio){margin-inline:0;padding:28px 20px 40px;max-width:none}.mobile-only{display:inline-flex}.page-head h1{font-size:36px}.page-head{padding-bottom:24px}.breadcrumb{margin-bottom:16px}.system-hero{gap:24px}.system-hero h1{font-size:42px}.system-hero-copy>p{font-size:14px}.system-preview{max-width:none}.system-facts{gap:12px 20px}.system-facts span:last-child{margin-inline-start:0}.nasaq-area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nasaq-area-card-copy{padding:16px}.section>h2{font-size:22px}.explore-workspace{grid-template-columns:180px minmax(0,1fr)}.icon-studio{padding:24px}.studio-heading{margin-bottom:20px!important}.nasaq-visual--page{max-height:none}.nasaq-visual--page>.nasaq-artwork{max-width:none}.nasaq-visual--page .nasaq-glass-caption{margin:0 20px 20px}
+}
+@media(max-width:600px) {
+ .explore-workspace{grid-template-columns:1fr}.explore-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-inline-end:0;border-bottom:1px solid var(--nq-border);padding:18px;gap:16px}.explore-field{min-width:0}.explore-canvas{min-height:260px;padding:24px 18px}.explore-preview{padding:22px 18px}.explore-bar{padding-inline:16px}.explore-status{padding-inline:16px}.explore-controls .nq-input,.explore-controls .nq-select{font-size:14px}.nq-reference{padding-inline:18px}.system-hero h1{font-size:40px}.system-preview{padding:16px}.system-preview-card{padding:18px}.nasaq-area-grid{grid-template-columns:1fr 1fr;gap:12px}.nasaq-area-card>.nasaq-artwork,.nasaq-area-card .nasaq-artwork img{height:108px}.nasaq-area-card-copy{padding:14px}.nasaq-area-card-title{font-size:14px}.nasaq-area-card-desc{font-size:14px}.nasaq-area-card .nasaq-art-label{font-size:7px}.nasaq-topic-grid{grid-template-columns:1fr}.icon-studio{padding:20px 16px;border-radius:16px}.studio-welcome h2{font-size:24px!important}.studio-starting-points>div{flex-direction:column;align-items:stretch}.studio-starting-points button{font-size:14px;padding-inline:14px}.studio-starting-points button>span{display:inline}.studio-welcome{padding-bottom:24px}.studio-footnote{margin-top:14px}.studio-session-status{font-size:14px}.studio-composer-bottom{gap:12px}#studio-input-help{font-size:14px}.studio-composer textarea{font-size:16px}.nasaq-visual--page .nasaq-glass-caption{margin:0 16px 16px}
+}
+@media(max-width:360px) {.brand span{font-size:19px}.topbar{padding-inline:12px}.header-actions{gap:2px}.icon-button{min-width:36px}.system-hero h1{font-size:36px}.system-facts{gap:10px 16px}.nasaq-area-grid{grid-template-columns:1fr}.nasaq-area-card>.nasaq-artwork,.nasaq-area-card .nasaq-artwork img{height:150px}.nasaq-area-card-desc{font-size:14px}}
+@media(prefers-reduced-motion:reduce) {.nasaq-area-card:hover{transform:none}.nasaq-area-card{transition:none}}
+
+.role-table-color{display:inline-flex;align-items:center;gap:8px;direction:ltr;white-space:nowrap}.role-table-color i{inline-size:22px;block-size:22px;flex-shrink:0;border:1px solid var(--nq-border-strong);border-radius:6px}
+
+[data-theme=dark] .brand>img{filter:none;background:var(--nq-action)}
+
+/* Multi-variant canvas shares the same semantic selection and interaction roles. */
+.component-studio{--studio-selection:var(--nq-action)}
+.component-layers>button:hover,.component-state-chips>button:hover,.component-expand:hover,.component-zoom button:hover{background:var(--nq-surface-hover);color:var(--nq-text)}
+.component-layers>button[aria-pressed=true],.component-state-chips>button[aria-pressed=true]{background:var(--nq-selected);color:var(--nq-on-selected)}
+.component-frame-surface .nq-tabs{flex-wrap:nowrap;max-inline-size:100%}
+.component-frame-surface [role=tabpanel]{font-size:14px;min-block-size:56px}
+.component-frame-surface .nq-progress-summary{inline-size:100%}
+
+/* Editorial cleanup: one title per context and intact illustration proportions. */
+.system-hero h1 span{color:inherit}.system-hero{margin-bottom:40px}.system-hero-copy>p{max-width:34ch}.system-kicker{letter-spacing:.06em}.system-kicker::before{display:none}
+.nasaq-area-card>.nasaq-artwork{height:auto;aspect-ratio:3/2}.nasaq-area-card .nasaq-artwork img{height:100%;width:100%;aspect-ratio:3/2;object-fit:contain}.nasaq-area-card-copy{gap:8px}.nasaq-area-card-title{margin:0}.nasaq-area-card-desc{font-size:14px}.nasaq-topic-card{min-height:76px;padding:22px 24px;display:flex;align-items:center}.nasaq-topic-card strong{font-size:14px}
+.page-head--illustrated{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,32%);align-items:center;gap:28px;background:var(--nq-surface);border:1px solid var(--nq-border);border-radius:16px;padding:28px;overflow:hidden}.page-head--illustrated h1{font-size:36px}.page-head--illustrated p{font-size:14px}.page-head--illustrated>.nasaq-artwork{border-radius:12px;aspect-ratio:3/2}.page-head--illustrated .nasaq-artwork img{width:100%;height:100%;aspect-ratio:3/2;object-fit:contain}
+.nav-group h2{margin:0 0 8px}.nav-group h2>a{margin:0;min-height:34px;font-size:14px;font-weight:700;letter-spacing:.02em;padding:6px 12px}.nav-group{margin-bottom:20px}
+.start-install{background:var(--nq-surface);border:1px solid var(--nq-border);border-radius:16px;padding:24px}.start-install>.nq-tabs{margin-bottom:24px}.start-install [role=tabpanel]>p{font-size:14px;color:var(--nq-muted);margin:0 0 18px}.start-install .nq-button{font-size:14px}.start-install .code-block{margin-bottom:0}.start-next-links{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.start-next-links a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:1px solid var(--nq-border-strong);border-radius:10px;background:var(--nq-surface);font-size:14px}.start-next-links a:hover{background:var(--nq-selected);border-color:var(--nq-action)}.start-language-example{border-top:1px solid var(--nq-border);margin-top:32px;padding-block:16px}.start-language-example>summary{cursor:pointer;font-size:14px;min-height:44px;display:list-item;padding-block:10px}.start-language-example #explore-live{margin-block:20px}
+.component-studio-bar{justify-content:flex-end}.component-studio-bar>span:empty{display:none}.component-canvas-meta{justify-content:flex-end}.component-properties-heading{display:block;padding-block:18px}.component-properties-heading strong{font-size:14px}.component-properties-heading~.component-property-group{padding-top:20px}.component-canvas-bottom.sr-only{padding:0}.component-property-group.sr-only{padding:0;border:0}.component-frame-name{font-size:14px}
+.footer-note{margin-top:40px}.footer-note>span:last-child{display:flex;gap:8px}
+@media(max-width:800px){.page-head--illustrated{grid-template-columns:1fr 200px;gap:20px;padding:24px}.page-head--illustrated h1{font-size:30px}.nasaq-area-card .nasaq-artwork img,.nasaq-area-card>.nasaq-artwork{height:auto;aspect-ratio:3/2}.system-hero h1{font-size:40px}}
+@media(max-width:600px){.page-head--illustrated{grid-template-columns:1fr;padding:24px}.page-head--illustrated>.nasaq-artwork{max-width:360px;width:100%;justify-self:center}.start-install{padding:18px}.start-install .nq-tabs button{padding-inline:12px;font-size:14px}.nasaq-area-card-desc{font-size:14px}.nasaq-topic-card{padding:18px;min-height:64px}.component-property-group.sr-only{display:none}}
+
+/* Documentation chrome is readable without miniature labels. */
+.brand small,.version small,.sidebar-skill small{display:none}
+.nav-group h2{font-size:14px;letter-spacing:0;margin-inline:0}
+.nav-group h2 a{font-weight:600}
+.nav-group a{min-height:40px}
+kbd{font-size:14px}
+.nq-reference>summary{font-size:16px;line-height:1.7;padding-block:16px;min-height:48px}
+.nq-reference :is(p,li,td,th,label,small,code),.spec-table :is(th,td){font-size:14px}
+.nq-reference .type-style :is(small,code){font-size:14px}
+.nq-reference .type-style small{display:block;margin-block-end:8px}
+.nq-reference .type-style p{margin-block:12px}
+#explore-reference{margin-block-start:24px}
+
+.component-studio-bar{justify-content:space-between}
+.component-studio.is-expanded .component-studio-workspace{grid-template-columns:minmax(0,1fr) 240px}
+.component-frame-name,.component-properties-heading strong{font-size:14px}
+@media(max-width:640px){.component-studio.is-expanded .component-studio-workspace{display:flex}}

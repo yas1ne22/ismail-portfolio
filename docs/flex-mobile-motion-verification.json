@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Qatar",
+  "scope": "Local Flex responsive-context improvements and reduced-motion entry behavior. Original homepage and all 180 audit criteria retained. Not deployed.",
+  "previousGoalTurn": "Progress: closed A08.01 and A08.05 with an explicit artifact comparison and observed desktop sample-task recovery; counts increased from 61 to 63 Done.",
+  "closedActions": [],
+  "counts": {
+    "Done": 63,
+    "In progress": 46,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "changes": [
+    "Added offer opening, primary route anchor and compact source-attributed operating context to the existing Flex study. No additional page was created.",
+    "At narrow widths, stacked proof, route choices and form actions. Kept actions in normal flow and collapsed prototype review tools. The version comparison explains omitted programme/testimonial content and retained details.",
+    "Allowed Flex step-heading focus to scroll into view after task transitions. This last focus adjustment is source-tested but not yet native-verified.",
+    "Skipped 3D scanner loading for reduced-motion entry. Preference changes invalidate pending imports, dispose a live scanner and preserve plain entry, or finish a pending close immediately.",
+    "Updated the decorative timeline on motion-preference changes and rechecked reduced motion before mounting a late sky import."
+  ],
+  "sourceChecks": {
+    "workspaceTests": 123,
+    "failures": 0,
+    "newReducedMotionContracts": 4,
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 628,
+    "scriptSyntaxChecks": 23,
+    "staticIssues": 0,
+    "staticFragmentPages": 17,
+    "dynamicNasaqLinksDeferred": 38,
+    "contrastStatesSourceChecked": 6
+  },
+  "newContracts": [
+    "Reduced motion initially enabled: no scanner import, plain entry and immediate opener restoration.",
+    "Preference enabled during import: no late scanner mount.",
+    "Preference enabled with a live scanner: one disposal, usable plain entry and a later normal opening.",
+    "Preference enabled during closing: immediate return, canceled stale close and a later plain entry stays open."
+  ],
+  "nativeObservations": [
+    {
+      "id": "flex-responsive-opening-r2",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Rendered the revised desktop offer opening, prototype boundary, learning-path action, operating-context action and attributed source section. The review tools were collapsed by default.",
+      "result": "Passed the observed desktop opening"
+    },
+    {
+      "id": "flex-responsive-narrow-r2",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html#experience-app",
+      "observed": "After eight browser Zoom In increments from the normal preview, the offer headline and lede wrapped, proof cards stacked, and source links were readable. Followed the operating-context and learning-path anchors. The route-selector container received native focus; Tab moved to the beginner option with a visible outline. Enter opened the form. Native observations showed retained sample name, invalid-email feedback, goal selection through the native popup and a corrected editable email field. Screens showed the form within the available width without horizontal clipping.",
+      "result": "Partial narrow/enlarged-text review; both complete confirmations remain unverified",
+      "limits": "The exact zoom percentage and CSS viewport were not read from browser UI. This is not a physical-phone test. A keyboard attempt did not select the goal, so this is not counted as a complete keyboard workflow."
+    }
+  ],
+  "externalSources": [
+    {
+      "url": "https://theflex.global/",
+      "scope": "Company description of furnished stays and property management. Attributed company statement, not independent verification."
+    },
+    {
+      "url": "https://base360.ai/",
+      "scope": "Company description of its rental platform and its origin in daily work at The Flex. No Academy learner-outcome claim."
+    }
+  ],
+  "unsuccessfulOrIncomplete": [
+    "PageDown was not a recognized native key name. Native app scroll returned noWindowsAvailable. The documented Next key then scrolled the browser successfully.",
+    "A native browser-change guard interrupted a menu choice; the current tree was refreshed before selecting the goal from the actual menu.",
+    "A later Continue to review attempt timed out. Re-observation showed the Mac was locked; completion was not inferred. A stale-window reconnect also confirmed the Mac remained locked.",
+    "Both complete narrow confirmation paths and an OS reduced-motion/browser walkthrough could not be completed. The later Flex heading-scroll adjustment has no native result yet.",
+    "The final native reconnect for zoom cleanup returned cgWindowNotFound. No zoom reset or further browser verification was inferred."
+  ],
+  "pendingBrowserCleanup": "Restore the review origin to 100% zoom via View > Actual Size and verify the result when the Mac is unlocked. Zoom was not restored through another automation method.",
+  "remaining": [
+    "Complete both revised narrow journeys through review, confirmation, failure/retry and cancellation; inspect heading visibility after transitions.",
+    "Physical-phone review, increased system text, screen-reader review and the full portfolio keyboard path.",
+    "Enable the actual OS reduced-motion preference and inspect entry, clouds, reveals and project transitions.",
+    "Live Figma parity, approved Flex offer terms and real participant/client/outcome evidence."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "54696d5c84b4e12a3f5b5cc111d0be579f79264883a1baeaf05ca1eabaef38e2",
+    "src/flexStudyContent.js": "8ceadb2779fb3899b6ffca83e6d07101cd480fed4dc5b8078b7ce69bd0e7e93a",
+    "src/flexVersionContent.js": "3d5af68747dda341e75525103ed97bb1e54169d5a2647edf8dddcaf1882ea58b",
+    "src/caseReviewContent.js": "b40f822434683923454911f31fad6803a1359b23b8963ae584066ced6b4d5862",
+    "src/boardingGate.js": "b37f728d14b920d3e52ff93dc1908d8bbdc7269cc6be05dcc6f50ea68ee02c7a",
+    "src/main.js": "f0ffbb13fdffd8b2b6667104bbd6565f6b46d08b9154a953822ad83196e7e1bc",
+    "scripts/render-studies.mjs": "e4dd4afb77ce62151b0e00317a52dcf98498c8c963c6c3f87d4e645cbfacff3c",
+    "scripts/enrich-cases.mjs": "0fe44e9bca57d8b6a7ec4fb0f6ed07da0d523eb0b279217dbd1fd348eb91c0d0",
+    "scripts/record-flex-version.mjs": "30bdf9f1988dc7be0be64763c1ba14428800983c7f6c301799aa57c39c0c6ca4",
+    "scripts/update-review-progress.mjs": "49068662670715394f3f9363c3810ce81b43dd149cac9e945bdb26815d5c0623",
+    "scripts/verify-portfolio.py": "e1894217151067dffa68f5de12fe857b9e8ed9603063c6e2da364685b73b21de",
+    "tests/boarding-gate.test.mjs": "963ab90383b3300c6db2a6e06b0579c576e6bd7b88822b322412896526b799d1",
+    "tests/study-ui.test.mjs": "5de4b108bcbbb294b25d0e359a3d79b58ef8a0cea40efcf2e2f86ee5c6b638cc",
+    "public/projects/flex-academy/study.html": "0357329545072b05427c356c7fd89f8546a928ea901ae4a57e522c327c7f7ec5",
+    "public/projects/flex-academy/index.html": "7bafc9c19af04d92597b74cec0265c1a1aa00b1bd6fa35f9ffe8e9c3c8ef5b71",
+    "public/projects/flex-academy/journey.css": "c76aa4e236220e4fe0c1e396f7c0f042057859cfd6037747b40ba42187b4e63b",
+    "public/projects/flex-academy/delivery-status.json": "ca5ef2d05ddd6107359d9084029df858d9ae21357a353ac4485a2d95b47a3922",
+    "public/projects/experience-lab.js": "e82d3747ba104a352717e836c67ac66a2d769766d8382210f3743010c3953862"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "1c3fec2d4576b253720d8e1066fee142839cd8a664dc2c1afa1c6f5b05aac0b2",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 63,
+      "In progress": 46,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "changedRangesVisuallyReviewed": true,
+    "sourceHashesMatch": true,
+    "builtFlexSourcesMatch": true
+  },
+  "recordScope": "Historical Flex/motion review snapshot. Shared study CSS and the subsequently overwritten workbook may change later; this record’s hashes retain the reviewed snapshot.",
+  "laterSharedSourceReview": "docs/andalus-nexus-verification.json"
+}

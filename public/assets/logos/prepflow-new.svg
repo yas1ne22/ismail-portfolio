@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">PrepFlow</title><desc id="d">A plate divided into a weekly meal preparation path</desc>
+  <rect width="64" height="64" rx="16" fill="#E9FF67"/>
+  <circle cx="31" cy="32" r="18" fill="#17362C"/>
+  <path d="M31 15v17H48M31 32 20 45" fill="none" stroke="#E9FF67" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M39 12c7-2 12 2 12 8-7 2-12-1-12-8Z" fill="#FFFFFF"/>
+  <path d="m40 19 7-4" stroke="#17362C" stroke-width="2" stroke-linecap="round"/>
+</svg>

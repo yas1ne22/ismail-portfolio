@@ -12,13 +12,11 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ismail Bettoumi — Resume / Curriculum Vitae</title>
-    <meta name="description" content="Resume of Ismail Bettoumi, Digital Marketing Account Manager based in Doha, Qatar." />
+    <title>Ismail Bettoumi: Resume / Curriculum Vitae</title>
+    <meta name="description" content="Resume of Ismail Bettoumi, Product Designer focused on UX strategy and AI enablement, based in Doha, Qatar." />
     <link rel="icon" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+@font-face{font-family:Inter;src:url(/projects/nasaq/assets/inter-variable.ttf) format('truetype');font-weight:100 900;font-display:swap}
       :root {
         --text-primary: #111827;
         --text-secondary: #374151;
@@ -75,7 +73,7 @@
       }
 
       .btn-print {
-        background: #2c6fff;
+        background: #254dd7;
         color: #ffffff;
         border: none;
         padding: 8px 16px;
@@ -457,8 +455,41 @@
           gap: 2px;
         }
       }
+      .cv-header { text-align:left; border-bottom:1px solid var(--border-color); }
+      .cv-contact-line { justify-content:flex-start; }
+      .cv-name { font-weight:600; }
+      .cv-role,.exp-company { color:var(--text-secondary); font-weight:500; }
+      .cv-sec-title { font-weight:600; letter-spacing:.04em; }
+      .cv-summary { text-align:left; }
+      .exp-title a { color:inherit; text-decoration:none; }
+      .exp-title a:hover { text-decoration:underline; }
+      .cv-bar { background:#fff; color:#111827; border-bottom:1px solid #e5e7eb; box-shadow:none; backdrop-filter:none; }
+      .cv-bar-brand,.btn-back { color:#374151; }
+      .btn-print { background:#171717; box-shadow:none; font-weight:500; }
+      .btn-print:hover { background:#333; box-shadow:none; transform:none; }
+      .btn-back:hover { color:#111827; background:#f3f4f6; }
+      @media print { .exp-item { break-inside:avoid; } a { color:inherit; } }
+      .cv-header { display:grid; grid-template-columns:minmax(0,1fr) 104px; gap:20px; align-items:start; }
+      .cv-whatsapp { display:flex; flex-direction:column; align-items:center; gap:2px; font-size:9px; line-height:1.4; color:var(--text-secondary); text-align:center; break-inside:avoid; }
+      .cv-whatsapp img { display:block; background:#fff; width:78px; height:78px; }
+      .cv-whatsapp strong { color:var(--text-primary); font-weight:600; }
+      .cv-whatsapp a { color:inherit; text-decoration:none; }
+      .cv-whatsapp p { max-width:100px; }
+      @media (max-width:420px) { .cv-header { grid-template-columns:minmax(0,1fr) 84px; gap:10px; } .cv-whatsapp { font-size:8px; } .cv-whatsapp img { width:70px; height:70px; } }
+      @media print { .cv-header { grid-template-columns:minmax(0,1fr) 86px; gap:14px; } .cv-whatsapp { font-size:8px; } .cv-whatsapp img { width:68px; height:68px; } }
     </style>
-  </head>
+    <link rel="stylesheet" href="/no-arrows.css">
+<link rel="canonical" href="https://ismail-bettoumi.com/cv.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ismail Bettoumi: Resume / Curriculum Vitae">
+<meta property="og:description" content="Resume of Ismail Bettoumi, Product Designer focused on UX strategy and AI enablement, based in Doha, Qatar.">
+<meta property="og:url" content="https://ismail-bettoumi.com/cv.html">
+<meta property="og:image" content="https://ismail-bettoumi.com/assets/ismail-bettoumi-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ismail Bettoumi: Resume / Curriculum Vitae">
+<meta name="twitter:description" content="Resume of Ismail Bettoumi, Product Designer focused on UX strategy and AI enablement, based in Doha, Qatar.">
+<meta name="twitter:image" content="https://ismail-bettoumi.com/assets/ismail-bettoumi-share.png">
+</head>
   <body>
     <!-- Top Action Toolbar -->
     <div class="cv-bar">
@@ -466,7 +497,8 @@
         <span>Ismail Bettoumi · Curriculum Vitae</span>
       </div>
       <div class="cv-bar-actions">
-        <a class="btn-back" href="/">← Return to Portfolio</a>
+        <a class="btn-back" href="/"> Return to Portfolio</a>
+        <a class="btn-back" href="/Ismail_Bettoumi_CV.pdf" download>Download CV (PDF)</a>
         <button class="btn-print" onclick="window.print()">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
           <span>Print / Save as PDF</span>
@@ -477,8 +509,9 @@
     <!-- Resume Document -->
     <main class="cv-container">
       <header class="cv-header">
+        <div class="cv-header-copy">
         <h1 class="cv-name">Ismail Bettoumi</h1>
-        <p class="cv-role">Digital Marketing Account Manager</p>
+        <p class="cv-role">Product Designer</p>
         <div class="cv-contact-line">
           <span>Doha, Qatar</span>
           <span class="cv-bullet-sep">•</span>
@@ -486,93 +519,45 @@
           <span class="cv-bullet-sep">•</span>
           <a href="mailto:bettoumi001@gmail.com">bettoumi001@gmail.com</a>
           <span class="cv-bullet-sep">•</span>
-          <a href="https://www.linkedin.com/in/ismail-bettoumi-868b04402/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ismail-bettoumi-868b04402</a>
+          <a href="https://ismail-bettoumi.com" target="_blank" rel="noopener noreferrer">ismail-bettoumi.com</a>
         </div>
+        </div>
+      <aside class="cv-whatsapp">
+        <a href="https://wa.me/97470773838" target="_blank" rel="noopener noreferrer" aria-label="Contact Ismail on WhatsApp"><img src="/assets/whatsapp-qr.svg" width="84" height="84" alt="QR code for Ismail’s WhatsApp"></a>
+        <div><strong>Let’s build together.</strong></div>
+      </aside>
       </header>
 
-      <!-- Professional Summary -->
       <section class="cv-section">
-        <h2 class="cv-sec-title">Professional Summary</h2>
-        <p class="cv-summary">
-          Client-focused Digital Marketing Account Manager with 3+ years of experience managing multi-client accounts, developing data-driven marketing strategies, and scaling B2B & B2C brands across Google Ads, Meta Ads, and e-commerce. Proven expertise in client relationship management, account growth, retention, and executive KPI reporting, complemented by hands-on proficiency in AEO/SEO and AI-automated reporting (Claude API, GA4) to maximize campaign efficiency, client satisfaction, and ROAS.
-        </p>
+        <h2 class="cv-sec-title">Profile</h2>
+        <p class="cv-summary">UX designer and AI product builder with a background in AI enablement and marketing. I shape meaningful user journeys around real needs, clear decisions, and purposeful interactions, from first discovery to task completion. I combine research, conversion strategy, and AI-ready design systems to turn product ideas into working experiences.</p>
       </section>
-
-      <!-- Key Skills -->
       <section class="cv-section">
-        <h2 class="cv-sec-title">Key Skills</h2>
+        <h2 class="cv-sec-title">Skills</h2>
         <div class="skills-list">
-          <div class="skill-item">
-            <span class="skill-label">Client & Account Management:</span> Client Relationship Management, Primary Point of Contact, Account Strategy & Growth, Client Retention, Upselling & Cross-Selling, Client Presentations, Issue Resolution, Client Satisfaction.
-          </div>
-          <div class="skill-item">
-            <span class="skill-label">Paid Media & Acquisition:</span> Google Ads, Meta Ads (FB/IG), Audience Segmentation & Retargeting, Multi-variant A/B Testing, Quality Score Optimization, ROAS & CAC Control.
-          </div>
-          <div class="skill-item">
-            <span class="skill-label">SEO & Generative Search (AEO):</span> Technical SEO, Schema & Structured Data (FAQ/HowTo/Speakable), Google AI Overviews & Perplexity Optimization, Position-Zero Capture, Google Search Console.
-          </div>
-          <div class="skill-item">
-            <span class="skill-label">E-Commerce, Analytics & Lifecycle:</span> Shopify Store Architecture & CRO, HubSpot, Mailchimp Email Drips, GA4 Attribution & Executive Dashboards, Claude API Automated Reporting Workflows.
-          </div>
+          <p class="skill-item"><span class="skill-label">Design:</span> User flows, journey mapping, wireframes, responsive interfaces, prototyping, Figma.</p>
+          <p class="skill-item"><span class="skill-label">Systems:</span> Design-system architecture, typed tokens, reusable component libraries, RTL/LTR support, Figma plug-in development, system audits, installable UI packages.</p>
+          <p class="skill-item"><span class="skill-label">Working methods:</span> Journey mapping, heuristic review, interaction-state design, usability-test planning, experiment planning, conversion analysis.</p>
+          <p class="skill-item"><span class="skill-label">AI:</span> ChatGPT, Claude, Codex, context engineering, prompt design, AI-assisted prototyping, MCP integrations, workflow automation, answer engine optimization (AEO).</p>
+          <p class="skill-item"><span class="skill-label">Marketing:</span> Google Ads, Meta Ads, SEO, content planning, email campaigns, audience segmentation, A/B testing, customer retention.</p>
         </div>
       </section>
-
-      <!-- Professional Experience -->
       <section class="cv-section">
-        <h2 class="cv-sec-title">Professional Experience</h2>
-
-        <!-- Role 1 -->
-        <article class="exp-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Digital Marketing Account Manager & Consultant</span> | <span class="exp-company">Independent</span>
-            </div>
-            <span class="exp-meta">Doha, Qatar (Remote) | Jan 2025 – Present</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Manage a portfolio of <strong>4 cross-sector client accounts</strong> (retail, F&B, professional services) as primary point of contact, developing account strategies aligned with client objectives while maintaining a <strong>100% client retention rate</strong>.</li>
-            <li>Drove account growth by identifying upselling and cross-selling opportunities; expanded 6 retail accounts into Shopify CRO, lifting average conversion rates from <strong>1.8% to 2.4% (+31%)</strong>.</li>
-            <li>Established structured <strong>content calendars and campaign briefs</strong> to coordinate creative and technical teams, ensuring on-time delivery of client deliverables and ad assets.</li>
-            <li>Conducted monthly cross-channel attribution audits, scaling average e-commerce client <strong>ROAS from 1.8x to 3.9x</strong> over 12 months to secure sustained contract renewals and budget expansions.</li>
-            <li>Engineered automated reporting pipelines leveraging <strong>Claude and GA4</strong>, saving 5+ hours of manual reporting per client monthly, while resolving tracking and campaign issues promptly to maintain high <strong>client satisfaction</strong>.</li>
-            <li>Architected Answer Engine Optimization (AEO) strategies for 7 clients utilizing structured data and conversational schema, driving a <strong>36% average increase</strong> in impressions from zero-click and AI-cited sources.</li>
-          </ul>
-        </article>
-
-        <!-- Role 2 -->
-        <article class="exp-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Senior Marketing Specialist</span> | <span class="exp-company">Andalus Smart Way</span>
-            </div>
-            <span class="exp-meta">Algeria | Jan 2024 – Dec 2024</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Served as trusted point of contact for clients and brand stakeholders, synchronizing campaign messaging across paid, email, and organic with sales product launch schedules to drive a <strong>29% revenue uplift</strong> during key release windows.</li>
-            <li>Developed monthly <strong>content calendars and creative briefs</strong> to coordinate cross-functional teams, expanding monthly organic traffic by <strong>+47%</strong> within 6 months through topic-cluster SEO and technical site hygiene.</li>
-            <li>Executed comprehensive AEO tactics (FAQ schema, entity-based markup, speakable tags), capturing featured snippets for <strong>41% of targeted commercial keywords</strong>.</li>
-            <li>Optimized digital footprint for generative search engines (Google AI Overviews, Perplexity), lifting tracked <strong>brand citation share by 28%</strong> across key product discovery queries.</li>
-            <li>Restructured Google Ads account architecture and bid strategies, elevating average <strong>Quality Score from 4 to 8</strong> and eliminating <strong>34% in wasted ad spend</strong>.</li>
-            <li>Conducted regular client performance meetings and presentations to review KPIs, identify improvement opportunities, and resolve campaign delivery issues promptly.</li>
-          </ul>
-        </article>
-
-        <!-- Role 3 -->
-        <article class="exp-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Marketing Specialist</span> | <span class="exp-company">Zer</span>
-            </div>
-            <span class="exp-meta">Algeria | Jan 2023 – Dec 2023</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Built and executed an integrated B2B acquisition strategy across paid search, SEO, and email, increasing <strong>qualified inbound leads by 42%</strong> (from 85 to 120+/quarter) within two quarters.</li>
-            <li>Launched and multivariate-tested 14 PPC campaigns across Google and Meta Ads, decreasing blended <strong>customer acquisition cost (CAC) by 23%</strong> on top-converting creatives.</li>
-            <li>Refined editorial and content distribution around audience segment engagement data, reducing <strong>cost-per-click (CPC) by 27%</strong>.</li>
-            <li>Deployed automated lifecycle email drip workflows, achieving a <strong>34% open rate</strong> (13 points above the 21% industry benchmark) and converting email into a sustained revenue channel.</li>
-            <li>Managed a <strong>$9,500 monthly ad budget</strong> with 100% on-target ROAS and zero overruns, while engineering automated GA4 dashboards that eliminated <strong>6 hours/week</strong> of manual reporting.</li>
-          </ul>
-        </article>
+        <h2 class="cv-sec-title">Selected projects</h2>
+        <article class="exp-item"><h3 class="exp-title"><a href="/projects/nasaq/case-study-en.html">Nasaq · Independent Arabic/English design system</a></h3><p class="cv-summary">Designed an Arabic/English system for AI products with 340 typed tokens (v1.5), 18 components with documented states, and 12 interface patterns. Delivered RTL/LTR documentation, an installable npm package, a brand kit, and an AI skill with a local MCP server for developer handoff.</p></article>
+        <article class="exp-item"><h3 class="exp-title"><a href="/projects/andalus/index.html">Cart recovery · Andalus Smart Way</a></h3><p class="cv-summary">Designed an end-to-end UX strategy focused on conversion: reconnect interrupted bookings across web, app, and email, restore saved context, explain fare changes, and guide travelers through to booking completion.</p></article>
+        <article class="exp-item"><h3 class="exp-title">Other work</h3><ul class="exp-bullets">
+          <li><strong>Design Handoff & Design System Doctor:</strong> Built Figma audit tools that surface delivery risks and system drift in prioritized review reports.</li>
+          <li><strong>Flex Academy:</strong> Designed a client conversion experience that routes beginners to a webinar and established operators to a strategy call.</li>
+          <li><strong>Nexus:</strong> Built a browser workspace that brings saved links, design references, and research into organized views.</li>
+          <li><strong>Veyra:</strong> Designed an interactive trip-planning journey that connects destination discovery with day-by-day planning.</li>
+        </ul></article>
+      </section>
+      <section class="cv-section">
+        <h2 class="cv-sec-title">Experience</h2>
+        <article class="exp-item"><div class="exp-header"><div><span class="exp-title">Product Enablement & UX Consultant</span> · <span class="exp-company">Independent</span></div><span class="exp-meta">Jan 2025 – Present</span></div><ul class="exp-bullets"><li>Built Nasaq into an AI-ready design system, connecting typed tokens and component rules to an installable package, an AI skill, and a local MCP server.</li><li>Created Design Handoff and Design System Doctor, Figma tools that flag delivery risks and design-system inconsistencies with structured review reports.</li><li>Built Nexus, a browser workspace for organizing saved links, design references, and daily research.</li><li>Designed Flex Academy’s client website around 2 audience journeys: webinar registration for beginners and strategy calls for existing operators.</li></ul></article>
+        <article class="exp-item"><div class="exp-header"><div><span class="exp-title">Senior Marketing Specialist</span> · <span class="exp-company">Andalus Smart Way</span></div><span class="exp-meta">Jan – Dec 2024</span></div><ul class="exp-bullets"><li>Designed booking-recovery journeys across 3 channels: web, app, and email.</li><li>Connected marketing, customer experience, and measurement around saved booking context; programme reporting supplied to the case study describes a 13–15% return rate and a 4% booking rate after recovery. These are reported programme rates, not measured incremental design lift.</li></ul></article>
+        <article class="exp-item"><div class="exp-header"><div><span class="exp-title">Marketing Specialist</span> · <span class="exp-company">Zer</span></div><span class="exp-meta">Jan – Dec 2023</span></div><ul class="exp-bullets"><li>Identified decision barriers and friction across customer journeys, then translated them into landing-page priorities.</li><li>Refined landing-page messaging, content hierarchy, and calls to action to connect user intent with the right next step.</li><li>Planned A/B tests across pages and follow-up journeys to evaluate usability and conversion opportunities.</li></ul></article>
       </section>
 
       <!-- Education & Certifications -->
@@ -582,14 +567,12 @@
           <div class="edu-item">
             <div class="edu-degree">
               <span>Master’s Degree in Physics Education</span>
-              <span class="edu-year">| 2025</span>
             </div>
             <div class="edu-school">Higher School of Teachers, Algeria</div>
           </div>
           <div class="edu-item">
             <div class="edu-degree">
               <span>Bachelor’s Degree in Science & Technology</span>
-              <span class="edu-year">| 2020</span>
             </div>
             <div class="edu-school">Higher School of Teachers, Algeria</div>
             <div class="edu-extra">Secondary School Teaching Certificate included</div>
@@ -601,13 +584,14 @@
           <div class="cert-item">
             <div class="cert-title">
               <span>Google Digital Marketing & E-commerce Certificate</span>
-              <span class="cert-date">| March 2026</span>
             </div>
-            <div class="cert-issuer">Google (via Coursera)</div>
-            <div class="cert-extra">8-course credential: Full-Funnel Omnichannel Strategy, SEO/SEA, E-commerce Store Management, Analytics & Marketing Automation.</div>
+            <div class="cert-issuer">Google</div>
+            <div class="cert-extra">Digital marketing, e-commerce, analytics, and marketing automation.</div>
           </div>
         </section>
       </div>
+
     </main>
+    <footer class="cv-updated" style="max-width:1080px;margin:16px auto;padding:0 24px;color:#42564a;font:12px/1.6 Arial,sans-serif"><time datetime="2026-11-11">Updated 11 November 2026</time></footer>
   </body>
 </html>

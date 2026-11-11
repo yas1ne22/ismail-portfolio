@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-20",
+  "scope": "Explicit measurement readiness in a local portfolio study. This is not production event delivery, analytics integration, user research, qualification approval or business results.",
+  "originalAction": "A08.09",
+  "checks": {
+    "modelContracts": 4,
+    "actualHandlerDOMContracts": 3,
+    "publishedContractMatchesRuntime": true,
+    "registrationRequiresSuccessfulConfirmation": true,
+    "qualificationRequiresSeparateReview": true,
+    "existingFailureAndUnavailableAreNotNewConversions": true,
+    "reconfirmationAndTraceClearPreserveDeduplication": true,
+    "formNameAndEmailExcludedFromTrace": true
+  },
+  "commands": [
+    "node --test tests/flex-events.test.mjs tests/study-ui.test.mjs",
+    "npm run verify:portfolio",
+    "npm run build"
+  ],
+  "workspaceTestsPassed": 92,
+  "browserObservation": "Opera displayed the expanded measurement panel, its production authority definitions, not-collected results label and initially disabled qualification control. The active tab changed before a new task interaction could be verified. Complete native-browser conversion tasks remain open.",
+  "sources": {
+    "public/projects/flex-events.js": "6eb5c7a3a2e345ff9cee67d57ef889e2aa88a6785ed59ea5f2a2e3b062326158",
+    "public/projects/experience-lab.js": "14822b7133797c502dc45f7bb90eaf8339dd0b93df0ed01dafb4310dde4a4a14",
+    "public/projects/flex-academy/study.html": "1ffc22163751c292fd1dc511db4089cd6c4709b84fda86b3e54bdb72220addf5",
+    "public/projects/flex-academy/measurement-contract.json": "a643c1b672ecf0837858b5221255fd9d1c91e8d1572b0b7130ec550a472ceb10",
+    "public/projects/flex-academy/index.html": "0dd1b46919f2e8fbe1b86f3934347ea83069fe29b950e741ffa54f55f6cf635f"
+  }
+}

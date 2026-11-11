@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#79b5d9">
+  <title>Cansaas Space — AI Workspace UI Concept | Ismail Bettoumi</title>
+  <meta name="description" content="An interactive AI workspace concept with voice, files, model switching, projects and configurable widgets.">
+  <link rel="stylesheet" href="/projects/ui-work/cansaas.css">
+  <link rel="stylesheet" href="/no-arrows.css">
+<link rel="canonical" href="https://ismail-bettoumi.com/projects/cansaas/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cansaas Space — AI Workspace UI Concept | Ismail Bettoumi">
+<meta property="og:description" content="An interactive AI workspace concept with voice, files, model switching, projects and configurable widgets.">
+<meta property="og:url" content="https://ismail-bettoumi.com/projects/cansaas/">
+<meta property="og:image" content="https://ismail-bettoumi.com/assets/ismail-bettoumi-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cansaas Space — AI Workspace UI Concept | Ismail Bettoumi">
+<meta name="twitter:description" content="An interactive AI workspace concept with voice, files, model switching, projects and configurable widgets.">
+<meta name="twitter:image" content="https://ismail-bettoumi.com/assets/ismail-bettoumi-share.png">
+</head>
+<body>
+<main class="space-stage" data-space>
+  <div class="sky-grain"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+  <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div><div class="lake"></div>
+
+  <section class="space-app" aria-label="Interactive Cansaas Space demo">
+    <header class="space-topbar">
+      <button class="brand" type="button" aria-label="Open workspace switcher"><span class="brand-mark">CS</span><strong>Cansaas Space</strong><span class="chevron">⌄</span></button>
+      <div class="top-actions"><button type="button" data-widgets><img src="/assets/icons/lucide/sliders-horizontal.svg" alt="">Manage widgets</button><button type="button" data-help><img src="/assets/icons/lucide/circle-help.svg" alt="">Help</button></div>
+    </header>
+
+    <aside class="rail" aria-label="Product areas">
+      <button class="rail-logo" aria-label="Cansaas home">ID</button>
+      <button class="active" aria-label="Work"><img src="/assets/icons/lucide/panel-left.svg" alt=""><small>Work</small></button>
+      <button aria-label="Wiki"><img src="/assets/icons/lucide/notebook.svg" alt=""><small>Wiki</small></button>
+      <button aria-label="AI"><img src="/assets/icons/lucide/bot.svg" alt=""><small>AI</small></button>
+      <div class="rail-spacer"></div><button aria-label="Support"><img src="/assets/icons/lucide/life-buoy.svg" alt=""></button><button aria-label="Settings"><img src="/assets/icons/lucide/settings.svg" alt=""></button><button class="rail-avatar" aria-label="Profile">IB</button>
+    </aside>
+
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <div class="side-title"><strong>Work</strong><span>◫</span></div>
+      <button class="new-work" type="button"><img src="/assets/icons/lucide/folder-plus.svg" alt="">Create New Work <span>+</span></button>
+      <p class="side-label">Menu</p>
+      <nav class="side-nav">
+        <button class="active" type="button"><img src="/assets/icons/lucide/home.svg" alt="">Home</button>
+        <button type="button"><img src="/assets/icons/lucide/layout-grid.svg" alt="">Workspace</button>
+        <button type="button"><img src="/assets/icons/lucide/file-text.svg" alt="">Drafts <span class="nav-count">2</span></button>
+        <button type="button"><img src="/assets/icons/lucide/notebook.svg" alt="">Notes</button>
+        <button type="button"><img src="/assets/icons/lucide/folder.svg" alt="">My Work</button>
+        <button type="button"><img src="/assets/icons/lucide/layout-template.svg" alt="">Templates</button>
+      </nav>
+      <div class="projects-head"><p class="side-label">Projects</p><button type="button" aria-label="Add project">+</button></div>
+      <nav class="project-nav"><button><i class="project-dot p-blue"></i>Elevate Skin</button><button><i class="project-dot p-yellow"></i>Project Youve</button><button><i class="project-dot p-violet"></i>Blanc Project 2.0 <span>⌄</span></button></nav>
+      <div class="upgrade"><span>Pro</span><strong>Upgrade your workspace</strong><p>Unlock more features for your team.</p><button type="button">Learn More</button></div>
+    </aside>
+
+    <section class="workspace">
+      <div class="welcome">
+        <div class="assistant-orb" aria-hidden="true"><i></i><b></b></div>
+        <h1>Good Morning, Soke Bahtera</h1><p>What would you like to work on today?</p>
+      </div>
+
+      <div class="composer-shell">
+        <div class="conversation" data-conversation hidden></div>
+        <label for="space-prompt" class="space-chip"><span class="brand-mark">CS</span>Cansaas Space</label>
+        <textarea id="space-prompt" rows="2" placeholder="Ask anything…" aria-label="Ask Cansaas Space"></textarea>
+        <div class="composer-actions">
+          <div class="action-group">
+            <button class="icon-button attach" type="button" aria-label="Attach or create" data-attach><img src="/assets/icons/lucide/link-2.svg" alt=""></button>
+            <button type="button" data-build><img src="/assets/icons/lucide/wand-sparkles.svg" alt="">Build <span>⌄</span></button>
+            <button type="button"><img src="/assets/icons/lucide/layers.svg" alt="">Tools</button>
+          </div>
+          <div class="action-group action-right">
+            <button type="button" class="model-button" data-model><img src="/assets/icons/lucide/bot.svg" alt=""><span data-model-name>Claude Opus 4.1</span><img class="chevron-icon" src="/assets/icons/lucide/chevron-down.svg" alt=""></button>
+            <button class="icon-button" type="button" aria-label="Browse the web"><img src="/assets/icons/lucide/globe-2.svg" alt=""></button>
+            <button class="icon-button" type="button" aria-label="Start voice input" data-voice><img src="/assets/icons/lucide/mic.svg" alt=""></button>
+            <button class="send-button" type="button" aria-label="Send prompt" data-send><img src="/assets/icons/lucide/arrow-up.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="voice-mode" data-voice-panel hidden><button type="button" data-close-voice aria-label="Close voice mode"><img src="/assets/icons/lucide/x.svg" alt=""></button><div class="waveform" aria-hidden="true"></div><span>Listening…</span><button class="voice-stop" type="button" data-close-voice aria-label="Stop recording"></button></div>
+
+        <div class="popover attach-menu" data-attach-menu hidden>
+          <button type="button" data-upload><img src="/assets/icons/lucide/upload.svg" alt=""><span><strong>Upload from Device</strong><small>Select files from your computer</small></span></button>
+          <button type="button"><img src="/assets/icons/lucide/cloud.svg" alt=""><span><strong>Import from Gdrive</strong><small>Select files from your drive</small></span></button>
+          <p>Create</p><button type="button"><img src="/assets/icons/lucide/image.svg" alt=""><span><strong>Image Generation</strong></span></button><button type="button"><img src="/assets/icons/lucide/video.svg" alt=""><span><strong>Video Generation</strong></span></button><button type="button"><img src="/assets/icons/lucide/music.svg" alt=""><span><strong>Music Composition</strong></span></button>
+        </div>
+        <div class="popover model-menu" data-model-menu hidden>
+          <label>Search models…<input type="search" aria-label="Search models"></label>
+          <button data-pick-model="Gemini 3 Pro"><img src="/assets/icons/lucide/sparkles.svg" alt="">Gemini 3 Pro <b></b></button>
+          <button data-pick-model="Claude Opus 4.1" class="selected"><img src="/assets/icons/lucide/bot.svg" alt="">Claude Opus 4.1 <b><img src="/assets/icons/lucide/check.svg" alt="Selected"></b></button>
+          <button data-pick-model="GPT - 5.1"><img src="/assets/icons/lucide/message-circle-question.svg" alt="">GPT - 5.1 <b></b></button>
+          <button data-pick-model="DeepSeek V4 Pro"><img src="/assets/icons/lucide/search.svg" alt="">DeepSeek V4 Pro <b></b></button>
+          <div class="temp-row"><span><img src="/assets/icons/lucide/square-pen.svg" alt="">Temporary chat</span><button type="button" role="switch" aria-checked="true"><i></i></button></div>
+        </div>
+      </div>
+
+      <div class="starter-grid" data-starters>
+        <button type="button" data-prompt="Plan my priorities for the week"><span class="starter-icon purple"><img src="/assets/icons/lucide/sparkles.svg" alt=""></span><span><strong>Work Smarter <em>PRODUCTIVITY</em></strong><small>Simplify everyday tasks and get more done with AI assistance.</small></span></button>
+        <button type="button" data-prompt="Give me a quick tour of this workspace"><span class="starter-icon green"><img src="/assets/icons/lucide/square-pen.svg" alt=""></span><span><strong>Easy to Get Started</strong><small>Find your way around with a simple, intuitive workspace.</small></span></button>
+        <button type="button" data-prompt="What can you help me answer today?"><span class="starter-icon orange"><img src="/assets/icons/lucide/mic-audio-lines.svg" alt=""></span><span><strong>Speak & Get Answers</strong><small>Use voice input to ask questions and get AI-powered responses.</small></span></button>
+      </div>
+
+      <section class="recents" data-recents><header><h2>Recent Projects</h2><button type="button">View All</button></header><div class="recent-row"><span class="project-emoji"><img src="/assets/icons/lucide/folder.svg" alt=""></span><strong>ASMO8</strong><p>Blanc Project 2.0</p><time>Updated 2 hours ago</time><div class="people"><i>SB</i><i>JL</i><i>RB</i><b><img src="/assets/icons/lucide/sparkles.svg" alt=""></b><span>+</span></div><button aria-label="Project actions"><img src="/assets/icons/lucide/more-horizontal.svg" alt=""></button></div><div class="recent-row"><span class="project-emoji"><img src="/assets/icons/lucide/square-pen.svg" alt=""></span><strong>VDWIS</strong><p>Project Youve</p><time>Updated 2 hours ago</time><div class="people"><i>AK</i><b><img src="/assets/icons/lucide/sparkles.svg" alt=""></b><span>+</span></div><button aria-label="Project actions"><img src="/assets/icons/lucide/more-horizontal.svg" alt=""></button></div></section>
+    </section>
+
+    <div class="widget-drawer" data-widget-drawer aria-hidden="true"><header><div><small>PERSONALIZE HOME</small><h2>Manage widgets</h2></div><button type="button" data-close-widgets aria-label="Close widget panel"><img src="/assets/icons/lucide/x.svg" alt=""></button></header><p>Choose what appears in your daily workspace.</p><label><span><b>Starter shortcuts</b><small>Quick ways to begin</small></span><input type="checkbox" checked data-toggle-target="starters"></label><label><span><b>Recent projects</b><small>Pick up where you left off</small></span><input type="checkbox" checked data-toggle-target="recents"></label><div class="drawer-preview"><i></i><span>Changes save automatically</span></div></div>
+    <div class="drop-overlay" data-drop hidden><div><img src="/assets/icons/lucide/upload.svg" alt=""><strong>Drop or select your files</strong><p>Upload documents, images, videos, audio, links, and more</p><span>Choose files</span></div></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+  </section>
+
+  <div class="demo-controls"><button type="button" data-tour><span>▶</span> Play guided demo</button></div>
+</main>
+<script type="module" src="/projects/ui-work/cansaas.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-21",
+  "scope": "Local portfolio demonstration and interaction-study corrections. No live provider evaluation, content publication, research findings or ranking effect is established.",
+  "closedActions": [
+    "A13.02",
+    "A13.08",
+    "A13.03",
+    "A13.01"
+  ],
+  "checks": {
+    "archivedFixtureAndSourceContracts": 4,
+    "currentStudyHandlerDOMContracts": 4,
+    "workspaceTestsPassed": 113,
+    "providerRequestsFromAuditAndDraft": 0,
+    "retrievedSources": 0,
+    "externalPublication": false,
+    "identicalBeforeAndAfterFixture": true,
+    "draftContextsKeepSeparateHistories": true,
+    "visibleSingleStepUndo": true,
+    "archivedContextContracts": 7,
+    "allFourPresetsAreAtomic": true,
+    "editedFieldsRequireReplacementChoice": true,
+    "exactContextRequiresReviewBeforeExecution": true,
+    "editedFieldsInvalidatePriorResults": true,
+    "lateResultsRejectedAfterEditOrWorkspaceChange": true,
+    "editingAPendingChoiceRetainsTypingFocus": true,
+    "archivedOriginContracts": 7,
+    "viewsWithSourceDefinitions": 8,
+    "bundledAndStoredOriginsDistinguished": true,
+    "urlParsingDoesNotCertifyAccess": true,
+    "brandNotesNeverAcquireVerificationOrCitationCounts": true,
+    "copyWaitsForClipboardAndExposesFailureText": true
+  },
+  "browserObservations": [
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=20261021",
+      "version": "Corrected archived Aevis portfolio demonstration",
+      "observed": "The pre-React authorship banner and case/current-study exits render above the dashboard. The audit identifies authored rows and defines its 50% ratio as two mentions among four examples. The generated draft says its business claims and comparison evidence are not supplied. Retest shows 50/100 and 50% on both sides, Not collected provider outcomes, two illustrative position-two rows and two omissions. No ranking improvement is asserted.",
+      "result": "Observed this complete audit/draft/retest path; other dashboard views and narrow layouts remain open"
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/aevis/study.html?review=20261021",
+      "version": "Current Aevis interaction study",
+      "observed": "Default context submits to explicitly authored observations. The draft view shows original and editable proposed text, an unverified source boundary and no-publication message. Entering text and approving shows local revision 1 with the exact entered text. Undo shows revision 2 with the original text still visibly displayed, removes the spent undo control and announces that no website changed.",
+      "result": "Observed approval and visible one-step rollback; changed-context preservation is separately covered by DOM contracts, not claimed as a browser observation"
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=context-20261021",
+      "version": "Archived Aevis context-review revision",
+      "observed": "Each of the four presets updated brand, industry, competitors and question together. Manually edited brand/question became a custom context. Choosing another preset displayed a replacement choice without changing those edits; Keep retained them. Explicit Apply replaced all fields and returned focus to Brand. Context review received heading focus and displayed all four normalized fields before execution. Confirming produced an authored audit for that context. Editing the question then removed that result and review, retained the new question and returned to custom context. In the final focus regression check, editing Industry while the replacement choice was open dismissed that choice, preserved the complete typed value including a subsequent “ today”, and left focus in Industry.",
+      "result": "Observed desktop preset/context workflow. Full keyboard, narrow-screen, assistive-technology and participant review remain open."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=origin-20261021",
+      "version": "Archived Aevis per-view origins",
+      "observed": "Visited all eight dashboard views. Each displayed a view-specific source explanation and the no-collection/publication boundary; navigation focused the explanation. Expanded definitions describe example scorecards, catalog totals, comparison calculations, source URLs, positions and dates without treating them as real measurements. Citation details explicitly say that source examples were not analyzed by a model. The studio generated an unverified draft. Brand setup stated that it creates a local example without a scrape or provider query; setup was dismissed without creating a workspace.",
+      "result": "Observed all eight source panels and citation/studio/setup boundaries on desktop. Saved-package classification is covered separately by a source contract, not claimed as a native-browser observation."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=origin-20261021",
+      "version": "Archived Aevis URL and note boundaries",
+      "observed": "A valid URL returned its locally parsed host/path and explicitly unknown HTTP, robots, crawler and indexing status. An invalid URL replaced that feedback with a syntax error and no-fetch statement. A new brand note showed Entered context · unverified and No independent verification, without citation counts. Copy displayed Unverified notes copied. Nothing was published. Switching views and reopening Brand Vault removed the added page-local note as disclosed.",
+      "result": "Observed these native interactions. Clipboard failure and exact fallback text are covered by handler/helper contracts. This does not certify full keyboard navigation, dialog focus or assistive-technology behavior."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/aevis/study.html",
+      "version": "Current Aevis uncertainty review attempt",
+      "observed": "The complete authored baseline rendered 3 / 4 returned fixture responses = 75%, the exact context and no-provider provenance. The condition popup exposed the four other choices once, but subsequent accessibility clicks and keyboard actions left its value at Complete fixture. Alternative result states were not observed.",
+      "result": "Incomplete browser verification. Keep A13.07 open; passing DOM contracts are not promoted to a browser finding."
+    }
+  ],
+  "limits": [
+    "All eight archived source panels and the recorded URL/note/source-detail interactions were reviewed on desktop. Full new-workspace creation and every custom-data combination were not browser-tested.",
+    "The current study’s incomplete-evidence states remain without a completed native-browser walkthrough; the latest condition-selector attempt did not change its value.",
+    "Narrow-screen, full keyboard, legacy dialog focus, assistive-technology and participant review remain open.",
+    "Actual buyer research, provider collection and task-comprehension findings were not supplied."
+  ],
+  "commands": [
+    "node --test tests/aevis-origin.test.mjs tests/aevis-context.test.mjs tests/aevis-legacy.test.mjs tests/study-ui.test.mjs",
+    "npm test",
+    "npm run verify:portfolio",
+    "npm run build"
+  ],
+  "sources": {
+    "public/aeokiller/demo-fixtures.js": "9254073932bec941706a457deaed2654f4f7a9e7c2e39f0b465a1c30517c9e7a",
+    "public/aeokiller/assets/index-HPfAPLMS.js": "d341c8d2837e2cf7d6967e6dc42da5705212bff2e15f719baddf41c038b732e9",
+    "public/aeokiller/index.html": "6ea7d6e199b72696af6d3250d10ac73a2f8b662eecb0e6acf16434f7f9975f02",
+    "public/aeokiller/demo-context.css": "702b1f57c4064c93898e5080b3e55163ddd7d6a846f081bcae19436de23d3001",
+    "public/projects/advanced-studies.js": "b99d7f153f50e7da77fc57c3a5cb68b697c8da419cea21385646e5913917e0b2",
+    "public/projects/aevis/index.html": "bdb81fb6f7eaa9937876d47b61e95cc19dba945ea61aa17238a9944f5daf34ca",
+    "tests/aevis-legacy.test.mjs": "c2837d5eaab165e906ff7c30550d69a5ce75ab166769efd08345f5aca339ac9d",
+    "tests/study-ui.test.mjs": "b68a88284c512ae0351810dfb0499b7113ba7dbe6f3c731d897c8cbfac3f6c6c",
+    "scripts/patch-aevis-demo.mjs": "adf8e163504220368cdf226f50eb594d0f9cb9358d615e0c35fcd7f5069cd07f",
+    "public/aeokiller/audit-context.js": "ee29596ac0ebf9e6cfb01493f834a61869ae70163797b4cdda5345796f26dde5",
+    "tests/aevis-context.test.mjs": "0bb8f846202a614d59e29f2652d52745ae16918eeeff67db975dc953ed533126",
+    "public/aeokiller/data-origin.js": "1fa256e3f039f18ae3f656ded711bd334674ab9afe8cc5f02bb11506004d0df8",
+    "scripts/patch-aevis-origin.mjs": "82b8a99dcedb0b0b217d95fd69608094e7ec6367b904491fa94be1125b8d4f21",
+    "tests/aevis-origin.test.mjs": "bd600d68b009341fdd9d8cb61f67bf80d9ed577df026e79e74ebe4bf9c871472",
+    "tests/helpers/aevis-render.mjs": "933d2ab0362e2f9cae6064a50bca433ac9e7f8cc3f7fe18dc9b9c1c92aaec063",
+    "src/caseReviewContent.js": "5574bde904ee7351aa074678589701cd30fd663d536ca504db2cebbb8083aca6"
+  }
+}

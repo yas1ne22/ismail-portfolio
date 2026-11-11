@@ -1,0 +1,362 @@
+/* Readability pass: clearer hierarchy, comfortable reading widths, and larger supporting text. */
+:root {
+  --readable-ink: #172536;
+  --readable-copy: #4f6173;
+}
+
+body {
+  color: var(--readable-ink);
+}
+
+.wrap {
+  width: min(100% - 64px, 1120px);
+}
+
+.hero .lead {
+  max-width: 720px;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.55;
+  color: var(--readable-copy);
+}
+
+.project-meta {
+  gap: 32px;
+  padding: 36px 0;
+}
+
+.project-meta small,
+.recovery-metrics small,
+.test-card > small,
+.metric-band small {
+  font-size: 10px;
+}
+
+.project-meta b {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.evidence-note,
+.metrics-source,
+.caption {
+  max-width: 820px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #657485;
+}
+
+.chapter-nav a {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.chapter {
+  padding-top: 120px;
+  padding-bottom: 28px;
+}
+
+.section-heading {
+  max-width: 820px;
+}
+
+.section-heading > p:last-child {
+  max-width: 700px;
+  margin-top: 26px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--readable-copy);
+}
+
+.recovery-metrics,
+.hypotheses,
+.decisions,
+.test-grid {
+  gap: 22px;
+  margin-top: 44px;
+}
+
+.recovery-metrics article,
+.hypotheses article,
+.test-card {
+  padding: 32px;
+}
+
+.recovery-metrics h3,
+.hypotheses h3 {
+  font-size: 22px;
+}
+
+.recovery-metrics p,
+.problem-strip p,
+.hypotheses p,
+.hypotheses strong,
+.decisions p,
+.test-card li,
+.test-card > p,
+.tradeoff p,
+.lab-copy > p:not(.eyebrow),
+.channel-copy > p,
+.channel-copy dd,
+.metric-insight p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--readable-copy);
+}
+
+.metrics-source {
+  margin-top: 20px;
+}
+
+.metric-insight {
+  align-items: flex-start;
+  margin-top: 34px;
+  padding: 18px 24px;
+}
+
+.metric-insight b {
+  min-width: 190px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.problem-strip {
+  margin-top: 44px;
+}
+
+.problem-strip > div {
+  padding: 32px;
+}
+
+.hypotheses strong {
+  min-height: 78px;
+}
+
+.research-bar {
+  grid-template-columns: 1.2fr repeat(3, 1fr);
+  gap: 28px;
+  padding: 32px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.research-bar small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.channel-node b {
+  font-size: 16px;
+}
+
+.channel-node span,
+.shared-state p,
+.shared-state > span {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.shared-state small,
+.service-flow small,
+.tradeoff > span {
+  font-size: 10px;
+}
+
+.decisions h3 {
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.service-flow {
+  padding: 28px;
+}
+
+.service-flow b {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.sketch-sheet figcaption {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sketch-sheet figcaption span {
+  font-size: 12px;
+}
+
+.experience-section {
+  padding: 104px 0;
+}
+
+.design-shot figcaption small {
+  font-size: 10px;
+}
+
+.design-shot figcaption h3 {
+  font-size: 24px;
+}
+
+.design-shot figcaption p,
+.prototype-heading p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--readable-copy);
+}
+
+.channel-tabs button {
+  min-height: 46px;
+  padding-inline: 24px;
+  font-size: 14px;
+}
+
+.channel-copy h3,
+.lab-copy h3 {
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.channel-copy dt {
+  font-size: 10px;
+}
+
+.state-buttons button {
+  min-height: 42px;
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.return-status,
+.return-screen p,
+.demo-result {
+  font-size: 13px !important;
+  line-height: 1.55;
+}
+
+.return-screen h4 {
+  font-size: 25px;
+}
+
+.test-card h3 {
+  font-size: 29px;
+}
+
+.experiment-arm {
+  padding: 16px;
+}
+
+.experiment-arm > b,
+.experiment-arm span {
+  font-size: 14px;
+}
+
+.experiment-arm small {
+  font-size: 12px;
+}
+
+.metric-band {
+  padding: 36px;
+}
+
+.metric-band h3 {
+  font-size: 21px;
+}
+
+.metric-band p,
+.rollout p,
+.rollout small {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+footer {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .wrap {
+    width: calc(100% - 48px);
+  }
+
+  .research-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
+
+  .hero .lead,
+  .section-heading > p:last-child {
+    font-size: 16px;
+  }
+
+  .chapter {
+    padding-top: 78px;
+  }
+
+  .chapter-nav a {
+    font-size: 11px;
+  }
+
+  .recovery-metrics article,
+  .hypotheses article,
+  .test-card,
+  .problem-strip > div {
+    padding: 24px;
+  }
+
+  .hypotheses strong {
+    min-height: 0;
+  }
+
+  .research-bar {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .metric-insight {
+    padding: 16px 20px;
+  }
+
+  .metric-insight b {
+    min-width: 0;
+  }
+
+  .experience-section {
+    padding: 72px 0;
+  }
+
+  .channel-tabs button {
+    min-height: 44px;
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+
+  .metric-band {
+    padding: 28px;
+  }
+}
+
+.andalus-timeline{list-style:none;padding:0;margin:26px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.andalus-timeline li{min-width:0;border-top:2px solid #254dd7;padding-top:16px}
+.andalus-period{font-size:12px!important;font-weight:650;color:#172536!important;line-height:1.7;margin:0 0 12px}
+.andalus-timeline h3{font-size:18px;line-height:1.4;margin:0 0 12px}
+.andalus-timeline p:not(.andalus-period),.andalus-context-note{font-size:14px;line-height:1.8;color:#4f6173}
+.andalus-context-note a{display:inline-flex;align-items:center;min-height:44px;color:#254dd7}
+.andalus-handoff{margin-top:24px;padding:24px;border:1px solid #cbd4dc;border-radius:8px;background:#fff;scroll-margin-top:24px}
+.andalus-handoff summary{min-height:44px;font-size:16px;font-weight:650;line-height:1.6;cursor:pointer}
+.andalus-handoff h3{font-size:25px;line-height:1.3;margin:24px 0 14px}
+.andalus-handoff p{font-size:14px;line-height:1.8;color:#4f6173;overflow-wrap:anywhere}
+.andalus-scenario{padding:18px 20px;background:#eef3fb;border-inline-start:3px solid #254dd7}
+.andalus-scenario>strong{display:block;color:#172536}
+.andalus-handoff-steps{padding-inline-start:24px;margin:24px 0;list-style:decimal-leading-zero}
+.andalus-handoff-steps li{display:list-item;border-top:1px solid #cbd4dc;padding:20px 0 20px 8px}
+.andalus-handoff-steps li>div{display:inline-block;vertical-align:top;width:calc(33.333% - 20px);margin-inline-end:20px}
+.andalus-handoff-steps li::marker{color:#254dd7;font-size:13px;font-weight:650}
+.andalus-handoff-steps h4{font-size:17px;line-height:1.5;margin:0 0 12px}
+.andalus-handoff-steps strong{display:block;font-size:12px;font-weight:650;color:#172536;margin-bottom:6px}
+.andalus-handoff-steps p{margin:0}
+.andalus-handoff a{display:inline-flex;align-items:center;min-height:44px;color:#254dd7}
+@media(max-width:760px){.andalus-timeline{grid-template-columns:1fr;gap:20px}.andalus-handoff{padding:20px}.andalus-handoff-steps li>div{display:block;width:auto;margin:0 0 18px}.andalus-handoff-steps li>div:last-child{margin-bottom:0}}

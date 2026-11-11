@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Design System Doctor</title>
+  <desc id="desc">A component grid crossed by a diagnostic pulse</desc>
+  <defs>
+    <linearGradient id="bg" x1="7" y1="6" x2="57" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#282347"/>
+      <stop offset="1" stop-color="#151424"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="13" y1="34" x2="52" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76F3C5"/>
+      <stop offset="1" stop-color="#9CFF7A"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <g fill="#fff" fill-opacity=".92">
+    <rect x="14" y="14" width="13" height="13" rx="4"/>
+    <rect x="37" y="14" width="13" height="13" rx="4" fill-opacity=".48"/>
+    <rect x="14" y="37" width="13" height="13" rx="4" fill-opacity=".48"/>
+    <rect x="37" y="37" width="13" height="13" rx="4"/>
+  </g>
+  <path d="M10 34h10l3-7 6 15 6-20 5 12h14" fill="none" stroke="url(#pulse)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="54" cy="34" r="3" fill="#9CFF7A"/>
+  <path d="M12 9c12-5 28-4 40 4" fill="none" stroke="#fff" stroke-opacity=".11" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-21",
+  "scope": "Homepage footer reading area and bounded source-color checks. Local workspace only; no deployment.",
+  "changedActions": [
+    "A05.01",
+    "A05.02",
+    "A05.04",
+    "A05.05"
+  ],
+  "closedActions": [],
+  "changes": [
+    "At CSS viewport width 760px or below, or height 600px or below, the homepage footer flows after the content and optional assistant. Its fixed blur is hidden.",
+    "The four existing footer actions wrap into two equal columns, retain 44px minimum targets and include a bottom safe-area allowance.",
+    "Footer labels use the existing body-text color in both themes. The window, timeline, project curation, short copy and inactive alternate homepage remain."
+  ],
+  "checks": {
+    "relevantHomepageAndGateTestsPassed": 8,
+    "latestFullWorkspaceSuitePassed": 115,
+    "latestFullSuiteContext": "Current workspace after the footer, version-comparison visibility and single-stop-label corrections.",
+    "staticPagesChecked": 44,
+    "localReferencesChecked": 606,
+    "scriptsSyntaxChecked": 20,
+    "staticIssues": [],
+    "buildPassed": true,
+    "sourceMediaQuery": "(max-width: 760px), (max-height: 600px)",
+    "sourceViewportChecks": [
+      {
+        "cssViewport": {
+          "width": 320,
+          "height": 568
+        },
+        "flowFooter": true
+      },
+      {
+        "cssViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "flowFooter": true
+      },
+      {
+        "cssViewport": {
+          "width": 489,
+          "height": 292
+        },
+        "flowFooter": true
+      },
+      {
+        "cssViewport": {
+          "width": 1440,
+          "height": 600
+        },
+        "flowFooter": true
+      },
+      {
+        "cssViewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "flowFooter": false
+      }
+    ],
+    "compiledStylesheetContainsOverrides": true
+  },
+  "contrast": {
+    "method": "sRGB relative luminance, comparing unrounded ratios with the stated threshold. Checks resolve current source variables, expand shorthand hex colors and follow aliases; they are not rendered-state observations.",
+    "scope": "The two opaque flow-footer surfaces and focus outline in light/dark themes. Desktop gradient/image combinations and the rest of the portfolio remain unverified.",
+    "earlierDefaultLabels": [
+      {
+        "theme": "light",
+        "state": "Previous default muted label",
+        "foreground": "#9b9b9b",
+        "background": "#ffffff",
+        "minimum": 4.5,
+        "ratio": 2.779409408331677
+      },
+      {
+        "theme": "dark",
+        "state": "Previous default muted label",
+        "foreground": "#7d7c7c",
+        "background": "#191817",
+        "minimum": 4.5,
+        "ratio": 4.260613550061133
+      }
+    ],
+    "checks": [
+      {
+        "theme": "light",
+        "state": "Footer text on opaque flow surface",
+        "foreground": "#434445",
+        "background": "#ffffff",
+        "minimum": 4.5,
+        "ratio": 9.760897786620054,
+        "meetsCriterion": true
+      },
+      {
+        "theme": "light",
+        "state": "Footer text on hover surface",
+        "foreground": "#434445",
+        "background": "#f2f0f0",
+        "minimum": 4.5,
+        "ratio": 8.597834985152156,
+        "meetsCriterion": true
+      },
+      {
+        "theme": "light",
+        "state": "Focus outline on opaque flow surface",
+        "foreground": "#3a53ed",
+        "background": "#ffffff",
+        "minimum": 3,
+        "ratio": 5.769079135593623,
+        "meetsCriterion": true
+      },
+      {
+        "theme": "dark",
+        "state": "Footer text on opaque flow surface",
+        "foreground": "#b9b8b6",
+        "background": "#191817",
+        "minimum": 4.5,
+        "ratio": 8.945361368691362,
+        "meetsCriterion": true
+      },
+      {
+        "theme": "dark",
+        "state": "Footer text on hover surface",
+        "foreground": "#b9b8b6",
+        "background": "#2b2928",
+        "minimum": 4.5,
+        "ratio": 7.303886055342099,
+        "meetsCriterion": true
+      },
+      {
+        "theme": "dark",
+        "state": "Focus outline on opaque flow surface",
+        "foreground": "#2c6fff",
+        "background": "#191817",
+        "minimum": 3,
+        "ratio": 4.073818779485509,
+        "meetsCriterion": true
+      }
+    ]
+  },
+  "nativeVerification": {
+    "status": "Scoped native observation completed",
+    "browser": "Opera GX",
+    "zoom": "300%, restored to 100%",
+    "earlierAttempt": "The Mac was initially locked; browser control became available later.",
+    "observations": [
+      {
+        "date": "2026-10-21",
+        "browser": "Opera GX",
+        "route": "http://127.0.0.1:3011/#selected-work",
+        "version": "Homepage reading-area correction at 300% zoom",
+        "observed": "At 300% browser zoom, the fixed footer and its blur no longer cover project content. At the bottom, the optional assistant precedes the two-column footer and all four labels are readable. The boarding action opened its optional interaction; Escape closed it, then restored the same footer button and scroll position after the close transition. Tab proceeded through CV / Resume, WhatsApp and LinkedIn, with visible focus. No contact link was activated. Zoom was restored to 100%.",
+        "result": "Observed this enlarged homepage and footer path. Real phones, increased system text, all case layouts and full accessibility remain open."
+      }
+    ]
+  },
+  "limits": [
+    "A05.01 and A05.05 still require real-phone, enlarged-text and representative case/embedded-page review.",
+    "A05.04 remains open for the portfolio-wide state matrix and rendered combinations.",
+    "Source media-query matching is not a browser layout or viewport measurement.",
+    "The earlier observed footer blur in docs/homepage-preview-verification.json is a historical observation before this correction."
+  ],
+  "sources": {
+    "public/classic-review.css": "d8ac337e7097823171cc2ab484968fbfe67852831e666d2e0c90a7f855933d62",
+    "style.css": "a9210a3a3c0e013598dd9e43ee35b8afd0ac2cb0effcb22673f75ff91eeed014",
+    "classic-review-entry.css": "eaf8a5cf71b1ee4d6fab62ceb2b48c255d011d9bf796b2202c3a6ce0e5273640",
+    "src/main.js": "0fb234f7ca2deb72095cd467c124bcbd0b30b7daf83c1ec9665206a6a3bc83d4",
+    "dist/assets/index-WzxAJ5w0.css": "cd5d1da6abae2505bf32b3a5ce12acdb324f3dc74401afac48cf34ce7e88038c"
+  }
+}

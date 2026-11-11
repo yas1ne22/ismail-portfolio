@@ -1,0 +1,142 @@
+.nasaq-material-row .nasaq-case-icon {
+  background: #e8def8 !important;
+  border: 0 !important;
+}
+
+.nasaq-material-row .case-badge-img {
+  background: none !important;
+  padding: 2px !important;
+}
+
+.tl-cases > li:has(> .nasaq-material-row) {
+  margin-top: 12px;
+  padding-top: 18px;
+}
+
+.nasaq-material-preview {
+  display: block;
+  width: calc(100% - 54px);
+  margin: 14px 0 0 54px;
+  padding: 8px;
+  border: 1px solid rgba(100, 66, 204, 0.12);
+  border-radius: 22px;
+  background: linear-gradient(145deg, #f5f0ff, #ded2fb);
+  box-shadow: 0 14px 34px rgba(53, 35, 72, 0.08);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.nasaq-material-preview > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.nasaq-material-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: calc(100% - 54px);
+  margin-left: 54px;
+  padding: 12px 0 18px;
+  box-sizing: border-box;
+}
+
+.nasaq-material-links > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 12px;
+  border-radius: 28px;
+  background: #e8def8;
+  color: #6442cc;
+  font: 500 12px/1.5 Inter, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.nasaq-material-links > a:first-child {
+  background: #6442cc;
+  color: #fffbff;
+}
+
+.nasaq-material-links > a:hover {
+  filter: brightness(0.95);
+}
+
+.nasaq-material-links a:focus-visible,
+.nasaq-material-preview:focus-visible,
+.nasaq-material-row:focus-visible {
+  outline: 3px solid #6442cc;
+  outline-offset: 4px;
+}
+
+.plugin-showcase-dialog.nasaq-material-dialog {
+  border: 0 !important;
+  border-radius: 28px !important;
+  background: #fffbff !important;
+  overflow: hidden;
+}
+
+.nasaq-material-dialog .plugin-showcase-bar {
+  padding: 16px 22px !important;
+  border-color: #ded4e8 !important;
+  background: #f6f0f7 !important;
+  color: #201d22 !important;
+}
+
+.nasaq-material-dialog .plugin-showcase-bar a {
+  color: #6442cc !important;
+}
+
+.nasaq-material-dialog .plugin-showcase-actions button {
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: #e8def8 !important;
+  color: #352348 !important;
+}
+
+.nasaq-material-dialog iframe {
+  background: #fffbff !important;
+}
+
+.nasaq-material-row .classic-project-visual {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .nasaq-material-preview,
+  .nasaq-material-links {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .nasaq-material-preview {
+    padding: 8px;
+    border-radius: 18px;
+  }
+
+  .nasaq-material-links {
+    gap: 8px;
+  }
+
+  .nasaq-material-links > a {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nasaq-material-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nasaq-material-links > a:first-child {
+    grid-column: 1 / -1;
+  }
+}

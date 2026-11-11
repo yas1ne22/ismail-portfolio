@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-21",
+  "scope": "Version comparison and keyboard-focus continuity in the existing Veyra case and local map-first planner. Local workspace only; not deployed.",
+  "changedActions": [
+    "A09.05",
+    "A09.08"
+  ],
+  "closedActions": [
+    "A09.05",
+    "A09.08"
+  ],
+  "checks": {
+    "workspaceTestsPassed": 115,
+    "veyraActualHandlerDOMContracts": 4,
+    "newFocusAndContinuationContracts": 2,
+    "recommendedVersion": "Version 2 · city.html",
+    "guidedTasks": 3,
+    "earlierScreensAndEmbedInCollapsedComparison": true,
+    "plannerReturn": "index.html#prototype",
+    "versionLabelsAndDestinationProbePassed": true,
+    "staticPagesChecked": 44,
+    "localReferencesChecked": 606,
+    "scriptsSyntaxChecked": 20,
+    "staticIssues": [],
+    "buildPassed": true,
+    "nativeDesktopKeyboardCoreTaskObserved": true,
+    "caseComparisonDisclosureObserved": true,
+    "caseReturnObserved": true,
+    "singleStopLabelObserved": true
+  },
+  "behavior": [
+    "Case, project snapshot, planner introduction and saved delivery metadata identify the same current Version 2; the earlier Figma file remains Version 1.",
+    "Version 2 tasks cover map/list discovery, day/timing review and stop change/undo. Broader travel-service features remain outside the demonstrated scope.",
+    "Detail dialogs restore the exact map/list opener after closing or adding, contain forward/backward Tab, guard focus and restore the inert surrounding content.",
+    "Review, reorder, removal and undo retain a usable focused continuation. Restored stops keep order and planned times; other selected places remain.",
+    "Route review shows every selected pin even when the discovery query is narrower, while retaining that query for discovery.",
+    "The earlier-version disclosure and its boundary note remain visible despite the older clean stylesheet. The current card receives a scoped visual emphasis. Versioned script/style references deliver the corrected local assets."
+  ],
+  "nativeVerificationAttempts": [
+    {
+      "tool": "cua_repl native Opera GX observation",
+      "result": "Computer Use server error -10005: cgWindowNotFound"
+    },
+    {
+      "tool": "cua.getState inventory",
+      "result": "Native apps: Sky Computer Use request timed out; no app or browser inventory returned"
+    },
+    {
+      "tool": "cua.getApp Opera GX",
+      "result": "Computer Use server error -10005: cgWindowNotFound"
+    }
+  ],
+  "limits": [
+    "The observed keyboard task uses the local curated Rome prototype on desktop Opera. Physical-phone, enlarged system text and screen-reader verification remain open under the original portfolio-wide criteria.",
+    "The earlier Figma file was not edited or newly walked through. Its earlier screen reference and direct link remain labeled; the disclosure was checked.",
+    "Four DOM contracts cover bounded handler behavior; no test or browser observation establishes a live travel service.",
+    "No traveler research, comparative benefit, project duration, launch outcome or attributable third-party feedback was invented."
+  ],
+  "commands": [
+    "node --test tests/study-ui.test.mjs",
+    "npm test",
+    "npm run verify:portfolio",
+    "npm run build"
+  ],
+  "sources": {
+    "src/caseReviewContent.js": "a5591b4434a4801afa2c2374c5da87320275a89c15250c632dea804d9ed98538",
+    "public/projects/veyra/index.html": "085533c2a8d18380f831adb130f4c9fea7558e8b2cfd84c5ed733cc5c0b6042f",
+    "public/projects/veyra/city.html": "a7b814803f61ea88ef488593fb6a30d805cc67db642584c5ecf916e455dd73cc",
+    "public/projects/veyra/city.js": "afe1bfa813350f27f371ad433b29d63b82e909cbc9fd746d53740250e13aaf5d",
+    "public/projects/veyra/portfolio-revision.css": "ca3a877e9be9060a75bd4ca073540e9d5b1e55284a1ca34c428ef26059ebd921",
+    "public/projects/veyra/delivery-status.json": "24e1fe790222c3d9786fd2eaad53e990d27fcaf77fd370b3e8295b596c0eb5a6",
+    "tests/study-ui.test.mjs": "47084fc1ba4903231b4f36e5f4a8e7614de8ec0ccf8a9c171b9e38e989fbbb6e",
+    "public/projects/veyra/clean.css": "4d9c29a9a6f2fe42e9198cb20ef6ff9d050d299a461976499a59f297bc549b24"
+  },
+  "browserObservations": [
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/veyra/index.html?review=versions-20261021#prototype",
+      "version": "Veyra Version 2 recommendation and Version 1 reference",
+      "observed": "The comparison identifies Version 2 as current and recommended, gives three tasks and labels the earlier Figma sequence Version 1. A legacy style had hidden the disclosure; the scoped override and updated stylesheet reference made the current card, disclosure and scope note visible. Opening the disclosure exposed the saved six-screen reference and its earlier-iteration caption; the Figma flow was not newly evaluated. Following the recommended link opened the current local planner. Its Back to case study link returned to index.html#prototype.",
+      "result": "Observed the coherent recommended entry, earlier reference disclosure and return destination. No Figma synchronization or traveler improvement is claimed."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/veyra/city.html#place-search",
+      "version": "Veyra current planner desktop keyboard path",
+      "observed": "From the initial page, Tab reached Skip to place search and Return focused search. Keyboard search found Trevi and the garden; Tab reached each list control, Return opened details and Shift+Tab reached Add. In the first dialog, Escape restored the list opener, and forward/backward Tab wrapped between Close and Add. Two additions produced the same day. Keyboard activation of Review focused its heading and showed both numbered selected pins despite the retained garden search. Earlier moved the garden to stop 1 at 09:30 and Trevi to stop 2 at 11:10. Remove retained Trevi and focused Undo; Return restored the garden in the same order and focused that stop. A fresh final single-add check displayed 1 stop. The case-return link was also observed.",
+      "result": "Observed the core alternate-control task through change and recovery. Some immediate accessibility snapshots lagged keyboard focus; visible focus was checked before activating the relevant controls. This is a scoped desktop keyboard observation, not a screen-reader or physical-phone certification."
+    }
+  ]
+}

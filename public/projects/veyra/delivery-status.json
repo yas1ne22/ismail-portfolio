@@ -1,0 +1,51 @@
+{
+  "status": "delivered",
+  "figmaFile": "9FN8FpqOMz0CwY5jRy02Lv",
+  "screens": 24,
+  "prototype": "https://www.figma.com/proto/9FN8FpqOMz0CwY5jRy02Lv/veyra?node-id=4-634&starting-point-node-id=4%3A634",
+  "journeyBoard": "7:193",
+  "imagery": "Travel photography and custom illustration",
+  "research": "Research strategy and validation plan included",
+  "revision": {
+    "name": "Visual city planning",
+    "localExperience": "city.html",
+    "figmaSync": "Not synchronized. The Figma file preserves Version 1; city.html is the current Version 2 local prototype.",
+    "flow": [
+      "Explore map",
+      "Inspect place",
+      "Add stop",
+      "Review route"
+    ],
+    "implemented": [
+      "photo pins",
+      "place detail",
+      "category filters",
+      "numbered route",
+      "day list",
+      "reorder",
+      "remove",
+      "undo"
+    ],
+    "map": "Interactive route-planning experience",
+    "currentEntry": "city.html",
+    "comparison": "index.html#prototype",
+    "scope": "One day with three curated Rome places. Discovery, timing review, reorder, remove and undo; no live travel service or cross-session saving."
+  },
+  "caseStudy": {
+    "status": "Editorial revision complete",
+    "includes": [
+      "visual cover",
+      "problem and evidence",
+      "audience model",
+      "journey map",
+      "before-after rationale",
+      "annotated wireframes",
+      "screen explanations",
+      "brand presentation",
+      "Figma experience embed",
+      "validation plan",
+      "reflection and credits"
+    ],
+    "figmaEdits": "Deferred by user"
+  }
+}

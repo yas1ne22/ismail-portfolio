@@ -1,0 +1,367 @@
+{
+  "date": "2026-10-23",
+  "scope": "Observed local browser behavior. Individual observations below do not certify the full portfolio or participant comprehension.",
+  "checks": [
+    {
+      "browser": "Chrome",
+      "route": "/",
+      "observed": "Homepage and selected-work content render directly without scanning or opening the optional assistant.",
+      "result": "Observed",
+      "version": "Earlier alternate homepage; historical observation only"
+    },
+    {
+      "browser": "Chrome",
+      "route": "/",
+      "observed": "At the reviewed laptop-sized window, the first project card is too low to expose its problem and contribution in the opening viewport.",
+      "result": "Open issue; homepage visual direction remains undecided",
+      "version": "Earlier alternate homepage; historical observation only"
+    },
+    {
+      "browser": "Safari",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Beginner path renders its labeled form. A valid name and goal are preserved after invalid email submission; the email has an error border and a visible focus outline.",
+      "result": "Passed this state"
+    },
+    {
+      "browser": "Safari",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "A valid request reaches review. Simulated service failure preserves the name/email and explains retry; confirmation is not falsely reported.",
+      "result": "Passed this state"
+    },
+    {
+      "browser": "Chrome",
+      "route": "http://127.0.0.1:3011/",
+      "version": "Existing window-and-timeline layout, before later short-copy edits",
+      "observed": "Portfolio rendered directly with original window, timeline, selected-work action, resume and email. Assistant was collapsed and no boarding gate was required.",
+      "result": "Observed"
+    },
+    {
+      "browser": "Chrome",
+      "route": "http://127.0.0.1:3011/projects/andalus/index.html",
+      "observed": "Clicking the homepage Andalus entry changed the current tab to its standalone case URL and page title.",
+      "result": "Navigation observed; complete case reading and return remain open"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/#work-nasaq",
+      "observed": "Opening the project-entry fragment scrolled to and focused the Nasaq entry, with a visible focus outline.",
+      "result": "Observed this return destination"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/#contact",
+      "observed": "The boarding button opened the optional gate and focused its dialog container. Escape closed it and restored visible focus to the original boarding button beside the contact section.",
+      "result": "Observed opener/focus return"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/#contact",
+      "observed": "Opening by keyboard focused the gate. Shift+Tab focused Skip, and Tab wrapped to Scan Boarding Pass. Return activated that scan control without immediately bypassing its action.",
+      "result": "Observed Tab wrapping and scan activation; final scan completion not observed"
+    },
+    {
+      "browser": "Chrome",
+      "route": "http://127.0.0.1:3011/projects/flex-academy/study.html",
+      "observed": "Beginner route displayed its labeled form, retained a sample name and email, and exposed the goal control. Further native-select actions did not yield a verified new selection; screenshot and AX representations diverged.",
+      "result": "Partial form observation only; complete conversion remains open"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/flex-academy/study.html#measurement-events",
+      "observed": "The evidence panel opened at its deep link. It displayed registration, qualified-booking and attendance definitions, their missing production connections, a not-collected results label, an initially disabled qualification selector and an empty local trace.",
+      "result": "Definitions and initial evidence state observed; complete native task interaction remains open"
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=20261021",
+      "version": "Corrected archived Aevis portfolio demonstration",
+      "observed": "The pre-React authorship banner and case/current-study exits render above the dashboard. The audit identifies authored rows and defines its 50% ratio as two mentions among four examples. The generated draft says its business claims and comparison evidence are not supplied. Retest shows 50/100 and 50% on both sides, Not collected provider outcomes, two illustrative position-two rows and two omissions. No ranking improvement is asserted.",
+      "result": "Observed this complete audit/draft/retest path; other dashboard views and narrow layouts remain open"
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/aevis/study.html?review=20261021",
+      "version": "Current Aevis interaction study",
+      "observed": "Default context submits to explicitly authored observations. The draft view shows original and editable proposed text, an unverified source boundary and no-publication message. Entering text and approving shows local revision 1 with the exact entered text. Undo shows revision 2 with the original text still visibly displayed, removes the spent undo control and announces that no website changed.",
+      "result": "Observed approval and visible one-step rollback; changed-context preservation is separately covered by DOM contracts, not claimed as a browser observation"
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=context-20261021",
+      "version": "Archived Aevis context-review revision",
+      "observed": "Each of the four presets updated brand, industry, competitors and question together. Manually edited brand/question became a custom context. Choosing another preset displayed a replacement choice without changing those edits; Keep retained them. Explicit Apply replaced all fields and returned focus to Brand. Context review received heading focus and displayed all four normalized fields before execution. Confirming produced an authored audit for that context. Editing the question then removed that result and review, retained the new question and returned to custom context. In the final focus regression check, editing Industry while the replacement choice was open dismissed that choice, preserved the complete typed value including a subsequent “ today”, and left focus in Industry.",
+      "result": "Observed desktop preset/context workflow. Full keyboard, narrow-screen, assistive-technology and participant review remain open."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=origin-20261021",
+      "version": "Archived Aevis per-view origins",
+      "observed": "Visited all eight dashboard views. Each displayed a view-specific source explanation and the no-collection/publication boundary; navigation focused the explanation. Expanded definitions describe example scorecards, catalog totals, comparison calculations, source URLs, positions and dates without treating them as real measurements. Citation details explicitly say that source examples were not analyzed by a model. The studio generated an unverified draft. Brand setup stated that it creates a local example without a scrape or provider query; setup was dismissed without creating a workspace.",
+      "result": "Observed all eight source panels and citation/studio/setup boundaries on desktop. Saved-package classification is covered separately by a source contract, not claimed as a native-browser observation."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/aeokiller/?code=1212&review=origin-20261021",
+      "version": "Archived Aevis URL and note boundaries",
+      "observed": "A valid URL returned its locally parsed host/path and explicitly unknown HTTP, robots, crawler and indexing status. An invalid URL replaced that feedback with a syntax error and no-fetch statement. A new brand note showed Entered context · unverified and No independent verification, without citation counts. Copy displayed Unverified notes copied. Nothing was published. Switching views and reopening Brand Vault removed the added page-local note as disclosed.",
+      "result": "Observed these native interactions. Clipboard failure and exact fallback text are covered by handler/helper contracts. This does not certify full keyboard navigation, dialog focus or assistive-technology behavior."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/aevis/study.html",
+      "version": "Current Aevis uncertainty review attempt",
+      "observed": "The complete authored baseline rendered 3 / 4 returned fixture responses = 75%, the exact context and no-provider provenance. The condition popup exposed the four other choices once, but subsequent accessibility clicks and keyboard actions left its value at Complete fixture. Alternative result states were not observed.",
+      "result": "Incomplete browser verification. Keep A13.07 open; passing DOM contracts are not promoted to a browser finding."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/#selected-work",
+      "version": "Original window-and-timeline homepage with project previews",
+      "observed": "All three featured entries retained the original timeline and short headings. Andalus shows the recovery wireframes and reconstruction caption; Nasaq shows its current conversation, six-icon family, refinement choices and composer with a local-demo caption; Flex shows its saved landing-page headline, supporting panel and primary action. At 300% browser zoom, the narrow Andalus crop focused the changed-fare screen and the Nasaq crop stayed within its frame. The existing footer blur covers content near the lower viewport edge, particularly at high zoom; these crops were inspected by scrolling them into the clearer area. Zoom was restored to 100%. Clicking Nasaq opened its existing language dialog, and closing returned focus to the same Nasaq entry.",
+      "result": "Observed this desktop preview change and limited high-zoom reflow. Physical mobile, full accessibility, opening-viewport proof and hiring comprehension remain open."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/#selected-work",
+      "version": "Homepage reading-area correction at 300% zoom",
+      "observed": "At 300% browser zoom, the fixed footer and its blur no longer cover project content. At the bottom, the optional assistant precedes the two-column footer and all four labels are readable. The boarding action opened its optional interaction; Escape closed it, then restored the same footer button and scroll position after the close transition. Tab proceeded through CV / Resume, WhatsApp and LinkedIn, with visible focus. No contact link was activated. Zoom was restored to 100%.",
+      "result": "Observed this enlarged homepage and footer path. Real phones, increased system text, all case layouts and full accessibility remain open."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/veyra/index.html?review=versions-20261021#prototype",
+      "version": "Veyra Version 2 recommendation and Version 1 reference",
+      "observed": "The comparison identifies Version 2 as current and recommended, gives three tasks and labels the earlier Figma sequence Version 1. A legacy style had hidden the disclosure; the scoped override and updated stylesheet reference made the current card, disclosure and scope note visible. Opening the disclosure exposed the saved six-screen reference and its earlier-iteration caption; the Figma flow was not newly evaluated. Following the recommended link opened the current local planner. Its Back to case study link returned to index.html#prototype.",
+      "result": "Observed the coherent recommended entry, earlier reference disclosure and return destination. No Figma synchronization or traveler improvement is claimed."
+    },
+    {
+      "date": "2026-10-21",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/projects/veyra/city.html#place-search",
+      "version": "Veyra current planner desktop keyboard path",
+      "observed": "From the initial page, Tab reached Skip to place search and Return focused search. Keyboard search found Trevi and the garden; Tab reached each list control, Return opened details and Shift+Tab reached Add. In the first dialog, Escape restored the list opener, and forward/backward Tab wrapped between Close and Add. Two additions produced the same day. Keyboard activation of Review focused its heading and showed both numbered selected pins despite the retained garden search. Earlier moved the garden to stop 1 at 09:30 and Trevi to stop 2 at 11:10. Remove retained Trevi and focused Undo; Return restored the garden in the same order and focused that stop. A fresh final single-add check displayed 1 stop. The case-return link was also observed.",
+      "result": "Observed the core alternate-control task through change and recovery. Some immediate accessibility snapshots lagged keyboard focus; visible focus was checked before activating the relevant controls. This is a scoped desktop keyboard observation, not a screen-reader or physical-phone certification."
+    },
+    {
+      "id": "homepage-opening-20261021-1",
+      "browser": "Opera GX",
+      "route": "http://127.0.0.1:3011/",
+      "version": "Final built original homepage with the new status labels",
+      "observed": "Normal native laptop-sized window, device toolbar closed. Before any page scroll, Product Designer, the two-sentence promise and direct links, Andalus title, explicit cart-recovery design contribution, dated retrospective status, and a meaningful portion of the recovery wireframes were visible. The original window and collapsed assistant remained.",
+      "capture": "3024 × 1900 native screenshot including browser chrome. Exact CSS viewport was not queried.",
+      "result": "Passed the stated opening criterion in this observed window"
+    },
+    {
+      "id": "homepage-opening-20261021-2",
+      "browser": "Opera GX",
+      "route": "/projects/nasaq/case-study-en.html",
+      "observed": "Clicked the Nasaq link in the homepage introduction. The English hero, description, four chapters and project brief rendered directly. Switched to the Arabic case through its visible link, observed its Arabic heading and English return link, and switched back.",
+      "result": "Passed this direct-entry and language path"
+    },
+    {
+      "id": "homepage-opening-20261021-3",
+      "browser": "Opera GX",
+      "route": "/#work-nasaq",
+      "observed": "Used the English case’s Portfolio link. The original timeline returned with focus around the Nasaq entry and its readable contribution/maturity line. Opened that primary entry: the language chooser appeared. Escape dismissed it and restored focus to the primary Nasaq link.",
+      "result": "Passed this return and preserved-entry path"
+    },
+    {
+      "id": "navigation-positioning-20261022-1",
+      "browser": "Opera GX",
+      "route": "/projects/index.html",
+      "observed": "Followed the homepage More product explorations link. The secondary index showed six named cases, scope, evidence stage and selected-work navigation in a readable two-column layout. All six cases were opened and returned to their corresponding entries.",
+      "result": "Observed bounded desktop curation/navigation"
+    },
+    {
+      "id": "navigation-positioning-20261022-2",
+      "browser": "Opera GX",
+      "route": "/projects/prepflow/index.html",
+      "observed": "The first quick-return click initially hit the overlaid fixed brand header and changed the fragment to #top. After reserving header flow space and normalizing the legacy bottom return, a fresh native visit showed the complete quick navigation below the header. The quick return then reached #work-prepflow with the archive entry visibly outlined.",
+      "result": "Corrected and observed"
+    },
+    {
+      "id": "navigation-positioning-20261022-3",
+      "browser": "Opera GX",
+      "route": "/#work-nasaq",
+      "observed": "The homepage displayed the 18-component/326-token design statement, local release 1.4 and status-review date, with the existing Icon Studio preview. Independent file counts agree; the statement does not claim adoption or commercial impact.",
+      "result": "Observed and source-counted"
+    },
+    {
+      "id": "navigation-positioning-20261022-4",
+      "browser": "Opera GX",
+      "route": "/#experience",
+      "observed": "The two marketing-to-design sentences were readable below the original Experience heading; the existing employment entries and dates remained.",
+      "result": "Observed"
+    },
+    {
+      "id": "navigation-positioning-20261022-5",
+      "browser": "Opera GX",
+      "route": "/projects/nasaq/en.html#buttons",
+      "observed": "Opened the English case, followed its design-system link to Overview, opened Buttons, then used Portfolio to return with native focus on the Nasaq homepage row.",
+      "result": "Local representative documentation path passed; public deployment remains open"
+    },
+    {
+      "id": "navigation-positioning-20261022-round-trips",
+      "browser": "Opera GX",
+      "route": "13 standalone project routes",
+      "observed": "Opened project content and followed its return route for all 13 projects. Native focus was explicitly observed on seven homepage rows and four exploration-index entries. Promptilo and Skinny returned to their matching archive fragments using the same validated restoration handler.",
+      "result": "Passed this bounded standalone return-path review",
+      "details": [
+        {
+          "project": "andalus",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-andalus",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "flex-academy",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-flex",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "veyra",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-veyra",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "design-handoff",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-design-handoff",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "design-system-doctor",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-design-system-doctor",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "nexus",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-nexus",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "prepflow",
+          "caseBodyObserved": true,
+          "returnPath": "/projects/index.html#work-prepflow",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "promptilo",
+          "caseBodyObserved": true,
+          "returnPath": "/projects/index.html#work-promptilo",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": false
+        },
+        {
+          "project": "skinny",
+          "caseBodyObserved": true,
+          "returnPath": "/projects/index.html#work-skinny",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": false
+        },
+        {
+          "project": "timer-gym",
+          "caseBodyObserved": true,
+          "returnPath": "/projects/index.html#work-timer-gym",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "voicy",
+          "caseBodyObserved": true,
+          "returnPath": "/projects/index.html#work-voicy",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "aevis",
+          "caseBodyObserved": true,
+          "returnPath": "/projects/index.html#work-aevis",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true
+        },
+        {
+          "project": "nasaq",
+          "caseBodyObserved": true,
+          "returnPath": "/#work-nasaq",
+          "returnBodyObserved": true,
+          "nativeFocusExplicitlyObserved": true,
+          "returnFrom": "English documentation Buttons page; direct English-case return was recorded in the prior opening review"
+        }
+      ]
+    },
+    {
+      "id": "flex-version-20261022",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/index.html#versions",
+      "observed": "Displayed the dated current-study, saved-design and supplied-Figma cards. Expanded the five-decision comparison, followed Open the current flow, and observed the matching 22 October version notice. The current study is explicitly separate from the saved landing-page composition and an approved client release.",
+      "result": "Passed the explicit version-differences criterion"
+    },
+    {
+      "id": "flex-launch-20261022",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Selected Service failure, then retry and Launch. Submitted an invalid email and missing goal: name/email were retained and the invalid email received focus. Corrected sample details, chose a starting-sequence goal, reviewed the absent-approved-timing notice, encountered a failed confirmation, used Try again, and observed Sample registration complete with no real booking/email. Cancellation returned to editable retained details.",
+      "result": "Passed the bounded beginner prototype task"
+    },
+    {
+      "id": "flex-scale-20261022",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Changed to Scale and an operating-systems goal. Selected a 12:00 PM Qatar sample slot, changed to Europe/London, and observed 9:00 AM/1:00 PM with neither selected and confirmation disabled. Under Service failure, then retry, selected 9:00 AM, observed the failure, retried and received the same sample time in confirmation. Edited, reconfirmed and canceled, retaining details. Selected No call availability, requested a sample notification and observed no appointment/email/future-availability promise with booking disabled. A later invalid email submission preserved the other details and focused email.",
+      "result": "Passed the bounded operator prototype task"
+    },
+    {
+      "id": "flex-return-20261022",
+      "browser": "Opera GX",
+      "route": "/#work-flex",
+      "observed": "Followed the study’s portfolio link and observed the original homepage with native focus on its Flex Academy entry. The existing window-shade control and timeline sections remained present.",
+      "result": "Passed the local return route"
+    },
+    {
+      "id": "flex-responsive-opening-r2",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Rendered the revised desktop offer opening, prototype boundary, learning-path action, operating-context action and attributed source section. The review tools were collapsed by default.",
+      "result": "Passed the observed desktop opening"
+    },
+    {
+      "id": "flex-responsive-narrow-r2",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html#experience-app",
+      "observed": "After eight browser Zoom In increments from the normal preview, the offer headline and lede wrapped, proof cards stacked, and source links were readable. Followed the operating-context and learning-path anchors. The route-selector container received native focus; Tab moved to the beginner option with a visible outline. Enter opened the form. Native observations showed retained sample name, invalid-email feedback, goal selection through the native popup and a corrected editable email field. Screens showed the form within the available width without horizontal clipping.",
+      "result": "Partial narrow/enlarged-text review; both complete confirmations remain unverified",
+      "limits": "The exact zoom percentage and CSS viewport were not read from browser UI. This is not a physical-phone test. A keyboard attempt did not select the goal, so this is not counted as a complete keyboard workflow."
+    }
+  ],
+  "remaining": [
+    "Representative revised case openings and return paths",
+    "Small-width layout and 200% zoom",
+    "Keyboard review beyond the observed form states",
+    "Screen-reader checks",
+    "Device/native-app checks",
+    "Participant evaluation"
+  ],
+  "limitations": "Individual observations retain their own version and scope. Native browser attempts sometimes returned blank content or no page tree, and these attempts are not passes. The latest enlarged Flex pass stopped when the Mac locked, before complete narrow confirmation; the review-origin zoom reset is still pending. OS reduced-motion, complete keyboard, screen-reader, physical-device and participant verification remain open.",
+  "nativeCleanupPending": "Restore the review origin to 100% zoom via View > Actual Size and verify the result when the Mac is unlocked. Zoom was not restored through another automation method."
+}

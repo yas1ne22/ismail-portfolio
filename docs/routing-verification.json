@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-20",
+  "scope": "Local Vite development routes; production hosting remains a separate deployment check.",
+  "unitCommand": "node --test tests/public-path.test.mjs",
+  "unitTestsPassed": 1,
+  "httpChecks": [
+    {"request": "/projects/veyra?view=map", "status": 301, "location": "/projects/veyra/?view=map"},
+    {"request": "/projects/veyra/", "status": 200},
+    {"request": "/projects/../../package.json", "status": 404, "method": "curl --path-as-is; response body not read"},
+    {"request": "/aeokiller/assets/missing.js", "status": 404},
+    {"request": "/projects/not-a-case/", "status": 404},
+    {"request": "/projects/nasaq/assets/inter-variable.ttf", "status": 200, "contentType": "font/ttf"}
+  ]
+}

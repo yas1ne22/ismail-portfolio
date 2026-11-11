@@ -1,0 +1,63 @@
+/* Nasaq 1.5 technical artwork uses the shared inverse color roles. */
+.nasaq-artwork{display:block;min-width:0;overflow:hidden;background:var(--nq-inverse);border-radius:inherit}
+.nasaq-artwork img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;filter:none}
+.nasaq-visual{isolation:isolate;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:center;gap:0;margin:24px 0 32px;border:1px solid var(--nq-inverse-border);border-radius:20px;overflow:hidden;background:var(--nq-inverse);color:var(--nq-on-inverse);text-align:start}
+.nasaq-visual>.nasaq-artwork{border-radius:0}
+.nasaq-glass-caption{position:relative;z-index:1;min-width:0;margin:24px;margin-inline-start:-20px;padding:28px;border:1px solid #FFFFFF26;border-radius:16px;background:var(--nq-inverse-selected);box-shadow:0 12px 36px #00000020;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.nasaq-art-label{display:block;color:var(--nq-inverse-accent);font:700 10px/1.6 Inter,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;direction:ltr;text-align:start}
+.nasaq-glass-caption strong{display:block;color:var(--nq-on-inverse);font-family:var(--nq-font-display);font-size:clamp(22px,2.2vw,32px);line-height:1.5;margin-block:12px}
+.nasaq-glass-caption p{font-size:13px;line-height:1.8;color:var(--nq-inverse-muted);margin:0;max-width:34ch}
+.nasaq-symbols{display:flex;align-items:center;gap:12px;margin-top:24px}
+.nasaq-symbols img{width:24px;height:24px;filter:invert(1)}
+.nasaq-art-steps{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:20px;font-size:11px;line-height:1.8;color:var(--nq-on-inverse)}
+.nasaq-art-steps span{padding:4px 9px;background:var(--nq-inverse-selected);border:1px solid var(--nq-inverse-border);border-radius:6px}
+.nasaq-visual--compact .nasaq-glass-caption{padding:24px}
+.nasaq-visual--compact .nasaq-glass-caption strong{font-size:24px}
+.nasaq-visual--compact .nasaq-symbols{margin-top:16px}
+.case-opening:has(.case-opening-art){display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0 48px;align-items:center}
+.case-opening:has(.case-opening-art)>:not(.case-opening-art){grid-column:1}
+.case-opening:has(.case-opening-art) h1{font-size:clamp(34px,3.8vw,52px);margin-block:28px 20px}
+.case-opening-art{grid-column:2;grid-row:1 / span 3;margin:0;border:1px solid var(--nq-inverse-border);border-radius:20px;overflow:hidden;min-width:0;background:var(--nq-inverse);color:var(--nq-on-inverse)}
+.case-opening-art figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-top:1px solid #FFFFFF20;font-size:11px;color:var(--nq-inverse-muted)}
+.case-opening-art figcaption img{width:22px;height:22px;filter:invert(1)}
+.case-layout .nasaq-glass-caption strong{font-size:27px;line-height:1.35}
+/* Keep the current documentation destination readable on its quiet surface. */
+.nav-group a.active{color:var(--nq-text)}
+@supports not (backdrop-filter:blur(16px)){.nasaq-glass-caption{background:var(--nq-inverse-selected)}}
+@media(max-width:1000px){.nasaq-glass-caption{padding:20px;margin:16px;margin-inline-start:-16px}.nasaq-glass-caption strong{font-size:24px}}
+@media(max-width:850px) and (min-width:641px){.nasaq-visual{grid-template-columns:1fr}.nasaq-visual>.nasaq-artwork{width:100%;max-width:540px;margin:auto}.nasaq-glass-caption{margin:0 20px 20px}.nasaq-glass-caption strong{margin-block:8px}.nasaq-symbols{margin-top:16px}}
+@media(max-width:800px){.case-opening:has(.case-opening-art){display:block}.case-opening-art{margin-top:28px;max-width:560px}.case-opening:has(.case-opening-art) h1{font-size:38px}.case-layout .nasaq-visual{grid-template-columns:1fr 1fr}.case-layout .nasaq-glass-caption{padding:20px}}
+@media(max-width:640px){.nasaq-visual{grid-template-columns:1fr;border-radius:16px;margin-block:20px 28px}.nasaq-glass-caption,.nasaq-visual--compact .nasaq-glass-caption{margin:-8px 16px 16px;padding:22px}.nasaq-glass-caption strong,.nasaq-visual--compact .nasaq-glass-caption strong{font-size:25px;margin-block:8px}.nasaq-glass-caption p{font-size:13px;max-width:none}.nasaq-symbols{margin-top:16px}.case-opening-art{border-radius:16px}.case-layout .nasaq-visual{grid-template-columns:1fr}.case-layout .nasaq-glass-caption strong{font-size:25px}.case-opening-art figcaption{padding:12px 16px;font-size:10px}}
+
+/* Six illustrated destinations replace the overview's text-only navigation. */
+#explore-system{margin-block:0 48px}
+#explore-system>h2{font-size:24px;margin-bottom:8px}
+.nasaq-directory-intro{margin-block:0 24px;color:var(--nq-muted)}
+.nasaq-area-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.nasaq-area-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--nq-inverse-border);border-radius:16px;background:var(--nq-inverse);color:var(--nq-on-inverse);text-decoration:none;isolation:isolate;transition:border-color .18s,box-shadow .18s}
+.nasaq-area-card>.nasaq-artwork{border-radius:0;flex:none}
+.nasaq-area-card-copy{display:flex;flex-direction:column;flex:1;gap:10px;padding:20px;border-top:1px solid #FFFFFF18;background:var(--nq-inverse)}
+.nasaq-area-card .nasaq-art-label{font-size:9px;letter-spacing:.08em;line-height:1.7}
+.nasaq-area-card-title{display:flex;align-items:start;justify-content:space-between;gap:12px;font:700 19px/1.5 var(--nq-font-display);color:var(--nq-on-inverse)}
+.nasaq-area-card-title>span{font:400 21px/1.4 Inter,Arial,sans-serif;color:var(--nq-inverse-accent);flex:none}
+.nasaq-area-card-desc{font-size:12px;line-height:1.75;color:var(--nq-inverse-muted)}
+.nasaq-area-card:hover{border-color:var(--nq-inverse-accent);box-shadow:0 8px 28px #18202B18}
+.nasaq-area-card:focus-visible,.nasaq-topic-card:focus-visible,.nasaq-area-return:focus-visible{outline:3px solid var(--nq-focus);outline-offset:4px}
+.nasaq-visual--page{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);margin-block:0 36px}
+.nasaq-visual--page .nasaq-glass-caption{padding:24px}
+.nasaq-visual--page .nasaq-glass-caption strong{font-size:clamp(22px,2vw,29px);line-height:1.5}
+.nasaq-area-return{display:inline-flex;align-items:center;gap:8px;margin-top:20px;color:var(--nq-on-inverse);font-size:12px;line-height:1.7;text-decoration:underline;text-underline-offset:4px}
+.nasaq-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.nasaq-topic-card{display:flex;align-items:center;gap:16px;min-width:0;padding:20px;border:1px solid var(--nq-border);border-radius:12px;color:var(--nq-text);background:var(--nq-surface);text-decoration:none}
+.nasaq-topic-card:hover{border-color:var(--nq-focus)}
+.nasaq-topic-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:12px;background:var(--nq-selected);flex:none}
+.nasaq-topic-icon img{filter:none}
+.nasaq-topic-card:nth-child(3n+2) .nasaq-topic-icon{background:var(--nq-surface-hover)}
+.nasaq-topic-card:nth-child(3n) .nasaq-topic-icon{background:var(--nq-surface-subtle)}
+.nasaq-topic-card small{display:block;color:var(--nq-muted);font:10px/1.6 Inter,Arial,sans-serif;margin-bottom:5px}
+.nasaq-topic-card strong{font-size:15px;line-height:1.6;overflow-wrap:anywhere}
+.nasaq-topic-arrow{margin-inline-start:auto;flex:none;color:var(--nq-muted)}
+@media(max-width:1280px){.nasaq-area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.nasaq-visual--page{grid-template-columns:1fr}.nasaq-visual--page>.nasaq-artwork{max-width:540px;width:100%;margin:auto}.nasaq-visual--page .nasaq-glass-caption{margin:0 20px 20px}}
+@media(max-width:580px){.nasaq-area-grid,.nasaq-topic-grid{grid-template-columns:1fr;gap:16px}.nasaq-area-card-copy{padding:20px}.nasaq-area-card-title{font-size:22px}.nasaq-area-card-desc{font-size:13px}.nasaq-topic-card{padding:16px}.nasaq-visual--page .nasaq-glass-caption{padding:22px;margin:-8px 16px 16px}}
+@media(prefers-reduced-motion:reduce){.nasaq-area-card{transition:none}}

@@ -70,17 +70,16 @@ const caseRow = (key) => {
   const visual = p.icon
     ? `<span class="case-icon case-icon-${p.icon}" aria-hidden="true">${projectIcons[p.icon]}</span>`
     : "";
-  return `<li><button type="button" class="case is-strategy-trigger" data-strategy="${key}"><span class="tl-dot tl-dot-case"></span>${visual}<span class="case-text"><span class="case-title">${p.title}</span><span class="case-desc">${p.desc}</span></span><span class="case-arrow" aria-hidden="true">↗</span></button></li>`;
+  return `<li><button type="button" class="case is-strategy-trigger" data-strategy="${key}"><span class="tl-dot tl-dot-case"></span>${visual}<span class="case-text"><span class="case-title">${p.title}</span><span class="case-desc">${p.desc}</span></span><span class="case-arrow" aria-hidden="true"></span></button></li>`;
 };
 const productCaseRow = (p) => {
   const visual = p.logo
     ? `<span class="case-icon case-icon-app case-icon-${p.key}" aria-hidden="true"><img src="${p.logo}" alt="${p.title}" class="case-badge-img" width="36" height="36" loading="lazy" /></span>`
     : `<span class="case-icon case-icon-${p.key}" aria-hidden="true">${projectIcons[p.icon] || projectIcons[p.key] || ""}</span>`;
-  const badge = p.isFlagship ? `<span class="case-flagship-pill">Flagship</span>` : "";
-  return `<li><a class="case" href="${p.href}" target="_blank" rel="noopener noreferrer"><span class="tl-dot tl-dot-case"></span>${visual}<span class="case-text"><span class="case-title">${p.title} ${badge}</span><span class="case-desc">${p.desc}</span></span><span class="case-arrow" aria-hidden="true">↗</span></a></li>`;
+  return `<li id="work-${p.key === 'flex-academy' ? 'flex' : p.key}"><a class="case" href="${p.href}" data-plugin-showcase data-plugin-title="${p.title}" data-showcase-category="Case study" target="_blank" rel="noopener noreferrer"><span class="tl-dot tl-dot-case"></span>${visual}<span class="case-text"><span class="case-title">${p.title}</span><span class="case-desc">${p.desc}</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>`;
 };
 document.querySelector("#app").innerHTML = `
-<a class="skip-content" href="#journey">Skip to experience</a>
+<a class="skip-content" href="#journey">Skip to selected work</a>
 <main class="folio booting" id="portfolio" tabindex="-1" inert>
 <aside class="folio-sticky"><span class="fs-rail" aria-hidden="true"></span><div class="fs-lines"><h1 class="fs-name">${profile.name}</h1><p>${profile.location}</p><p><a href="tel:+97470773838" class="fs-phone">${profile.phone}</a></p></div></aside>
 <section class="interview-card" aria-label="Talk to Ismail's AI agent">
@@ -93,18 +92,112 @@ document.querySelector("#app").innerHTML = `
   <h2 class="folio-tagline">${profile.tagline}</h2>
   <p class="folio-sub">${profile.intro}</p>
   <div class="intro-spot-row">
-    <a href="/Ismail_Bettoumi_CV.pdf" target="_blank" rel="noopener noreferrer" class="intro-spot-pill intro-cv-pill" title="Open Ismail Bettoumi CV (PDF)">
-      <span class="spot-pulse" aria-hidden="true"></span>
-      <span class="spot-pill-txt">Resume / CV</span>
-      <span class="spot-pill-tag">PDF ↗</span>
-    </a>
+    <a href="/cv.html" target="_blank" rel="noopener noreferrer" class="intro-spot-pill" title="Open Ismail Bettoumi resume"><span class="spot-pill-txt">Resume</span></a>
+    <a href="/Ismail_Bettoumi_CV.pdf" download class="intro-spot-pill" title="Download Ismail Bettoumi CV as PDF"><span class="spot-pill-txt">Download CV</span></a>
+    <a href="${profile.linkedin}" target="_blank" rel="noopener noreferrer" class="intro-spot-pill" title="Open Ismail Bettoumi on LinkedIn"><span class="spot-pill-txt">LinkedIn</span></a>
   </div>
 </div>
 
-<section class="folio-track" id="journey" aria-label="Career flight plan">
-<div class="plan-head reveal" aria-hidden="true"><span class="plan-label">Flight plan</span><span class="plan-plane">${plane}</span></div>
+<section class="ux-home" id="proposed-layout" aria-hidden="true" hidden>
+  <div class="ux-home-section ux-home-impact reveal">
+    <div class="ux-section-heading">
+      <span class="ux-section-index">01</span>
+      <div><p class="ux-section-kicker">What I do</p><h2>My impact</h2></div>
+    </div>
+    <div class="ux-impact-grid">
+      <article><span class="ux-impact-icon"></span><h3>Commercial impact</h3><p>Turn friction into measurable growth.</p></article>
+      <article><span class="ux-impact-icon">◎</span><h3>UX strategy</h3><p>Connect journeys, channels, and teams.</p></article>
+      <article><span class="ux-impact-icon">◇</span><h3>UX/UI systems</h3><p>Build clear, reusable product patterns.</p></article>
+      <article><span class="ux-impact-icon">✦</span><h3>AI enablement</h3><p>Accelerate exploration and delivery.</p></article>
+    </div>
+  </div>
+
+  <div class="ux-home-section reveal">
+    <div class="ux-section-heading">
+      <span class="ux-section-index">02</span>
+      <div><p class="ux-section-kicker">Commercial impact</p><h2>Andalus Smart Way</h2></div>
+    </div>
+    <a class="ux-feature-card ux-feature-andalus" href="/projects/andalus/index.html">
+      <div class="ux-feature-copy"><span class="ux-card-label">Flagship UX strategy</span><h3>Recover interrupted travel bookings.</h3><p>Web · App · Email</p></div>
+      <div class="ux-feature-meta"><span>Journey strategy</span><span>Experimentation</span><span>Commercial value</span></div>
+      <span class="ux-card-arrow" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="ux-home-section reveal">
+    <div class="ux-section-heading">
+      <span class="ux-section-index">03</span>
+      <div><p class="ux-section-kicker">UX/UI systems</p><h2>Flex Academy</h2></div>
+    </div>
+    <a class="ux-feature-card ux-feature-flex" href="/projects/flex-academy/index.html" data-plugin-showcase data-plugin-title="Flex Academy · UX & conversion" data-showcase-category="Case study">
+      <div class="ux-feature-copy"><span class="ux-card-label">Client project · UX & conversion</span><h3>Turn operator credibility into the right next step.</h3><p>UX design · UI design · Marketing</p></div>
+      <div class="ux-feature-meta"><span>Audience journeys</span><span>Conversion strategy</span><span>Visual design</span></div>
+      <span class="ux-card-arrow" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="ux-home-section reveal">
+    <div class="ux-section-heading">
+      <span class="ux-section-index">04</span>
+      <div><p class="ux-section-kicker">Built for the community</p><h2>Tools that remove busywork</h2></div>
+    </div>
+    <div class="ux-community-grid">
+      <a class="ux-tool-card ux-tool-primary" href="/projects/design-handoff/index.html" data-plugin-showcase data-plugin-title="Design Handoff Built">
+        <div class="ux-tool-top"><span class="ux-tool-type">Figma plugin</span><span class="ux-tool-status">Built</span></div>
+        <h3>Design Handoff</h3>
+        <p>Prepare cleaner files and clearer developer handoff.</p>
+      </a>
+      <a class="ux-tool-card" href="/projects/design-system-doctor/index.html" data-plugin-showcase data-plugin-title="Design System Doctor">
+        <div class="ux-tool-top"><span class="ux-tool-type">Figma plugin</span><span class="ux-tool-status">Built</span></div>
+        <h3>Design System Doctor</h3>
+        <p>Diagnose tokens, components, typography, and system drift.</p>
+      </a>
+      <a class="ux-tool-card" href="/projects/nexus/index.html" target="_blank" rel="noopener noreferrer">
+        <div class="ux-tool-top"><span class="ux-tool-type">Community product</span><span class="ux-tool-status">Live case</span></div>
+        <h3>Nexus Website Manager</h3>
+        <p>Organize web references and design research.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="ux-home-section ux-home-ai reveal">
+    <div class="ux-section-heading">
+      <span class="ux-section-index">05</span>
+      <div><p class="ux-section-kicker">AI-enabled practice</p><h2>Faster learning. Better systems.</h2></div>
+    </div>
+    <div class="ux-ai-line" aria-label="AI-enabled UX workflow"><span>Evidence</span><i></i><span>Explore</span><i></i><span>Judge</span><i></i><span>Verify</span></div>
+  </div>
+
+  <div class="ux-home-section ux-home-background reveal">
+    <div class="ux-section-heading">
+      <span class="ux-section-index">06</span>
+      <div><p class="ux-section-kicker">Background</p><h2>Commercial thinking, applied to product.</h2></div>
+    </div>
+    <div class="ux-experience-strip">
+      ${experience.map((e) => `<div><span>${e.year}</span><strong>${e.company}</strong><small>${e.role}</small></div>`).join("")}
+    </div>
+  </div>
+
+  <div class="folio-outro reveal">
+    <div class="outro-text">
+      <p class="outro-title">Let’s make the next product easier to use and ship.</p>
+      <a href="${profile.whatsapp}?text=${encodeURIComponent("Hi Ismail, let's talk.")}" target="_blank" rel="noopener noreferrer" class="outro-whatsapp-cta"><span>Let's talk</span><span aria-hidden="true"></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="folio-track" id="journey" aria-label="UX impact and selected work">
+<div class="plan-head reveal" id="selected-work" aria-hidden="true"><span class="plan-label">Selected work</span><span class="plan-plane">${plane}</span></div>
 <div class="folio-path" aria-hidden="true"><svg class="path-curve" viewBox="0 0 44 110"><defs><clipPath id="flight-path-reveal" clipPathUnits="userSpaceOnUse"><rect class="path-reveal" x="-8" y="-8" width="60" height="0"/></clipPath></defs><path class="pc-dots" d="M44 0 V25 C44 65 0 40 0 80 V110" fill="none"/><path class="pc-lit" d="M44 0 V25 C44 65 0 40 0 80 V110" fill="none" clip-path="url(#flight-path-reveal)"/></svg><div class="path-rail"><div class="path-lit"></div><span class="path-glow"></span><svg class="path-tip" viewBox="0 0 8 4"><path d="m1 1 3 2 3-2"/></svg></div></div>
-<ol class="folio-timeline">${experience.map((e) => `<li class="tl-entry"><div class="tl-head"><span class="tl-year">${e.route ? `<span class="tl-route">${e.route}</span>` : ""}<span class="tl-yearnum">${e.year}</span></span><span class="tl-dot tl-dot-${e.current ? "now" : "past"}" aria-hidden="true"></span><h2 class="tl-company">${e.href ? `<a href="${e.href}" target="_blank" rel="noopener noreferrer">${e.company}</a>` : e.company}</h2>${e.current ? '<span class="tl-badge">Current</span>' : ""}</div><div class="tl-body"><h3 class="tl-role">${e.role}</h3><p class="tl-desc">${e.desc}</p><p class="tl-dates">${e.dates}</p></div>${e.projects ? `<ul class="tl-cases">${e.projects.map(caseRow).join("")}</ul>` : ""}</li>`).join("")}
+<ol class="folio-timeline">
+<li class="tl-entry tl-entry-case-study ux-numbered-section" id="featured-case-studies">
+  <div class="tl-head"><span class="tl-year"><span class="tl-yearnum">01</span></span><span class="tl-dot tl-dot-now" aria-hidden="true"></span><h2 class="tl-company">Featured work</h2></div>
+  <ul class="tl-cases">
+    <li id="work-andalus"><button type="button" class="case" data-impact="andalus"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app" aria-hidden="true"><img src="/projects/andalus/andalus-google-profile.png" alt="" class="case-badge-img" width="36" height="36"></span><span class="case-text"><span class="case-title">Cart recovery program</span><span class="case-desc">Andalus Smart Way · multi-channel flight-booking recovery</span></span><span class="case-arrow" aria-hidden="true"></span></button></li>
+    <li id="work-nasaq"><a class="case" href="/projects/nasaq/case-study-en.html" data-plugin-showcase data-plugin-title="Nasaq · Bilingual design system" data-showcase-category="Case study"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app nasaq-case-icon" aria-hidden="true"><img src="/projects/nasaq/assets/nasaq-mark.svg" alt="" class="case-badge-img" width="36" height="36"></span><span class="case-text"><span class="case-title">Nasaq: bilingual design system</span><span class="case-desc">Foundations, tokens, reusable components, and AI interface patterns for Arabic and English.</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>
+  </ul>
+</li>
+${false ? `
 <li class="tl-entry tl-entry-case-study">
   <div class="tl-head">
     <span class="tl-year"><span class="tl-route">CASE</span><span class="tl-yearnum">2025</span></span>
@@ -146,7 +239,7 @@ document.querySelector("#app").innerHTML = `
           <span class="case-title">AEO Citation Growth & AI Visibility <span class="case-flagship-pill">Case Study</span></span>
           <span class="case-desc">Answer Engine Optimization (AEO), generative search visibility, structured schema & measurement framework.</span>
         </span>
-        <span class="case-arrow" aria-hidden="true">↗</span>
+        <span class="case-arrow" aria-hidden="true"></span>
       </button>
     </li>
   </ul>
@@ -192,7 +285,7 @@ document.querySelector("#app").innerHTML = `
           <span class="case-title">SEO & Organic Growth Engineering <span class="case-flagship-pill">Case Study</span></span>
           <span class="case-desc">Topic clusters, technical site health, position-zero capture & commercial search intent optimization.</span>
         </span>
-        <span class="case-arrow" aria-hidden="true">↗</span>
+        <span class="case-arrow" aria-hidden="true"></span>
       </button>
     </li>
   </ul>
@@ -242,40 +335,53 @@ document.querySelector("#app").innerHTML = `
           <span class="case-title">Paid Media & ROAS Optimization <span class="case-flagship-pill">Case Study</span></span>
           <span class="case-desc">Audience restructuring, multivariate creative testing & high-converting landing page funnel alignment.</span>
         </span>
-        <span class="case-arrow" aria-hidden="true">↗</span>
+        <span class="case-arrow" aria-hidden="true"></span>
       </button>
     </li>
   </ul>
 </li>
-<li class="tl-entry tl-entry-products">
-  <div class="tl-head">
-    <span class="tl-dot tl-dot-now" aria-hidden="true"></span>
-    <h2 class="tl-company">My Work</h2>
-    <span class="tl-badge">Selected Projects</span>
-  </div>
-  <div class="tl-body">
-    <h3 class="tl-role">Landing Page & Digital Experience Builder</h3>
-    <p class="tl-desc">Designed and built high-converting landing pages and digital experiences from the ground up, combining clean UI/UX, responsive design, conversion-focused structure, and front-end execution.</p>
-  </div>
+` : ""}
+<li class="tl-entry tl-entry-products more-case-studies ux-numbered-section" id="more-case-studies">
+  <div class="tl-head"><span class="tl-year"><span class="tl-yearnum">02</span></span><span class="tl-dot tl-dot-now" aria-hidden="true"></span><h2 class="tl-company">More Case Studies</h2></div>
   <ul class="tl-cases">
-    ${products.map(productCaseRow).join("")}
+    ${["flex-academy", "veyra"].map(key => products.find(p => p.key === key)).filter(Boolean).map(productCaseRow).join("")}
   </ul>
 </li>
+<li class="tl-entry tl-entry-products ux-numbered-section ui-work-section" id="ui-work">
+  <div class="tl-head"><span class="tl-year"><span class="tl-yearnum">03</span></span><span class="tl-dot tl-dot-now" aria-hidden="true"></span><h2 class="tl-company">My UI Work</h2></div>
+  <ul class="tl-cases">
+    <li><a class="case" href="/projects/focus-agents/index.html" data-plugin-showcase data-plugin-title="Focus Agents" data-showcase-category="UI & Motion"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app case-icon-focus-agents" aria-hidden="true"><img src="/assets/logos/focus-agents.svg" alt="" class="case-badge-img" width="36" height="36" loading="lazy"></span><span class="case-text"><span class="case-title">Focus Agents</span><span class="case-desc">An ambient mobile command center presented as a polished glassmorphic UI concept.</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>
+    <li><a class="case" href="/projects/cansaas/index.html" data-plugin-showcase data-plugin-title="Cansaas Space" data-showcase-category="UI & Motion"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app case-icon-cansaas" aria-hidden="true"><img src="/assets/logos/cansaas.svg" alt="" class="case-badge-img" width="36" height="36" loading="lazy"></span><span class="case-text"><span class="case-title">Cansaas Space</span><span class="case-desc">An intelligent workspace for projects, files, voice and multi-model creation.</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>
+    <li><a class="case" href="/projects/vanta/index.html" data-plugin-showcase data-plugin-title="Vanta" data-showcase-category="UI & Motion"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app case-icon-vanta" aria-hidden="true"><img src="/assets/logos/vanta.svg" alt="" class="case-badge-img" width="36" height="36" loading="lazy"></span><span class="case-text"><span class="case-title">Vanta</span><span class="case-desc">A high-contrast personal finance dashboard with balance, cash-flow and transaction views.</span></span></a></li>
+  </ul>
+</li>
+<li class="tl-entry tl-entry-case-study ux-numbered-section ux-community-timeline" id="community">
+  <div class="tl-head"><span class="tl-year"><span class="tl-yearnum">04</span></span><span class="tl-dot tl-dot-now" aria-hidden="true"></span><h2 class="tl-company">For the community</h2></div>
+  <ul class="tl-cases">
+    <li id="work-design-handoff"><a class="case" href="/projects/design-handoff/index.html" data-plugin-showcase data-plugin-title="Design Handoff Built"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app case-icon-handoff" aria-hidden="true"><img src="/assets/logos/design-handoff.svg" alt="" class="case-badge-img" width="36" height="36" loading="lazy"></span><span class="case-text"><span class="case-title">Design Handoff</span><span class="case-desc">Audit handoff risks and create a developer-ready report.</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>
+    <li id="work-design-system-doctor"><a class="case" href="/projects/design-system-doctor/index.html" data-plugin-showcase data-plugin-title="Design System Doctor"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app case-icon-system-doctor" aria-hidden="true"><img src="/assets/logos/design-system-doctor.svg" alt="" class="case-badge-img" width="36" height="36" loading="lazy"></span><span class="case-text"><span class="case-title">Design System Doctor</span><span class="case-desc">Diagnose token, component, typography, layout, and naming drift.</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>
+    <li id="work-nexus"><a class="case" href="/projects/nexus/index.html" data-plugin-showcase data-plugin-title="Nexus Website Manager" data-showcase-category="Project" target="_blank" rel="noopener noreferrer"><span class="tl-dot tl-dot-case"></span><span class="case-icon case-icon-app case-icon-nexus" aria-hidden="true"><img src="/assets/logos/nexus-new.svg" alt="" class="case-badge-img" width="36" height="36" loading="lazy"></span><span class="case-text"><span class="case-title">Nexus Website Manager</span><span class="case-desc">Organize web references and design research.</span></span><span class="case-arrow" aria-hidden="true"></span></a></li>
+  </ul>
+</li>
+<li class="tl-entry tl-entry-products career-background ux-numbered-section" id="experience">
+  <div class="tl-head"><span class="tl-year"><span class="tl-yearnum">05</span></span><span class="tl-dot tl-dot-now" aria-hidden="true"></span><h2 class="tl-company">My Professional Experience</h2></div>
+</li>
+${experience.map((e) => `<li class="tl-entry career-role"><div class="tl-head"><span class="tl-year">${e.route ? `<span class="tl-route">${e.route}</span>` : ""}<span class="tl-yearnum">${e.year}</span></span><span class="tl-dot tl-dot-${e.current ? "now" : "past"}" aria-hidden="true"></span><h2 class="tl-company">${e.href ? `<a href="${e.href}" target="_blank" rel="noopener noreferrer">${e.company}</a>` : e.company}</h2>${e.current ? '<span class="tl-badge">Current</span>' : ""}</div><div class="tl-body"><h3 class="tl-role">${e.role}</h3><p class="tl-desc">${e.desc}</p><p class="tl-dates">${e.dates}</p></div></li>`).join("")}
 </ol>
 <div class="folio-outro reveal">
   <div class="outro-text">
-    <p class="outro-title">Thank you for flying. Let's grow something together.</p>
+    <p class="outro-title">Let’s make the next product easier to understand, use, and ship.</p>
     <a href="${profile.whatsapp}?text=${encodeURIComponent("Hi Ismail, let's talk.")}" target="_blank" rel="noopener noreferrer" class="outro-whatsapp-cta">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.66 20.16 9.3 19.8 8.1 19.09L7.81 18.92L4.69 19.74L5.52 16.7L5.33 16.39C4.54 15.14 4.12 13.68 4.12 12.18C4.12 7.64 7.82 3.67 12.05 3.67M9.04 7.67C8.88 7.67 8.63 7.73 8.42 7.96C8.21 8.19 7.62 8.74 7.62 9.87C7.62 11 8.44 12.09 8.56 12.24C8.67 12.4 10.18 14.72 12.49 15.72C13.04 15.96 13.47 16.1 13.8 16.21C14.36 16.39 14.86 16.36 15.26 16.3C15.71 16.23 16.64 15.74 16.83 15.2C17.03 14.67 17.03 14.21 16.97 14.12C16.91 14.03 16.76 13.97 16.53 13.86C16.3 13.74 15.18 13.19 14.97 13.11C14.76 13.04 14.61 13 14.45 13.23C14.3 13.46 13.87 13.97 13.74 14.12C13.61 14.28 13.48 14.3 13.25 14.18C13.02 14.07 12.28 13.83 11.41 13.05C10.73 12.44 10.27 11.69 10.14 11.47C10.01 11.24 10.13 11.11 10.24 11C10.35 10.89 10.48 10.72 10.6 10.59C10.71 10.45 10.76 10.35 10.83 10.2C10.91 10.05 10.87 9.92 10.81 9.8C10.76 9.69 10.3 8.56 10.11 8.11C9.92 7.67 9.73 7.73 9.58 7.72C9.44 7.71 9.28 7.71 9.12 7.71L9.04 7.67Z"/></svg>
       <span>Let's talk</span>
-      <span aria-hidden="true" style="font-size: 11px;">↗</span>
+      <span aria-hidden="true" style="font-size: 11px;"></span>
     </a>
   </div>
 </div>
 </section>
 </div>
 <div class="folio-footer-fx" aria-hidden="true"><div class="pb pb1"></div><div class="pb pb2"></div><div class="pb pb3"></div><div class="pb pb4"></div><div class="pb pb5"></div><div class="folio-footer-tint"></div></div>
-<footer class="folio-footer"><nav class="ff-links" aria-label="Portfolio links"><button class="ff-link" id="return-gate"><span class="ff-link-label">Return to gate</span></button><a class="ff-link" href="/Ismail_Bettoumi_CV.pdf" target="_blank" rel="noopener noreferrer"><span class="ff-link-label">CV / Resume</span></a><a class="ff-link" href="${profile.whatsapp}" target="_blank" rel="noopener noreferrer"><span class="ff-link-label">WhatsApp</span></a><a class="ff-link" href="${profile.linkedin}" target="_blank" rel="noopener noreferrer"><span class="ff-link-label">LinkedIn</span></a></nav></footer>
+<footer class="folio-footer" id="contact"><nav class="ff-links" aria-label="Portfolio links"><button class="ff-link" id="return-gate"><span class="ff-link-label">Return to gate</span></button><a class="ff-link" href="/cv.html" target="_blank" rel="noopener noreferrer"><span class="ff-link-label">CV / Resume</span></a><a class="ff-link" href="/Ismail_Bettoumi_CV.pdf" download><span class="ff-link-label">Download CV (PDF)</span></a><a class="ff-link" href="mailto:bettoumi001@gmail.com"><span class="ff-link-label">Email</span></a><a class="ff-link" href="${profile.whatsapp}" target="_blank" rel="noopener noreferrer"><span class="ff-link-label">WhatsApp</span></a><a class="ff-link" href="${profile.linkedin}" target="_blank" rel="noopener noreferrer"><span class="ff-link-label">LinkedIn</span></a></nav></footer>
 </main>
 <div class="pass-stage" id="gate" tabindex="-1" role="dialog" aria-modal="true" aria-label="Welcome aboard Ismail's portfolio">
   <div class="pass-canvas" id="scanner"></div>
@@ -302,7 +408,7 @@ document.querySelector("#app").innerHTML = `
         </svg>
       </span>
       <span class="qsp-label">Tap to Scan</span>
-      <span class="qsp-arrow" aria-hidden="true">→</span>
+      <span class="qsp-arrow" aria-hidden="true"></span>
     </button>
   </div>
   <button class="skip-link" id="skip-intro">Skip</button>
@@ -350,9 +456,83 @@ document.querySelector("#app").innerHTML = `
     </button>
     <div class="strategy-modal-content" id="strategy-modal-content"></div>
   </div>
+</dialog>
+<dialog class="strategy-modal-dialog impact-modal-dialog" id="impact-dialog" aria-labelledby="impact-modal-title">
+  <div class="strategy-modal-box impact-modal-box">
+    <button class="strategy-close-btn" id="close-impact-btn" aria-label="Close impact details">
+      <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l10 10M13 3L3 13"/></svg>
+    </button>
+    <div id="impact-modal-content"></div>
+  </div>
+</dialog>
+<dialog class="plugin-showcase-dialog" id="plugin-showcase-dialog" aria-labelledby="plugin-showcase-title">
+  <div class="plugin-showcase-shell">
+    <div class="plugin-showcase-bar">
+      <div class="plugin-showcase-heading">
+        <button type="button" class="plugin-showcase-back" id="plugin-showcase-back" aria-label="Back to portfolio"><span aria-hidden="true">←</span> Back</button>
+        <div><span id="plugin-showcase-category">Figma plugin</span><strong id="plugin-showcase-title">Plugin showcase</strong></div>
+      </div>
+      <div class="plugin-showcase-actions"><a id="plugin-showcase-new-tab" href="#" target="_blank" rel="noopener noreferrer">Open full page </a><button type="button" id="plugin-showcase-close" aria-label="Close project showcase">×</button></div>
+    </div>
+    <iframe id="plugin-showcase-frame" title="Plugin showcase" loading="lazy"></iframe>
+  </div>
 </dialog>`;
 const folio = document.querySelector("#portfolio"),
   gate = document.querySelector("#gate");
+const pluginShowcaseDialog = document.querySelector("#plugin-showcase-dialog");
+const pluginShowcaseFrame = document.querySelector("#plugin-showcase-frame");
+const pluginShowcaseTitle = document.querySelector("#plugin-showcase-title");
+const pluginShowcaseCategory = document.querySelector("#plugin-showcase-category");
+const pluginShowcaseNewTab = document.querySelector("#plugin-showcase-new-tab");
+document.addEventListener("click", (event) => {
+  const trigger = event.target.closest("[data-plugin-showcase]");
+  if (!trigger || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  const href = trigger.getAttribute("href");
+  pluginShowcaseTitle.textContent = trigger.dataset.pluginTitle || "Plugin showcase";
+  pluginShowcaseCategory.textContent = trigger.dataset.showcaseCategory || "Figma plugin";
+  pluginShowcaseFrame.title = trigger.dataset.pluginTitle || "Plugin showcase";
+  pluginShowcaseFrame.src = href;
+  pluginShowcaseNewTab.href = href;
+  pluginShowcaseDialog.showModal();
+});
+document.querySelector("#plugin-showcase-back").addEventListener("click", () => pluginShowcaseDialog.close());
+document.querySelector("#plugin-showcase-close").addEventListener("click", () => pluginShowcaseDialog.close());
+pluginShowcaseFrame.addEventListener("load", () => {
+  try {
+    const embeddedDocument = pluginShowcaseFrame.contentDocument;
+    if (!embeddedDocument || pluginShowcaseFrame.contentWindow.location.href === "about:blank") return;
+    embeddedDocument.querySelectorAll([
+      "#back-to-portfolio",
+      ".back-row",
+      ".review-quick-nav > a:first-child",
+      ".case-nav > a[href^='/#']",
+      ".site-home[href^='/#']",
+      ".site-nav > a[href^='/#']",
+      ".top-nav > a[href^='/#']",
+      ".vanta-project-nav > a[href^='/#']",
+      ".nasaq-portfolio-link[href^='/#']",
+      ".rail-portfolio[href^='/#']"
+    ].join(",")).forEach((control) => {
+      control.setAttribute("hidden", "");
+      control.style.setProperty("display", "none", "important");
+    });
+  } catch {
+    // Cross-origin pages keep their own navigation.
+  }
+});
+pluginShowcaseDialog.addEventListener("click", (event) => {
+  if (event.target === pluginShowcaseDialog) pluginShowcaseDialog.close();
+});
+pluginShowcaseDialog.addEventListener("close", () => {
+  pluginShowcaseFrame.src = "about:blank";
+});
+window.addEventListener("message", (event) => {
+  if (event.origin === location.origin && event.source === pluginShowcaseFrame.contentWindow && ["close-andalus-case", "close-case-study"].includes(event.data?.type)) {
+    pluginShowcaseDialog.close();
+  }
+
+});
 const interviewCard = document.querySelector(".interview-card");
 const interviewWidget = interviewCard.querySelector("elevenlabs-convai");
 customElements.whenDefined("elevenlabs-convai").then(() => {
@@ -415,10 +595,19 @@ async function showGate() {
   const passStatus = document.querySelector("#pass-status");
   passStatus.textContent = "Click or swipe boarding pass to enter";
   passStatus.classList.remove("granted");
+  passStatus.classList.add("shimmer");
   await Promise.race([
     document.fonts?.ready ?? Promise.resolve(),
     new Promise((resolve) => setTimeout(resolve, 800)),
   ]);
+  if (entered) return;
+  if (reduced.matches) {
+    passStatus.textContent = "Welcome aboard. Enter to explore.";
+    document.querySelector("#scan-pass").classList.add("fallback");
+    document.querySelector("#scan-pass").onclick = enter;
+    gate.focus({ preventScroll: true });
+    return;
+  }
   try {
     const { mountScanner } = await import("./scanner.js");
     if (entered) return;
@@ -645,6 +834,69 @@ document.fonts?.ready.then(requestPathMeasure);
 const strategyDialog = document.querySelector("#strategy-dialog");
 const strategyContent = document.querySelector("#strategy-modal-content");
 const closeStrategyBtn = document.querySelector("#close-strategy-btn");
+const impactDialog = document.querySelector("#impact-dialog");
+const impactContent = document.querySelector("#impact-modal-content");
+const closeImpactBtn = document.querySelector("#close-impact-btn");
+
+const impactStories = {
+  andalus: {
+    eyebrow: "Cart recovery program · Andalus Smart Way",
+    title: "Bring travelers back to an interrupted booking.",
+    intro: "A multi-channel recovery experience that reconnects abandoned flight bookings across web, app, and email.",
+    points: [
+      ["Recognize", "Identify a useful, recoverable booking state without treating every interrupted session as intent."],
+      ["Reconnect", "Select the right channel and return the traveler to the last valid step with useful context preserved."],
+      ["Recover", "Revalidate fares and availability, explain changes clearly, and measure completed bookings."],
+    ],
+    cta: "Explore the full recovery journey",
+    href: "/projects/andalus/index.html",
+  },
+  flex: {
+    eyebrow: "Client project · Flex Academy",
+    title: "Turn operator credibility into the right next step.",
+    intro: "UX, UI, and marketing for a short-term-rental academy: two audiences, two relevant conversion journeys.",
+    points: [],
+    cta: "Explore the case study",
+    href: "/projects/flex-academy/index.html",
+  },
+};
+
+function openImpactStory(key) {
+  if (key === "andalus" || key === "flex") {
+    const isFlex = key === "flex";
+    const caseHref = isFlex ? "/projects/flex-academy/index.html" : "/projects/andalus/index.html";
+    pluginShowcaseTitle.textContent = isFlex ? "Flex Academy · UX & conversion" : "Andalus Smart Way · Cart recovery";
+    pluginShowcaseCategory.textContent = "Case study";
+    pluginShowcaseFrame.title = isFlex ? "Flex Academy UX and conversion case study" : "Andalus cart recovery case study";
+    pluginShowcaseFrame.src = caseHref;
+    pluginShowcaseNewTab.href = caseHref;
+    pluginShowcaseDialog.showModal();
+    return;
+  }
+  const story = impactStories[key];
+  if (!story) return;
+  impactContent.innerHTML = `
+    <article class="impact-story">
+      <p class="impact-story-eyebrow">${story.eyebrow}</p>
+      <h2 id="impact-modal-title">${story.title}</h2>
+      <p class="impact-story-intro">${story.intro}</p>
+      <div class="impact-story-grid">
+        ${story.points.map(([label, copy], index) => `<section><span>0${index + 1}</span><h3>${label}</h3><p>${copy}</p></section>`).join("")}
+      </div>
+      ${story.pending
+        ? `<p class="impact-story-cta impact-story-cta-pending" role="status">${story.cta}</p>`
+        : `<a class="impact-story-cta" href="${story.href}">${story.cta}<span aria-hidden="true"></span></a>`}
+    </article>`;
+  impactDialog.showModal();
+}
+
+document.querySelectorAll("[data-impact]").forEach((button) => {
+  button.addEventListener("click", () => openImpactStory(button.dataset.impact));
+});
+closeImpactBtn.addEventListener("click", () => impactDialog.close());
+impactDialog.addEventListener("click", (event) => {
+  if (event.target === impactDialog) impactDialog.close();
+});
 
 const memoryStrategyMap = {
   "placeholder-seo": "seo",
@@ -771,7 +1023,7 @@ function renderStrategyModalContent(key) {
           <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="dash-cta-btn dash-cta-whatsapp dash-cta-single">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.66 20.16 9.3 19.8 8.1 19.09L7.81 18.92L4.69 19.74L5.52 16.7L5.33 16.39C4.54 15.14 4.12 13.68 4.12 12.18C4.12 7.64 7.82 3.67 12.05 3.67M9.04 7.67C8.88 7.67 8.63 7.73 8.42 7.96C8.21 8.19 7.62 8.74 7.62 9.87C7.62 11 8.44 12.09 8.56 12.24C8.67 12.4 10.18 14.72 12.49 15.72C13.04 15.96 13.47 16.1 13.8 16.21C14.36 16.39 14.86 16.36 15.26 16.3C15.71 16.23 16.64 15.74 16.83 15.2C17.03 14.67 17.03 14.21 16.97 14.12C16.91 14.03 16.76 13.97 16.53 13.86C16.3 13.74 15.18 13.19 14.97 13.11C14.76 13.04 14.61 13 14.45 13.23C14.3 13.46 13.87 13.97 13.74 14.12C13.61 14.28 13.48 14.3 13.25 14.18C13.02 14.07 12.28 13.83 11.41 13.05C10.73 12.44 10.27 11.69 10.14 11.47C10.01 11.24 10.13 11.11 10.24 11C10.35 10.89 10.48 10.72 10.6 10.59C10.71 10.45 10.76 10.35 10.83 10.2C10.91 10.05 10.87 9.92 10.81 9.8C10.76 9.69 10.3 8.56 10.11 8.11C9.92 7.67 9.73 7.73 9.58 7.72C9.44 7.71 9.28 7.71 9.12 7.71L9.04 7.67Z"/></svg>
             <span>${s.ctaLabel || "Let's talk about Aevis"}</span>
-            <span aria-hidden="true" style="font-size: 11px;">↗</span>
+            <span aria-hidden="true" style="font-size: 11px;"></span>
           </a>
         `
             : `
@@ -787,7 +1039,7 @@ function renderStrategyModalContent(key) {
             s.externalHref
               ? `
             <a href="${s.externalHref}" target="_blank" rel="noopener noreferrer" class="dash-cta-btn dash-cta-platform">
-              <span>${s.externalLabel || "Launch Aevis Platform ↗"}</span>
+              <span>${s.externalLabel || "Launch Aevis Platform "}</span>
             </a>
           `
               : ""
@@ -872,7 +1124,7 @@ if (store.get("yb:boarded") === "1" && sessionStorage.getItem("yb:entered") === 
   showGate();
 }
 
-// Marketing skill summaries — each links to Ismail's LinkedIn for direct contact.
+// Marketing skill summaries: each links to Ismail's LinkedIn for direct contact.
 // outcomes or internal screenshots. Detail navigation mirrors the main flight.
 const summaries = {
   aeo: {
@@ -923,7 +1175,7 @@ const summaries = {
     heading: "Introducing a new way to explore",
     body: "Introduced The Pulse with Ramya Ravindran at Web Summit Qatar 2025 at the Qatar Airways booth, exploring the intersection of travel, emotion, and emerging tech.",
     image: "pulse",
-    caption: "Dream Destination: The Pulse — Web Summit Qatar 2025",
+    caption: "Dream Destination: The Pulse: Web Summit Qatar 2025",
   },
   sama: {
     year: "2025",
@@ -943,7 +1195,7 @@ const summaries = {
     heading: "Building meaningful customer experiences",
     body: "Collaborated on sports, loyalty, and digital engagement features designed to maximize fan participation and member value.",
     image: "football",
-    caption: "Qatar Airways Privilege Club — FIFA World Cup 2026™",
+    caption: "Qatar Airways Privilege Club: FIFA World Cup 2026™",
   },
 };
 const keys = ["aeo", "analytics", "seo", "paidmedia", "email", "shopify"];
@@ -974,10 +1226,10 @@ function navigateProject(key, push = true) {
   folio.hidden = true;
   detail.hidden = false;
   detail.inert = !entered;
-  document.title = `${p.title} — Ismail Bettoumi`;
+  document.title = `${p.title}: Ismail Bettoumi`;
   const content = s.restricted
-    ? `<article class="cs-flow restricted-project"><div class="cs-col cs-reveal is-in"><header class="cs-header"><p class="cs-eyebrow">${s.year}<span class="cs-eyebrow-dot"></span>${s.platform}</p><h1 class="cs-title">${p.title}</h1><p class="cs-blurb">${p.desc}</p></header><section class="project-access" aria-labelledby="project-access-title"><span class="project-access-icon case-icon-${p.icon}" aria-hidden="true">${projectIcons[p.icon]}</span><p class="project-access-kicker">Selected project</p><h2 class="project-access-title" id="project-access-title">The details stay in the room.</h2><p class="project-access-copy">Contact Ismail for more details about this project.</p><a class="project-access-link" href="${profile.linkedin}" target="_blank" rel="noopener noreferrer">Contact Ismail <span aria-hidden="true">↗</span></a></section></div></article>`
-    : `<article class="cs-flow"><div class="cs-col cs-reveal is-in"><header class="cs-header"><p class="cs-eyebrow">${s.year}<span class="cs-eyebrow-dot"></span>${s.platform}</p><h1 class="cs-title">${p.title}</h1><p class="cs-blurb">${p.desc}</p></header><section class="cs-overview"><p class="cs-gutter-label">Overview</p><p class="cs-lede">${s.overview}</p></section></div><div class="cs-full cs-reveal is-in"><figure class="cs-figure is-wide project-figure"><button class="cs-figure-card" data-enlarge="${s.image}" aria-label="Enlarge ${p.title} image"><img src="${shot(s.image)}" alt="${s.caption}"></button><figcaption class="cs-figcaption">${s.caption}</figcaption></figure></div><section class="cs-col cs-deep cs-reveal is-in"><h2 class="cs-heading">${s.heading}</h2><p class="cs-body">${s.body}</p><a class="project-source" href="${p.href}" target="_blank" rel="noopener noreferrer">Read my original post <span aria-hidden="true">↗</span></a></section></article>`;
+    ? `<article class="cs-flow restricted-project"><div class="cs-col cs-reveal is-in"><header class="cs-header"><p class="cs-eyebrow">${s.year}<span class="cs-eyebrow-dot"></span>${s.platform}</p><h1 class="cs-title">${p.title}</h1><p class="cs-blurb">${p.desc}</p></header><section class="project-access" aria-labelledby="project-access-title"><span class="project-access-icon case-icon-${p.icon}" aria-hidden="true">${projectIcons[p.icon]}</span><p class="project-access-kicker">Selected project</p><h2 class="project-access-title" id="project-access-title">The details stay in the room.</h2><p class="project-access-copy">Contact Ismail for more details about this project.</p><a class="project-access-link" href="${profile.linkedin}" target="_blank" rel="noopener noreferrer">Contact Ismail <span aria-hidden="true"></span></a></section></div></article>`
+    : `<article class="cs-flow"><div class="cs-col cs-reveal is-in"><header class="cs-header"><p class="cs-eyebrow">${s.year}<span class="cs-eyebrow-dot"></span>${s.platform}</p><h1 class="cs-title">${p.title}</h1><p class="cs-blurb">${p.desc}</p></header><section class="cs-overview"><p class="cs-gutter-label">Overview</p><p class="cs-lede">${s.overview}</p></section></div><div class="cs-full cs-reveal is-in"><figure class="cs-figure is-wide project-figure"><button class="cs-figure-card" data-enlarge="${s.image}" aria-label="Enlarge ${p.title} image"><img src="${shot(s.image)}" alt="${s.caption}"></button><figcaption class="cs-figcaption">${s.caption}</figcaption></figure></div><section class="cs-col cs-deep cs-reveal is-in"><h2 class="cs-heading">${s.heading}</h2><p class="cs-body">${s.body}</p><a class="project-source" href="${p.href}" target="_blank" rel="noopener noreferrer">Read my original post <span aria-hidden="true"></span></a></section></article>`;
   detail.innerHTML = `${content}<div class="folio-footer-fx" aria-hidden="true"><div class="pb pb1"></div><div class="pb pb2"></div><div class="pb pb3"></div><div class="pb pb4"></div><div class="pb pb5"></div><div class="folio-footer-tint"></div></div><nav class="cs-nav" aria-label="Projects"><a class="cs-nav-btn is-back" href="/work/${prev}" data-project="${prev}"><span class="cs-nav-kicker">‹ Back</span><span class="cs-nav-name">${projectNavName(prev)}</span></a><a class="cs-nav-home" href="/" data-home aria-label="Back to portfolio"><svg class="cs-nav-home-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10 12 4l8 6v10h-6v-6h-4v6H4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></a><a class="cs-nav-btn is-next" href="/work/${next}" data-project="${next}"><span class="cs-nav-kicker">Next ›</span><span class="cs-nav-name">${projectNavName(next)}</span></a></nav>`;
   const enlarge = detail.querySelector("[data-enlarge]");
   if (enlarge) enlarge.onclick = () => {
@@ -993,7 +1245,7 @@ function showHome(push = true) {
   if (push) history.pushState(null, "", "/");
   detail.hidden = true;
   folio.hidden = false;
-  document.title = "Ismail Bettoumi — Digital Marketing";
+  document.title = "Ismail Bettoumi: Product Designer";
   window.scrollTo(0, homeScroll);
   requestPathMeasure();
   folio.focus({ preventScroll: true });
@@ -1078,8 +1330,3 @@ if (location.pathname.includes("/case-studies/aeo-citation-growth")) {
     navigateProject(initialProject, false);
   }
 }
-import("./sky.js")
-  .then(({ mountSky }) => mountSky(document.querySelector(".sky"), windowEl))
-  .catch(() => {
-    /* The static cloud view remains available without WebGL. */
-  });

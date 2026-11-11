@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-22",
+  "scope": "Local Flex artifact/version clarity and bounded interaction behavior. Existing portfolio homepage retained. No deployment.",
+  "closedActions": [
+    "A08.01",
+    "A08.05"
+  ],
+  "counts": {
+    "Done": 63,
+    "In progress": 46,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "changes": [
+    "Dated current task study, explicit five-decision artifact comparison and matching case/study navigation.",
+    "Preserved the saved desktop design and separately labeled earlier HTML color and unverified supplied Figma reference.",
+    "Cleared stale selected appointments and errors on audience-route changes, retaining editable sample details.",
+    "Added direct in-flow retry to both journeys; the failure condition explicitly simulates recovery within the same sample request."
+  ],
+  "checks": {
+    "tests": 119,
+    "testFailures": 0,
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 626,
+    "scriptSyntaxChecks": 22,
+    "staticIssues": 0,
+    "fragmentPages": 17,
+    "dynamicNasaqLinksDeferred": 38,
+    "contrastStatesSourceChecked": 6
+  },
+  "regressions": {
+    "before": "Two targeted tests failed against the old shipped handler: stale appointment remained after route changes; no retry control existed.",
+    "after": "Both targeted tests and the full 119-test workspace suite pass. Retry preserves one request ID and one conversion event across either route; later reconfirmation does not create a second conversion. These are DOM/model contracts, not production analytics."
+  },
+  "nativeObservations": [
+    {
+      "id": "flex-version-20261022",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/index.html#versions",
+      "observed": "Displayed the dated current-study, saved-design and supplied-Figma cards. Expanded the five-decision comparison, followed Open the current flow, and observed the matching 22 October version notice. The current study is explicitly separate from the saved landing-page composition and an approved client release.",
+      "result": "Passed the explicit version-differences criterion"
+    },
+    {
+      "id": "flex-launch-20261022",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Selected Service failure, then retry and Launch. Submitted an invalid email and missing goal: name/email were retained and the invalid email received focus. Corrected sample details, chose a starting-sequence goal, reviewed the absent-approved-timing notice, encountered a failed confirmation, used Try again, and observed Sample registration complete with no real booking/email. Cancellation returned to editable retained details.",
+      "result": "Passed the bounded beginner prototype task"
+    },
+    {
+      "id": "flex-scale-20261022",
+      "browser": "Opera GX",
+      "route": "/projects/flex-academy/study.html",
+      "observed": "Changed to Scale and an operating-systems goal. Selected a 12:00 PM Qatar sample slot, changed to Europe/London, and observed 9:00 AM/1:00 PM with neither selected and confirmation disabled. Under Service failure, then retry, selected 9:00 AM, observed the failure, retried and received the same sample time in confirmation. Edited, reconfirmed and canceled, retaining details. Selected No call availability, requested a sample notification and observed no appointment/email/future-availability promise with booking disabled. A later invalid email submission preserved the other details and focused email.",
+      "result": "Passed the bounded operator prototype task"
+    },
+    {
+      "id": "flex-return-20261022",
+      "browser": "Opera GX",
+      "route": "/#work-flex",
+      "observed": "Followed the study’s portfolio link and observed the original homepage with native focus on its Flex Academy entry. The existing window-shade control and timeline sections remained present.",
+      "result": "Passed the local return route"
+    }
+  ],
+  "unsuccessfulOrIncomplete": [
+    "The prior Opera review tab updated titles/URLs but displayed a blank content area with no page tree after navigation. Reload, raise and rebind did not resolve it; those attempts were not counted as passes. A fresh review tab rendered the case and both task paths successfully.",
+    "An initial native timezone selector helper failed to match its diff output. The menu was inspected directly, Europe/London was selected and the resulting cleared selection and converted labels were observed.",
+    "The supplied Figma URL could not be inspected by the available web reader; current Figma contents, access and design/code parity are unverified."
+  ],
+  "remaining": [
+    "Phone hero, audience selector, proof, form and confirmation presentation.",
+    "Full rendered-state and live Figma parity review; the 6.73:1 current action result is a source-color check.",
+    "Approved offer terms, webinar schedule, testimonial attribution, original delivery dates, team responsibilities and client approval.",
+    "Real participant findings, before/after retest and client feedback.",
+    "Production registration, booking, attendance and commercial outcomes."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "src/flexVersionContent.js": "33bc3c9fb9c6e6ad397ea1b2f472fac9ce8cf93af3a766bbe24686668e6ba492",
+    "src/caseReviewContent.js": "51d97f9070a027f7319d8098fd858af80a4f6a7dcd28e0361891d276953869e2",
+    "src/caseEnhancementContent.js": "36855a184fb7941c9358f19dbb7f3f638da3d8b087da799c50bebcab5cdcb993",
+    "src/studyContent.js": "47121b52b7a21fede2aa463de6e37346f9b5d6b2285bdedd5637227888c9ae94",
+    "scripts/enrich-cases.mjs": "0fe44e9bca57d8b6a7ec4fb0f6ed07da0d523eb0b279217dbd1fd348eb91c0d0",
+    "scripts/render-studies.mjs": "e08cca8a9e25549364354dc7f24fcd1f5a0de2246f346a56affe883eef0a6a15",
+    "scripts/record-flex-version.mjs": "440089df4c55e741a5659f9ff04b594490689fbf8ca87f5ba45c5a60c7c352d5",
+    "scripts/update-review-progress.mjs": "7fa29eec452a3a2ea25ea7bf5a707f35e132b62a0574ce254f19e736b1c39ab1",
+    "scripts/verify-portfolio.py": "2391fa3ccef32e67b45d22eb7dc72f9048bdfebcb331257fd0d7fb9368fa59e0",
+    "tests/study-ui.test.mjs": "5de4b108bcbbb294b25d0e359a3d79b58ef8a0cea40efcf2e2f86ee5c6b638cc",
+    "public/projects/flex-academy/index.html": "ba1bf326791bd53beb4ba8cf42533ead143308e5b99bcafc4452fa4528c98322",
+    "public/projects/flex-academy/study.html": "dad0b9d3869b9816165561021e92e00fc923c9f5cf006b1ef0e3d9fc4c3850ed",
+    "public/projects/flex-academy/flex-case.css": "6e038cb97f7f329ce5c5dced0ee5eeeba9afcd614571764bd30ff24de0310359",
+    "public/projects/flex-academy/delivery-status.json": "2011d5bb0c6b8cecdf163b439ca5e9b83627b130f498a46b052f73ae762931b1",
+    "public/projects/experience-lab.js": "aa770aed6c876f60c736059f56fdf8caf2f16f69481911ab733d2fbf6fcdb2f2",
+    "public/projects/experience-lab.css": "679b4164282c6c7e68fffa62caf2e2a46c836427a54417b7ceb12ff5ee3eb82e",
+    "public/projects/flex-events.js": "6eb5c7a3a2e345ff9cee67d57ef889e2aa88a6785ed59ea5f2a2e3b062326158"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "35ce49acc9f411fc7d67c01c6995cd75b37da9e8ff576ca5601493eb9fb85698",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 63,
+      "In progress": 46,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "changedRangesVisuallyReviewed": true,
+    "flexCompleted": 3,
+    "flexActions": 10,
+    "sourceHashesMatch": true,
+    "builtFlexSourcesMatch": true
+  },
+  "historicalReferenceVersion": "flex-portfolio-2026-10-22",
+  "recordScope": "Historical r1 verification. Its source and workbook hashes describe that reviewed snapshot, not later r2 edits or a subsequently overwritten workbook.",
+  "laterReview": "docs/flex-mobile-motion-verification.json"
+}

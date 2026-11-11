@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-20",
+  "environment": "portfolio_study",
+  "scope": "Local, in-memory demonstration. Nothing is sent to analytics, a registration service or a booking provider. Real results are not collected.",
+  "fields": {
+    "sequence": "Increasing sequence within this page; continues after clearing the visible trace.",
+    "event": "One of the documented sample event names.",
+    "occurredAt": "ISO timestamp from the local browser clock, not server receipt time.",
+    "requestId": "Page-local sample-flex-N identifier; not a production customer or booking ID.",
+    "path": "launch or scale",
+    "goal": "start, systems, fit or not_selected",
+    "scenario": "success, failure, duplicate or unavailable",
+    "source": "Always local_simulation; not a service or analytics delivery receipt.",
+    "qualification": "not_reviewed, met or not_met; explicitly simulated, never inferred.",
+    "invalidFields": "Only name, email or goal identifiers; never their entered values.",
+    "reason": "A documented lifecycle reason when a sample qualified state is revoked.",
+    "realConversion": "Always false in this study."
+  },
+  "events": {
+    "sample_path_selected": "A visitor explicitly chooses Launch or Scale. This is intent, not a conversion.",
+    "sample_form_rejected": "The form cannot continue. Only invalid field identifiers enter the trace.",
+    "sample_request_reviewed": "Valid sample details reach review. No registration or booking has happened.",
+    "sample_confirmation_failed": "The simulated service rejects confirmation. A retry keeps the same local request ID.",
+    "sample_registration_confirmed": "A new Launch request receives a successful sample confirmation, once per local request.",
+    "sample_call_request_confirmed": "A new Scale request receives a successful sample confirmation with a selected time. It remains unqualified until separately reviewed.",
+    "sample_qualification_reviewed": "An explicit demo review records met, not met or not reviewed. Route choice and time selection never imply qualification.",
+    "sample_qualified_booking_confirmed": "A new confirmed Scale request also has an explicit met qualification review.",
+    "sample_qualified_booking_revoked": "A qualified sample is revised, cancelled or given a different qualification decision.",
+    "sample_existing_request_recognized": "The existing-request scenario returns a previous confirmation. It does not add a new conversion.",
+    "sample_confirmation_reused": "A confirmed request is inspected or reconfirmed. It does not add another registration or call request.",
+    "sample_request_revision_started": "Details are reopened. The current sample confirmation and qualification require review again.",
+    "sample_request_cancelled": "The local request is cancelled. This is separate from a new conversion.",
+    "sample_availability_notification_requested": "A page-local notification request is recorded. It is not a booking or a promise of availability."
+  },
+  "productionReadiness": [
+    {
+      "event": "registration_confirmed",
+      "authority": "Approved webinar/registration service",
+      "requirement": "Confirmed service request ID and accepted status. A button click, form review, retry or existing request is not a new registration.",
+      "connection": "Not connected in this study. Approved webinar schedule and delivery-service details are not supplied here."
+    },
+    {
+      "event": "qualified_booking_confirmed",
+      "authority": "Booking service plus a separate qualification record",
+      "requirement": "An accepted booking and an explicit qualification decision under client-approved criteria. A time selection or Scale route alone is insufficient.",
+      "connection": "Not connected. Qualification criteria, review ownership and the production booking service require client approval."
+    },
+    {
+      "event": "webinar_attended / call_attended",
+      "authority": "Attendance record from the approved event/call service",
+      "requirement": "Join attendance to the accepted request ID. Report the cohort, period, denominator and missing attendance records.",
+      "connection": "No attendance integration or real attendance results."
+    }
+  ],
+  "reporting": "Use distinct authoritative service request IDs, a defined acquisition cohort and observation window. Retain cancellations and qualification changes; do not sum repeated confirmation events. Report attendance separately from registration and booking. The local sample IDs cannot prove server deduplication or analytics delivery."
+}

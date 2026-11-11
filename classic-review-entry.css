@@ -1,0 +1,2 @@
+/* Bundle review rules after the original styles in development and production. */
+@import "./public/classic-review.css";

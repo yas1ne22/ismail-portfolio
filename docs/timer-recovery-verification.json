@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Qatar",
+  "scope": "Corrections to the existing Timer Gym browser study and its existing case. Original travel homepage remains active. All changes are local and unpublished.",
+  "previousGoalTurn": "Progress: native Flex and Promptilo narrow tasks plus Nexus export/restore were observed at their recorded source versions. Starting counts were 72 Done, 37 In progress, 71 Needs evidence.",
+  "closedActions": [],
+  "advancedActions": [
+    "A17.06",
+    "A17.08",
+    "A17.09",
+    "A17.10",
+    "A05.09"
+  ],
+  "counts": {
+    "Done": 72,
+    "In progress": 37,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "confirmedRegressionsBefore": [
+    "Automatic phase transition replaced the focused cue checkbox. The DOM identity assertion failed.",
+    "pagehide stopped the interval without settling/rendering pause. A simulated cached pageshow still displayed Running at 00:05 after 1.234 elapsed seconds, where Paused at 00:04 was expected."
+  ],
+  "changes": [
+    "Timer controls mount once. Phase, time, button state and cue feedback update in place so a focused cue control survives a phase boundary.",
+    "Pause, hidden page and page exit settle elapsed time before stopping. Browser-cache return stays visibly paused. Resume retains fractional remaining time and excludes time away.",
+    "Text phase, remaining time, phase position and next phase remain available with colors off and without speech or haptics. The timer role has live announcements off; phase changes use the existing status announcer.",
+    "Optional speech checks the window-bound API. Missing, synchronous failure and asynchronous error disable only the cue. Stale callbacks cannot overwrite a paused or reviewed session. No audibility claim is made.",
+    "Restart review pauses first and shows the retained phase/time. Keep, Escape and close retain the paused session. Only explicit confirmation resets to Ready; it never starts automatically.",
+    "The case distinguishes current browser implementation checks from native background, lock screen, Bluetooth, haptic, assistive-technology and participant evidence."
+  ],
+  "sourceChecks": {
+    "workspaceTests": 153,
+    "passed": 153,
+    "failed": 0,
+    "timerHandlerContracts": [
+      "Timer projects elapsed time at pause and keeps controls stable between ticks",
+      "Timer preserves a focused cue control across an automatic phase change",
+      "Timer settles time before page exit and restores a visibly paused session from the browser cache",
+      "Timer remains readable without color, browser speech or haptics and keeps a useful completion focus",
+      "Timer speech failures disable only the optional cue and preserve the running clock and pause action",
+      "Timer ignores stale speech callbacks after pausing or opening restart review",
+      "Timer restart review retains precise paused time and resets only after explicit confirmation"
+    ],
+    "regressionBefore": {
+      "tests": 2,
+      "passed": 0,
+      "failed": 2
+    },
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 630,
+    "scriptSyntaxChecks": 29,
+    "staticIssues": 0,
+    "builtPublicSourcesMatch": true,
+    "currentFlexManifestHashesMatch": true,
+    "originalHomepageActive": true
+  },
+  "nativeReview": {
+    "timerResult": "Not completed. The Timer navigation attempt was interrupted by a locked Mac before Timer was observed. No Timer native-browser, physical-device, screen-reader or audibility pass is claimed.",
+    "previousReview": "browser-validation-2026-10-24.json retains the earlier Flex/Nexus/Promptilo observations at their original source versions. Its final zoom was explicitly verified 100%. Shared runtime/CSS changes have not received a later native walkthrough.",
+    "osMotion": "The earlier permission question for a temporary macOS Reduce motion change has no answer. No setting change is claimed."
+  },
+  "remaining": "A17.06 stays In progress. Physical-device cues, scalable native text, assistive navigation, audibility and realistic movement comprehension remain unverified. Original ownership/delivery facts, participant research and outcomes remain open where required.",
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "1333b8aae5be7fdc10ab24f34b42ef27bb0df31fa6646af62521e56bdaa47c0d",
+    "docs/portfolio-verification.json": "519e44fe9259f190b2564258a32a4e9669acebfb86943fe56f758644be427118",
+    "scripts/update-review-progress.mjs": "a3882705549650e5d62c889a36b693e7446bc97481b6e5827383a46daee16b00",
+    "scripts/render-studies.mjs": "4d78bd1c17ce33d73a2f50fe16afa05070043a5eac0bd521bf3649b25ee6e23c",
+    "scripts/verify-portfolio.py": "49012c8611e1450255f7bd2f66dde51407fac002886eff5cc3b90a0788791dce",
+    "src/caseReviewContent.js": "7ced655c644b27471a517af2151d9e2336d1a1896cb7e0294b9b6379684868bf",
+    "src/caseEnhancementContent.js": "520ee2cfaf0ace73f348119927423f0d9e07ac0e1269e4220d108cc850e8806b",
+    "src/studyContent.js": "348d16fb40ea03ace65d6a21ac3e6fa46282514b67d8148d1d4552b2c36a1fd8",
+    "tests/study-ui.test.mjs": "85498dbdfff32a0996a1d4f6208735662bf3a001e338994d8107b333898b5e51",
+    "index.html": "1bb5a9aa6a504078482b464d11d166a28c2d7d3722a2217e91eb1bab884c11da",
+    "src/main.js": "f0ffbb13fdffd8b2b6667104bbd6565f6b46d08b9154a953822ad83196e7e1bc",
+    "public/projects/timer-study.js": "a0eab43a8eb25433dca61c9c14239d49ce67a252cf36a72531c8e633ec2b6c3a",
+    "public/projects/timer-gym/study.html": "fe8fb20a559d68f47ca4e820e4d0dd5fc1902a7edb129f041741a557ac9808d2",
+    "public/projects/timer-gym/index.html": "3c60fa05554f64374392f1e5b8f799fa95c9504c93f4c9a553f3d11ff213a3cf",
+    "public/projects/experience-lab.js": "e4bab14e401891a3206d63b70673a8ca63da7b7c81ca8e68996c23197b0f16fd",
+    "public/projects/experience-lab.css": "f3473d749f095d07dcce06285204daa998f093f29dea22f56f8c1fdbfd5039c4",
+    "public/projects/study-models.js": "f0656fe1dcb2aab0247b9697a67002796c9f2abc8851dd1f86ad67f864da1743",
+    "public/projects/flex-academy/delivery-status.json": "e9b1acafafbf365d216e2760106c816be84c260c72a0ac3860969dd3bd313de8",
+    "public/projects/flex-academy/study.html": "0357329545072b05427c356c7fd89f8546a928ea901ae4a57e522c327c7f7ec5",
+    "public/projects/flex-academy/journey.css": "c76aa4e236220e4fe0c1e396f7c0f042057859cfd6037747b40ba42187b4e63b",
+    "public/projects/nexus/study.html": "56099988f9e792b6ae8d4e5d2201b17827046cd4dc70e911d4b923330b6089c6",
+    "public/projects/workspace-study.js": "933f053c054624d1a2dec943caf68a7dda70c67b97d8f1f1eff12ec90f5f1ea8",
+    "public/projects/promptilo/study.html": "5b7830f9d3fd0cf6b382f88a2d8066a5caed977aab868e023a83c602e4bdbff8",
+    "public/projects/promptilo-study.js": "7e9f66670dd665e80eb3c1442c8099287e9399a4c6ff6860fa989a9f10a26eed",
+    "public/projects/voicy-study.js": "018d7d067d35caa21681a5f0953cf7de2548771dc686ea479c95ee77a2e59267",
+    "public/projects/prepflow-study.js": "13a42488094bf373faf5deb1caf78cb2ce8cffd3561bb7f77abd7e89cf475716"
+  },
+  "recordedLogHashes": {
+    "/tmp/ismux-timer-before.log": "ca611a0991f738c454acda015aca419c2e12dff383e4b98c5a80667e3578b5ca",
+    "/tmp/ismux-timer-tests.log": "0c2c3cc07459b5b5cf499471c2e158b9aa03adaf754b1e0341b62a93fc187ec5",
+    "/tmp/ismux-timer-build.log": "edbe3a20cb3c14b63b2e640b80b0fce91417f0f3374f70011e3270cc486e7b85"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "8c54891506d90c519df9cddaf5101ef98bd59dfe6e3ab1f00d7f1656784e53f0",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 72,
+      "In progress": 37,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "editableStatusRecalculationChecked": true,
+    "changedRangesVisuallyReviewed": true,
+    "unrelatedValuesFormulasLayoutValidationPreserved": true,
+    "builtPublicSourcesMatch": true
+  }
+}

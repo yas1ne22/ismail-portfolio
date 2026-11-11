@@ -1,0 +1,34 @@
+/* Quieter case-study styling: fewer decorative marks and plain links. */
+.hero{padding-top:54px}.hero-stage{min-height:430px;margin-top:36px}.hero-ticket{transform:none}.orbit,.floating-note,.stage-label,.hero-channels{display:none}
+.chapter-nav{gap:34px;padding-block:17px}.chapter-nav a,.topbar a,.review-snapshot a,.review-deep-dive a,.review-next a,.closing a,footer a{text-decoration:none!important;border-bottom:0!important}
+.chapter{padding-top:92px}.section-heading>p:last-child{max-width:650px}.thesis{margin-top:32px}
+.ecosystem{grid-template-columns:repeat(3,1fr)}.shared-state{grid-column:1/-1;grid-row:1}.channel-node svg,.channel-tabs svg,.decisions article>span,.service-flow i,.rollout i,.test-card li::before,.return-status::before{display:none!important}.channel-node{text-align:left}.channel-node span{margin-top:4px}
+.review-links{margin-top:24px}.case-action{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid var(--line)!important;border-radius:10px;color:var(--ink)!important;background:#fff;font-size:13px!important;text-decoration:none!important}.case-action:hover{border-color:#8ca2b6!important}
+.compact-evidence{padding-block:52px}.compact-evidence p:not(.review-label){margin-bottom:24px}.metric-band{grid-template-columns:1fr 1fr}.review-next{align-items:center}.review-next a{color:var(--ink)!important}
+
+/* Keep the app preview at an actual modern iPhone proportion (393 × 852). */
+.asw-phone{
+  width:min(100%,320px);
+  aspect-ratio:393/852;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  flex:0 0 auto;
+  border-width:6px;
+  border-radius:36px;
+  overflow:hidden;
+}
+.asw-phone-status{padding:8px 15px 5px}.asw-phone-status i{height:15px;width:68px}
+.asw-mobile-nav{padding:11px 16px}.asw-mobile-body{min-height:0;padding:14px 16px 10px;flex:1}
+.asw-mobile-nav>span{visibility:hidden}.asw-mobile-step{display:none}.asw-mobile-body h4{font-size:21px;margin:7px 0}.asw-mobile-body>p{line-height:1.45}
+.asw-mobile-trip{margin:14px 0 10px;padding:12px}.asw-mobile-date{margin-top:10px;padding-top:9px}
+.asw-mobile-trip::after{content:"Économique · Bagage 23 kg";display:block;margin-top:9px;padding-top:9px;border-top:1px solid #dfe6ec;color:#667d91;font-size:9px}
+.asw-mobile-detail{display:none}.asw-mobile-notice{margin:10px 0;padding:9px;font-size:0}.asw-mobile-notice::before{content:"Tarif indicatif, vérifié avant confirmation.";font-size:9px;line-height:1.5}
+.asw-mobile-price{padding:8px 0 10px}.asw-cta{padding:11px 13px}.asw-edit{padding-top:9px}.asw-phone-bottom{display:none}.asw-home{margin:8px auto 5px}
+.design-shot-app .design-shot-stage{min-height:755px}
+.channel-preview[data-channel=app]{grid-template-columns:minmax(320px,.72fr) 1fr;gap:48px}
+.asw-logo{width:62px;height:62px;min-width:62px;flex:0 0 62px;font-size:0;line-height:0;overflow:hidden}
+.asw-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.asw-nav{min-height:82px}
+@media(max-width:600px){.hero{padding-top:32px}.hero h1{font-size:52px}.hero-stage{min-height:410px}.chapter-nav{gap:22px}.chapter{padding-top:64px}.ecosystem{grid-template-columns:1fr}.shared-state{grid-column:1}.channel-node{display:block}.metric-band{grid-template-columns:1fr}}
+@media(max-width:600px){.asw-phone{width:min(100%,300px)}.design-shot-app .design-shot-stage{min-height:0}.channel-preview[data-channel=app]{grid-template-columns:1fr;gap:28px}}

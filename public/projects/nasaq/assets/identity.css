@@ -1,0 +1,41 @@
+/* Nasaq 1.5: the approved Cobalt + Graphite presentation. */
+.topbar{box-shadow:none}
+.brand>img{padding:2px;background:transparent!important;border-radius:0}
+.brand span{font-weight:800}
+.header-actions>.nq-button,.icon-button,.locale-link{border-radius:var(--nq-component-button-radius)}
+.sidebar{background:var(--nq-inverse);color:var(--nq-on-inverse);border-color:var(--nq-inverse-border);box-shadow:none}
+.sidebar .nasaq-portfolio-link,.sidebar .version small,.sidebar .nav-group h2,.sidebar .nav-group h2>a{color:var(--nq-inverse-muted)}
+.sidebar .version .nq-badge{background:var(--nq-inverse-selected);border-color:var(--nq-inverse-border);color:var(--nq-on-inverse)}
+.sidebar .nav-group a{color:var(--nq-inverse-muted);border-radius:var(--nq-radius-sm);font-size:13px;border-color:transparent;min-height:40px}
+.sidebar .nav-group a:hover,.sidebar .nav-group h2>a:hover{background:var(--nq-inverse-selected);color:var(--nq-on-inverse)}
+.sidebar .nav-group a.active,[dir=rtl] .sidebar .nav-group a.active{background:var(--nq-inverse-selected);color:var(--nq-on-inverse);border-color:transparent;border-inline-start:2px solid var(--nq-inverse-accent);box-shadow:none}
+.sidebar .nav-group a.active::after{background:var(--nq-inverse-accent)}
+.sidebar .sidebar-skill{background:transparent;border-color:var(--nq-inverse-border);color:var(--nq-on-inverse);border-radius:var(--nq-radius-sm)}
+.sidebar .sidebar-skill small{color:var(--nq-inverse-muted)}
+.sidebar :is(a,button):focus-visible{outline-color:var(--nq-inverse-accent)}
+.page-head h1{font-weight:800}
+.page-head,.system-hero{border-color:var(--nq-border)}
+.preview,.state-cell,.nq-reference,.nq-explorer,.component-studio,.icon-studio,.start-install,.system-preview,.system-preview-card,.nasaq-area-card,.nasaq-topic-card{border-radius:var(--nq-radius-md);box-shadow:none}
+.explore-controls :is(.nq-input,.nq-select),.component-properties :is(input,select,button),.studio-composer,.studio-starting-points button,.studio-choice,.studio-send{border-radius:var(--nq-radius-md)}
+.system-preview,.explore-canvas,.component-canvas{background-color:var(--nq-surface-subtle);background-image:radial-gradient(var(--nq-border) .65px,transparent .65px)}
+.system-preview-label,.nasaq-art-label{letter-spacing:.03em}
+.nasaq-area-card-copy{padding:20px}
+.nasaq-area-card-title{font-size:17px;font-weight:700}
+.nasaq-area-card-desc{font-size:13px}
+.nasaq-area-card:hover{transform:none;box-shadow:none}
+.nasaq-topic-card:hover{background:var(--nq-selected)}
+.nasaq-artwork{background:var(--nq-inverse)}
+.code-block{background:var(--nq-inverse);color:var(--nq-on-inverse);border-color:var(--nq-inverse-border);box-shadow:none}
+.code-block button{border-color:var(--nq-inverse-border);color:var(--nq-inverse-accent);background:var(--nq-inverse)}
+.code-block button:hover{background:var(--nq-inverse-selected)}
+.component-layers>button[aria-pressed=true],.component-state-chips>button[aria-pressed=true]{background:var(--nq-selected);color:var(--nq-on-selected)}
+.nasaq-glass-caption{background:var(--nq-surface);color:var(--nq-text);backdrop-filter:none;border-color:var(--nq-border);box-shadow:none}
+.nasaq-glass-caption strong{color:inherit}
+.nasaq-glass-caption p{color:var(--nq-muted)}
+.studio-welcome-mark,.studio-avatar,.studio-small-avatar{background:var(--nq-selected);color:var(--nq-on-selected)}
+.studio-icon-tile{background:var(--nq-surface-subtle)}
+.icon-button:hover,.locale-link:hover{background:var(--nq-surface-hover)}
+[data-theme=dark] .brand>img{filter:brightness(0) invert(1)}
+.component-studio :is(input:not([type=checkbox]):not([type=radio]),select,textarea){border-radius:var(--nq-radius-md)}
+[lang=ar] .sidebar .nav-group h2>a{font-weight:700}
+@media(max-width:800px){.sidebar{box-shadow:12px 0 30px #151a221a}.nasaq-area-card-desc{font-size:13px}}

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://bettoumi.cv/sitemap.xml
+Sitemap: https://ismail-bettoumi.com/sitemap.xml

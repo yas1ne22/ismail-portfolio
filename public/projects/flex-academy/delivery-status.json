@@ -1,0 +1,68 @@
+{
+  "id": "flex-portfolio-2026-10-22-r2",
+  "reviewed": "2026-10-22",
+  "reviewLabel": "22 October 2026",
+  "current": {
+    "label": "Current portfolio task study",
+    "href": "study.html",
+    "scope": "Responsive offer context, attributed operating proof, goal choice, validation, illustrative availability, confirmation, retry, changes and cancellation. Page-local sample data; no live registration or booking."
+  },
+  "saved": {
+    "label": "Saved desktop design",
+    "href": "/assets/flex/figma-desktop.png",
+    "scope": "Landing-page hierarchy, operating story and visual composition. Original design date and approval status are unconfirmed."
+  },
+  "figma": {
+    "label": "Supplied Figma file",
+    "href": "https://www.figma.com/design/ISnJ5tL4IaLlsm8m5KSRw2/FLEX-academy---saad?node-id=7-2",
+    "scope": "External source reference. Current contents, access and parity with the saved image have not been verified in this review."
+  },
+  "action": {
+    "background": "#254DD7",
+    "foreground": "#FFFFFF",
+    "ratio": 6.727592719710713,
+    "scope": "Default and hover colors on the current study. Other bounded source states are in the contrast record."
+  },
+  "decisions": [
+    [
+      "Audience priority",
+      "The landing-page image prioritizes the beginner webinar and keeps an operator route nearby.",
+      "The later portfolio study adds a concise offer opening and two explicit goals. A direct opening action reaches the route selector. This is a new portfolio hierarchy, not a client-approved revision of the saved landing page."
+    ],
+    [
+      "Proof and content",
+      "The image includes the operating story, programme content and testimonial slots.",
+      "The study links short attributed company descriptions to their sources, then demonstrates forms and booking behavior. It omits unapproved testimonial and programme claims. Learner outcomes and approved offer terms remain unavailable."
+    ],
+    [
+      "Commitment",
+      "The saved composition shows webinar and call actions, without proving their completion.",
+      "Sample review, confirmation, failure, retry and cancellation are inspectable. Dates are illustrative; no event or appointment is reserved."
+    ],
+    [
+      "Action color",
+      "The design-system document records #5070FE. The earlier HTML direction uses #405BD7. Neither is a verified live Figma state.",
+      "The current study uses #254DD7 with white labels (6.73:1) for default and hover. This is a scoped source check; full rendered-state and Figma parity remain unverified."
+    ],
+    [
+      "Small screens",
+      "The saved reference is a desktop composition; it does not establish a mobile conversion flow.",
+      "The current study stacks offer context, source-attributed proof, route choice and the active form. Long programme and testimonial sections are omitted. Prototype review controls are collapsed, form actions remain in normal flow, and entered details survive validation and recovery."
+    ],
+    [
+      "Date and authority",
+      "Original delivery dates, collaborators and client approval still require confirmation.",
+      "This later portfolio iteration is the reference for the demonstrated interaction states, reviewed 22 October 2026. It is not a client-approved release."
+    ]
+  ],
+  "scope": "A dated local portfolio reference and comparison. This record does not establish client approval, an original delivery date, live Figma parity or production results.",
+  "sourceHashes": {
+    "public/projects/flex-academy/study.html": "0357329545072b05427c356c7fd89f8546a928ea901ae4a57e522c327c7f7ec5",
+    "public/projects/flex-academy/journey.css": "c76aa4e236220e4fe0c1e396f7c0f042057859cfd6037747b40ba42187b4e63b",
+    "public/projects/experience-lab.js": "e4bab14e401891a3206d63b70673a8ca63da7b7c81ca8e68996c23197b0f16fd",
+    "public/projects/experience-lab.css": "f3473d749f095d07dcce06285204daa998f093f29dea22f56f8c1fdbfd5039c4",
+    "public/projects/flex-events.js": "6eb5c7a3a2e345ff9cee67d57ef889e2aa88a6785ed59ea5f2a2e3b062326158",
+    "public/projects/flex-academy/index.html": "7bafc9c19af04d92597b74cec0265c1a1aa00b1bd6fa35f9ffe8e9c3c8ef5b71",
+    "public/assets/flex/figma-desktop.png": "2265d2fd6ddb9d3b0d83cb7eead31c31fff1f6676ac13e7e59b850bc4ae536e3"
+  }
+}

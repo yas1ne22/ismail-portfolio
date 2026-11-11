@@ -1,0 +1,20 @@
+/* Nasaq 1.5 styling for its contribution guide and evaluation examples. */
+body{background:var(--nq-bg);color:var(--nq-text);font-family:Inter,Arial,sans-serif}
+a{color:var(--nq-link)}
+.lab-nav,.lab-table :is(th,td),.lab-item,.lab-event-trace li{border-color:var(--nq-border)}
+.lab-main>h1,.lab-card :is(h2,h3){font-weight:700;color:var(--nq-text)}
+.lab-intro,.lab-eyebrow,.lab-card p,.lab-panel :is(p,li),.lab-field-help,.lab-item small,.lab-table :is(th,td,caption),.lab-version,.lab-status,.lab-step{color:var(--nq-muted)!important}
+.lab-card,.lab-measurement{background:var(--nq-surface);border-color:var(--nq-border);border-radius:var(--nq-radius-md)}
+.lab-panel,.lab-boundary{background:var(--nq-selected);color:var(--nq-on-selected);border-color:var(--nq-action);border-radius:var(--nq-radius-md)}
+.lab-label{color:var(--nq-text)}
+.lab-field{background:var(--nq-surface);color:var(--nq-text);border-color:var(--nq-border-strong);border-radius:var(--nq-radius-md)}
+.lab-field[aria-invalid=true],.lab-error{border-color:var(--nq-error);color:var(--nq-error)!important}
+.lab-button{background:var(--nq-action);color:var(--nq-on-action);border-color:transparent;border-radius:var(--nq-radius-md)}
+.lab-button:hover:not(:disabled){background:var(--nq-action-hover)}
+.lab-button.secondary,.lab-option,.lab-item button{background:var(--nq-surface);color:var(--nq-text);border-color:var(--nq-border-strong);border-radius:var(--nq-radius-md)}
+.lab-option[aria-pressed=true]{background:var(--nq-selected);color:var(--nq-on-selected);border-color:var(--nq-action)}
+.lab-button.danger{background:var(--nq-surface);color:var(--nq-error);border-color:var(--nq-error)}
+.lab-confirmation{background:color-mix(in srgb,var(--nq-success) 10%,var(--nq-surface));border-color:var(--nq-success);color:var(--nq-success)}
+.lab-stats>div,.lab-empty,.lab-transcript{background:var(--nq-surface-subtle);color:var(--nq-text);border-color:var(--nq-border)}
+:is(button,a,input,select,textarea,summary):focus-visible{outline-color:var(--nq-focus)}
+[lang=ar],[dir=rtl].nasaq-demo{font-family:Almarai,Arial,sans-serif}

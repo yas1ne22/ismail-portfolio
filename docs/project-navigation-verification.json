@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-22",
+  "nativeObservedDate": "2026-10-21",
+  "scope": "Overnight local navigation and portfolio-positioning update. Original homepage retained; no deployment.",
+  "previousGoalTurn": "Progress: six opening/curation fixes were implemented and verified, and the workbook was updated to 57 Done. This pass changes source and completes four additional original criteria.",
+  "closedActions": [
+    "A01.06",
+    "A01.07",
+    "A02.07",
+    "A02.09"
+  ],
+  "counts": {
+    "Done": 61,
+    "In progress": 48,
+    "Needs evidence": 71
+  },
+  "changes": [
+    "A secondary six-project exploration index is linked beneath Veyra in the existing More Case Studies section. The homepage still has the original seven curated project entries.",
+    "All 12 enriched cases use the correct homepage row or exploration-index row. Legacy root-only return buttons and study/protocol return links are normalized too. Nasaq retains its own existing return implementation.",
+    "The index remembers ordinary-link origins with replaceState and restores only validated project entries on pageshow/hashchange. Modified clicks and unavailable history access retain native navigation.",
+    "Six formerly fixed case headers now occupy normal flow with sticky positioning. This prevents the new review navigation from sitting beneath them. PrepFlow was visually checked after the correction.",
+    "Nasaq’s 18-component and 326-token counts are stated as local delivery scope next to a dated release-status label. Two background sentences appear under Experience, within the existing timeline."
+  ],
+  "sourceChecks": {
+    "inventory": {
+      "components": 18,
+      "typedTokens": 326
+    },
+    "inventoryStatement": "I designed an Arabic-first library with 18 components, 326 typed tokens and an Icon Studio conversation flow.",
+    "statusReviewDate": "2026-10-21",
+    "careerIntroduction": "My marketing background made me attentive to how people discover, evaluate and return to a product. I bring that perspective into journey and interface decisions, using wireframes and working prototypes to make the flow concrete for a shared review.",
+    "caseReturns": [
+      {
+        "project": "andalus",
+        "returnHref": "/#work-andalus"
+      },
+      {
+        "project": "flex-academy",
+        "returnHref": "/#work-flex"
+      },
+      {
+        "project": "veyra",
+        "returnHref": "/#work-veyra"
+      },
+      {
+        "project": "design-handoff",
+        "returnHref": "/#work-design-handoff"
+      },
+      {
+        "project": "design-system-doctor",
+        "returnHref": "/#work-design-system-doctor"
+      },
+      {
+        "project": "nexus",
+        "returnHref": "/#work-nexus"
+      },
+      {
+        "project": "prepflow",
+        "returnHref": "/projects/index.html#work-prepflow"
+      },
+      {
+        "project": "promptilo",
+        "returnHref": "/projects/index.html#work-promptilo"
+      },
+      {
+        "project": "skinny",
+        "returnHref": "/projects/index.html#work-skinny"
+      },
+      {
+        "project": "timer-gym",
+        "returnHref": "/projects/index.html#work-timer-gym"
+      },
+      {
+        "project": "voicy",
+        "returnHref": "/projects/index.html#work-voicy"
+      },
+      {
+        "project": "aevis",
+        "returnHref": "/projects/index.html#work-aevis"
+      }
+    ],
+    "archiveContrastChecks": [
+      {
+        "state": "ink",
+        "foreground": "#17160f",
+        "background": "#ffffff",
+        "ratio": 18.13325335075053,
+        "minimum": 4.5
+      },
+      {
+        "state": "body",
+        "foreground": "#434445",
+        "background": "#ffffff",
+        "ratio": 9.760897786620054,
+        "minimum": 4.5
+      },
+      {
+        "state": "link",
+        "foreground": "#254dd7",
+        "background": "#ffffff",
+        "ratio": 6.727592719710713,
+        "minimum": 4.5
+      }
+    ],
+    "scope": "Source/DOM only. Browser and physical-device checks are separate."
+  },
+  "sourceHashes": {
+    "src/classicPortfolio.js": "8e29da7a5476fab18711eadbb93d769ba99ffea70d6eb8c6f8534c0f1b3bf5c2",
+    "src/portfolioContent.js": "fd89e6f954e6c07838ff8bee33d4609e2ee7ca6e4c457c3957ccb48e864d22ec",
+    "src/caseReviewContent.js": "04621e042d93e8fad3bbb1fd819f7beacb9781aae69013dce534e81c6bb9e173",
+    "public/classic-review.css": "753813ccd48b888855e61dc67597cf42b7522d3034e121dcd609fbfed9642e53",
+    "public/projects/index.html": "a716fdd4ec5ca46ffa6c088f0901b5f215f9a8d7919871c07e216aa33f70ab1b",
+    "public/projects/project-index.js": "b7c0248c87dbecc29d2e34704aa18a4619a83db7eb4537c9de0474513d1966a2",
+    "public/projects/project-index.css": "b7f0831b9684a63d98824bd596f1b02eb4cbbcfa7e901968da006ab0987ec620",
+    "public/projects/case-review.css": "e00ed1741316b1730fd7ff7cba1e14a3b895c9887a6ab6c8a310356bf2dbf784",
+    "public/projects/case-navigation.js": "46fa69e3609164f8d685304a407358f1fe4df58e2be503ae2484c18046cbda79",
+    "scripts/render-project-index.mjs": "3896275701e217c2582a3dafea3e96701446a7b31b70a4cb63efa7b28907802d",
+    "scripts/enrich-cases.mjs": "ca5af554ba97f9044aeede3497df6f79c5a625e95b277317c4df1fcdd6cb9a83",
+    "tests/project-index.test.mjs": "5a63c363748558357328ac1a3b9eb5a3410d371ceedf8e403fbfb4a177d214f3",
+    "public/cv.html": "d72201a6df3b734cc62f4ea724fdc71054839c529a498465bb4c0e00e02fc593",
+    "public/projects/nasaq/downloads/tokens.json": "0d31f32140eefc83dddbbb4714b7b8f0cc5377726dec182337d9502b9ae55ae9",
+    "public/projects/nasaq/downloads/mcp/catalog.en.json": "fc3ad0c74ce5d12661ecaec21e268598ce58771f653597cf5654837e1aa8e826",
+    "public/projects/nasaq/case-study-en.html": "2bb7629f91f58fc069c992e0e51b54d38905b8633325e26ae28810a748fe5858",
+    "public/projects/nasaq/en.html": "d4652b73721726c833cc48b4de333d976a5b79e9705718f3bc9cbf7d5ccd9315",
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "public/projects/andalus/index.html": "8e30ea8da0b9ae24c6ec7a51b79c761a13af329e82c10747edca607be5d57fff",
+    "public/projects/flex-academy/index.html": "460930909f33e4531b62e48c15775876c1ff36681a3a0db44ad61ab569356228",
+    "public/projects/veyra/index.html": "3dbcf5d7779ed55e98ebd6536cfd55513fcb8192fd6b6b0e0094c68cfe26a27c",
+    "public/projects/design-handoff/index.html": "fa34dd5f872b94df231bdee9c3d95c163b2b05f84154e6573ed37e10e23bd338",
+    "public/projects/design-system-doctor/index.html": "6ea838dd1ba9227a8f0224a988f994fbfb0f1879ab0afe50de7f79b04b0ef29b",
+    "public/projects/nexus/index.html": "698f2f723180917b0033b45ad7a33ea493d59dea5647d838877b3ed3d574c242",
+    "public/projects/prepflow/index.html": "786fae9a51c8056c8960173f9fffa5bc6adcc521690f4c58a569ed22272bb91e",
+    "public/projects/promptilo/index.html": "48578abcc29f28f7b5a38aa3bf3ce9ad5bed2a56939e42221029dd8326fb0f50",
+    "public/projects/skinny/index.html": "ff01a70d026dcc9fb558e0d1e895d96486d9390a8b55a0c182d476d0fa6b2f03",
+    "public/projects/timer-gym/index.html": "5f2455b66b11baca6dc707975644fce45af397b33ee749430d44384ae568f9c4",
+    "public/projects/voicy/index.html": "4266f07723ce1a7f2fc15b6812d7e5ef726a1d3b8fdf98aedf55976005f72d9c",
+    "public/projects/aevis/index.html": "7464fc025855968d2eaefbdd1511c7ebf6af83d6a9608435604c9adcd0f05ede"
+  },
+  "originalCriteriaPreserved": 180,
+  "checks": {
+    "fullWorkspaceTestsPassed": 117,
+    "fullWorkspaceTestsFailed": 0,
+    "newNavigationContracts": 2,
+    "affectedHomepageNavigationTestsPassed": 8,
+    "productionBuildPassed": true,
+    "staticChecks": {
+      "date": "2026-10-22",
+      "scope": "Static source, local link targets and JavaScript syntax. This does not certify runtime accessibility or user outcomes.",
+      "pages": 45,
+      "localReferencesChecked": 622,
+      "scriptsSyntaxChecked": 21,
+      "issues": []
+    }
+  },
+  "nativeRoundTrips": [
+    {
+      "project": "andalus",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-andalus",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "flex-academy",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-flex",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "veyra",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-veyra",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "design-handoff",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-design-handoff",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "design-system-doctor",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-design-system-doctor",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "nexus",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-nexus",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "prepflow",
+      "caseBodyObserved": true,
+      "returnPath": "/projects/index.html#work-prepflow",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "promptilo",
+      "caseBodyObserved": true,
+      "returnPath": "/projects/index.html#work-promptilo",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": false
+    },
+    {
+      "project": "skinny",
+      "caseBodyObserved": true,
+      "returnPath": "/projects/index.html#work-skinny",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": false
+    },
+    {
+      "project": "timer-gym",
+      "caseBodyObserved": true,
+      "returnPath": "/projects/index.html#work-timer-gym",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "voicy",
+      "caseBodyObserved": true,
+      "returnPath": "/projects/index.html#work-voicy",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "aevis",
+      "caseBodyObserved": true,
+      "returnPath": "/projects/index.html#work-aevis",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true
+    },
+    {
+      "project": "nasaq",
+      "caseBodyObserved": true,
+      "returnPath": "/#work-nasaq",
+      "returnBodyObserved": true,
+      "nativeFocusExplicitlyObserved": true,
+      "returnFrom": "English documentation Buttons page; direct English-case return was recorded in the prior opening review"
+    }
+  ],
+  "browserObservations": [
+    {
+      "browser": "Opera GX",
+      "route": "/projects/index.html",
+      "observed": "Followed the homepage More product explorations link. The secondary index showed six named cases, scope, evidence stage and selected-work navigation in a readable two-column layout. All six cases were opened and returned to their corresponding entries.",
+      "result": "Observed bounded desktop curation/navigation"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/projects/prepflow/index.html",
+      "observed": "The first quick-return click initially hit the overlaid fixed brand header and changed the fragment to #top. After reserving header flow space and normalizing the legacy bottom return, a fresh native visit showed the complete quick navigation below the header. The quick return then reached #work-prepflow with the archive entry visibly outlined.",
+      "result": "Corrected and observed"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/#work-nasaq",
+      "observed": "The homepage displayed the 18-component/326-token design statement, local release 1.4 and status-review date, with the existing Icon Studio preview. Independent file counts agree; the statement does not claim adoption or commercial impact.",
+      "result": "Observed and source-counted"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/#experience",
+      "observed": "The two marketing-to-design sentences were readable below the original Experience heading; the existing employment entries and dates remained.",
+      "result": "Observed"
+    },
+    {
+      "browser": "Opera GX",
+      "route": "/projects/nasaq/en.html#buttons",
+      "observed": "Opened the English case, followed its design-system link to Overview, opened Buttons, then used Portfolio to return with native focus on the Nasaq homepage row.",
+      "result": "Local representative documentation path passed; public deployment remains open"
+    }
+  ],
+  "unsuccessfulOrIncomplete": [
+    "Mac locking temporarily interrupted access. Native checks resumed after the Mac became available; no lock bypass was performed.",
+    "Some immediate snapshots were blank. These were not counted as successful visits. The same pending route was inspected when its readable body became available.",
+    "An extra native browser-Back check was interrupted by a later Mac lock before it could run. Browser-history restoration is covered by the actual-handler contract, but that extra native check is not claimed.",
+    "The exported live observation array contained 11 route records. Design System Doctor and Nexus are included here from their separate successful native tool results, which also explicitly showed focus on their homepage rows."
+  ],
+  "remaining": [
+    "Public deployment and verification of Nasaq navigation; all dynamic documentation destinations beyond the representative routes.",
+    "Complete keyboard, assistive-technology, mobile, enlarged-text and rendered contrast review. Archive color ratios are bounded source checks only.",
+    "Role/work-arrangement preferences and attributable analytics, participant findings or client feedback requested from the user. No missing outcomes were invented."
+  ],
+  "workbookVerification": {
+    "all180ExportedStatusesChecked": true,
+    "exportedCounts": {
+      "Done": 61,
+      "In progress": 48,
+      "Needs evidence": 71
+    },
+    "all18AreaCountsAndEditableDependencyChecked": true,
+    "formulaErrorMatches": 0,
+    "changedViewsVisuallyReviewed": true,
+    "xlsxArchiveValid": true,
+    "sha256": "516112334f544907701e93abf5cf0273d22bf8ed20b381819afb4c224a507843"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Qatar",
+  "scope": "In-place Promptilo editorial/public consistency and source-detail return. Original travel homepage retained; no replacement page or deployment.",
+  "previousGoalTurn": "Progress: completed PrepFlow first-use and interrupted-session design demonstrations, fixed recipe-state carryover and verified 136 tests plus build/static checks. This turn continues from the resulting 67/42/71 audit.",
+  "closedActions": [
+    "A15.06"
+  ],
+  "advancedActions": [
+    "A15.07"
+  ],
+  "counts": {
+    "Done": 68,
+    "In progress": 41,
+    "Needs evidence": 71
+  },
+  "originalCriteriaPreserved": true,
+  "changes": [
+    "A draft review condition is separate from the explicit applied editorial decision. Changing a draft cannot erase the public result.",
+    "The public card and source-detail view show the same applied decision, reason and revision. A local history retains prior decisions; repeated application is idempotent.",
+    "A fictional unavailable-source candidate remains held and unsavable. A duplicate points to the existing canonical resource without creating another trusted item or changing original metadata/saves.",
+    "Source inspection and canonical/submission comparison retain query, format and saves. Closing details restores the original result action or search fallback.",
+    "The actual save handler rejects an unapproved candidate independently of its disabled UI control. External original-source links explicitly identify a new tab.",
+    "The case and walkthrough identify the dated local study, fictional conditions, page-local reset and absence of actual verification or publication. Responsive text/wrapping changes are source changes, not a mobile visual pass."
+  ],
+  "regressions": {
+    "before": "Two new actual-handler tests reproduced (1) a held candidate detail showing the original unapproved state instead of its applied hold and (2) a draft-condition change erasing an applied duplicate decision.",
+    "after": "Both regressions and four other Promptilo contracts pass, covering canonical preservation, guarded saving, revision history, idempotence and filtered detail return focus."
+  },
+  "sourceChecks": {
+    "workspaceTests": 140,
+    "failures": 0,
+    "promptiloActualHandlerContracts": 6,
+    "newContracts": 4,
+    "productionBuild": "passed",
+    "staticPages": 45,
+    "localReferences": 630,
+    "scriptSyntaxChecks": 27,
+    "staticIssues": 0,
+    "currentFlexManifestHashesMatch": true,
+    "changedBuiltSourcesMatch": true,
+    "originalHomepageActive": true
+  },
+  "completionScope": {
+    "A15.06": "The requested design demonstration is complete from sample editor decision to matching public feedback and canonical resolution. No real source uptime, moderation operation, connected publication or participant understanding is claimed.",
+    "A15.07": "Advanced but open: actual handlers preserve search/filter/saved context and close-event focus. Native narrow-width legibility and full task completion have not been observed."
+  },
+  "nativeBrowserReview": {
+    "newNativeChecksPassed": 0,
+    "latestAttempt": "The current Opera GX binding returned cgWindowNotFound. No rendered, mobile, screen-reader or physical-device pass was inferred.",
+    "pendingCleanup": "Prior enlarged Flex preview zoom reset remains unverified; restore View > Actual Size when native access returns."
+  },
+  "remaining": [
+    "Native narrow-width Promptilo query/filter/detail/canonical/return review and assistive-technology checks.",
+    "Actual intended audience, discovery/classification/relevance/trust research, historical iteration, project dates and useful-return evidence.",
+    "Previously recorded portfolio-wide browser/device, ownership, research and outcome criteria remain open."
+  ],
+  "sourceHashes": {
+    "docs/portfolio-audit-source.json": "37f13ca79e2c26012b96fb0e4315d0a66fe0aaf7eb91b5d1cde2fb33a5e67a00",
+    "docs/portfolio-review-progress.json": "99bd71835627607363bf9d7ef2ec1d2462f8b192b8b39f6553c69c04f7fc86e1",
+    "docs/portfolio-verification.json": "86ec545a5624d273141a59053a4e96a2d3beec583e64db004dbb32c4a1c89d85",
+    "src/caseEnhancementContent.js": "ea2f0937ad91560eeb12ad7fa2d51f56f89d383a3f3ae1c2174bba105358ba6b",
+    "src/caseReviewContent.js": "600290eb59cfe93296c9227b4e891f18b1d6498bcc61d75be6069b61eecf2469",
+    "src/studyContent.js": "9c638755d2768119cccde02b2a46141522a97139ca1d20f2b8a6d501a2162578",
+    "scripts/update-review-progress.mjs": "21f3221aca84f72f7b0e1cc2d074bc42ee2c3cb9592c58f320a53df83016370e",
+    "scripts/verify-portfolio.py": "86354cdc81f8a905129fa47183c8f55beb3547167d6ae073099f30c332338962",
+    "tests/study-ui.test.mjs": "c1f75e6341807a19a84f6c5877ad95e2ef0fb24f9683f35ec5de6df2deedb03e",
+    "public/projects/promptilo/study.html": "5b7830f9d3fd0cf6b382f88a2d8066a5caed977aab868e023a83c602e4bdbff8",
+    "public/projects/promptilo/index.html": "1f9df2eebe5579eb5da3e0a594f350849dcda1af1348015f470889da6a36db97",
+    "public/projects/promptilo-study.js": "7e9f66670dd665e80eb3c1442c8099287e9399a4c6ff6860fa989a9f10a26eed",
+    "public/projects/experience-lab.js": "1f3d583ba80ef2f87ced51a83200f39505803e78d4ffd3626441d88992b57fc4",
+    "public/projects/experience-lab.css": "e495d494d238238713b526f75edc2af466524f7b8b956ded95fde3f1f4b7bebd",
+    "public/projects/flex-academy/delivery-status.json": "6ead4a36895723cad539de57a74c6d7069051757ad3dc33ade23583363c3e318"
+  },
+  "workbookVerification": {
+    "path": "/Users/reb/Desktop/ISMUX/outputs/portfolio-review-2026-10-20/Ismail_Bettoumi_Portfolio_Review.xlsx",
+    "sha256": "649677dc42ea8a05057c0091d78d1fade2be18b736a6ca273e99797f42dbb0a4",
+    "actionsChecked": 180,
+    "counts": {
+      "Done": 68,
+      "In progress": 41,
+      "Needs evidence": 71
+    },
+    "originalColumnsPreserved": true,
+    "all18AreaCountsMatch": true,
+    "formulaErrors": 0,
+    "editableStatusRecalculationChecked": true,
+    "changedRangesVisuallyReviewed": true,
+    "builtSourcesMatch": true
+  },
+  "verificationStatus": "Earlier 24 October Promptilo snapshot. Later Voicy work changed shared files and the live audit/workbook. Original hashes and observations remain historical; current checks are in voicy-setup-verification.json."
+}

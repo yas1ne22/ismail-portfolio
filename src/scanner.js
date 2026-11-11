@@ -5,7 +5,7 @@ import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.j
 // while a keyboard button offers the same scanning sequence without dragging.
 export function mountScanner(host, { onSuccess, onStatus, reduced = false }) {
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color("#faf5f5");
+  scene.background = new THREE.Color("#ffffff");
   const camera = new THREE.PerspectiveCamera(25, 1, 0.1, 50);
   const renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -200,12 +200,12 @@ export function mountScanner(host, { onSuccess, onStatus, reduced = false }) {
   const cardCanvas = boardingPass();
   const cardTexture = texture(cardCanvas);
   cardTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
-  const qatarLogo = new Image();
-  qatarLogo.onload = () => {
-    cardTexture.image = boardingPass(qatarLogo);
+  const airlineLogo = new Image();
+  airlineLogo.onload = () => {
+    cardTexture.image = boardingPass(airlineLogo);
     cardTexture.needsUpdate = true;
   };
-  qatarLogo.src = "/assets/qatar.jpg";
+  airlineLogo.src = "/assets/air-algerie.svg";
   const cardMat = new THREE.MeshPhysicalMaterial({
     map: cardTexture,
     roughness: 0.58,
@@ -535,7 +535,7 @@ export function mountScanner(host, { onSuccess, onStatus, reduced = false }) {
     },
   };
 }
-function boardingPass(qatarLogo) {
+function boardingPass(airlineLogo) {
   const c = document.createElement("canvas");
   c.width = 1536;
   c.height = 620;
@@ -543,9 +543,7 @@ function boardingPass(qatarLogo) {
   const ink = "#111317",
     muted = "#4e5358",
     paper = "#fcfcfb",
-    silver = "#555b60",
-    silverLight = "#b7bdc1",
-    burgundy = "#5c0632",
+    airlineRed = "#e2231a",
     rule = "#c9c5c2";
 
   ctx.clearRect(0, 0, c.width, c.height);
@@ -562,25 +560,11 @@ function boardingPass(qatarLogo) {
   stock.addColorStop(1, "#fafbfb");
   ctx.fillStyle = stock;
   ctx.fillRect(0, 118, c.width, c.height - 118);
-  const header = ctx.createLinearGradient(0, 0, c.width, 0);
-  header.addColorStop(0, "#4e555a");
-  header.addColorStop(0.18, "#777e83");
-  header.addColorStop(0.42, silverLight);
-  header.addColorStop(0.57, "#70777c");
-  header.addColorStop(0.82, "#aeb4b8");
-  header.addColorStop(1, silver);
-  ctx.fillStyle = header;
+  ctx.fillStyle = "#ffffff";
   ctx.fillRect(0, 0, c.width, 118);
-  const sheen = ctx.createLinearGradient(300, 0, 980, 118);
-  sheen.addColorStop(0, "#ffffff00");
-  sheen.addColorStop(0.45, "#ffffff08");
-  sheen.addColorStop(0.5, "#ffffff52");
-  sheen.addColorStop(0.55, "#ffffff0a");
-  sheen.addColorStop(1, "#ffffff00");
-  ctx.fillStyle = sheen;
-  ctx.fillRect(0, 0, c.width, 118);
-  ctx.fillStyle = "#ffffff55";
-  ctx.fillRect(0, 116, c.width, 2);
+  ctx.fillStyle = airlineRed;
+  ctx.fillRect(1195, 0, 341, 118);
+  ctx.fillRect(0, 114, c.width, 4);
 
   const text = (s, x, y, size = 16, color = ink, font = "MB Sans", weight = 400) => {
     ctx.fillStyle = color;
@@ -593,28 +577,18 @@ function boardingPass(qatarLogo) {
   const label = (s, x, y) => mono(s.toUpperCase(), x, y, 12, muted, 500);
   const value = (s, x, y, size = 25) => text(s, x, y, size, ink, "MB Sans", 500);
 
-  // Silver Business Class masthead, modeled on Qatar's printed pass.
-  text("درجة رجال الأعمال", 46, 40, 17, "#fff", "MB Sans", 400);
-  text("Business Class", 46, 78, 29, "#fff", "MB Sans", 400);
-  ctx.fillStyle = "#25357b";
-  ctx.beginPath();
-  ctx.arc(573, 59, 28, 0, Math.PI * 2);
-  ctx.fill();
-  text("oneworld", 550, 64, 11, "#fff", "MB Sans", 500);
-  ctx.fillStyle = "#fff";
-  ctx.beginPath();
-  ctx.arc(657, 58, 30, 0, Math.PI * 2);
-  ctx.fill();
-  if (qatarLogo?.complete) {
-    ctx.drawImage(qatarLogo, 637, 38, 40, 40);
+  // Air Algérie's official bilingual wordmark on a clean red-and-white pass.
+  if (airlineLogo?.complete && airlineLogo.naturalWidth) {
+    ctx.drawImage(airlineLogo, 46, 24, 390, 69.34);
   } else {
-    text("✦", 642, 72, 35, burgundy, "MB Sans", 500);
+    text("AIR ALGÉRIE", 46, 72, 38, airlineRed, "MB Sans", 600);
   }
-  text("QATAR", 701, 58, 31, "#fff", "MB Sans", 400);
-  text("AIRWAYS  القطرية", 703, 82, 13, "#fff", "MB Sans", 400);
-  text("بطاقة الصعود للطائرة", 1000, 40, 16, "#fff", "MB Sans", 400);
-  text("Boarding Pass", 1000, 78, 28, "#fff", "MB Sans", 400);
-  mono("BUSINESS CLASS", 1240, 66, 18, "#fff", 500);
+  text("بطاقة الصعود للطائرة", 780, 36, 17, airlineRed);
+  text("CARTE D’EMBARQUEMENT", 780, 66, 23, ink, "MB Sans", 600);
+  mono("BOARDING PASS", 780, 92, 13, muted);
+  text("درجة رجال الأعمال", 1231, 35, 17, "#fff");
+  mono("CLASSE AFFAIRES", 1231, 65, 21, "#fff", 600);
+  mono("BUSINESS CLASS", 1231, 91, 14, "#fff");
 
   ctx.strokeStyle = "#b8b4b1";
   ctx.lineWidth = 2;
@@ -635,12 +609,12 @@ function boardingPass(qatarLogo) {
     ctx.fillRect(x, 156, w, 353);
     x += w + 2 + (seed % 2);
   }
-  mono("QR2026 / 01A", 42, 544, 10, muted, 500);
+  mono("AH2026 / 01A", 42, 544, 10, muted, 500);
 
   // Passenger and flight information.
-  label("NAME OF PASSENGER / اسم المسافر", 132, 157);
+  label("PASSAGER / اسم المسافر", 132, 157);
   value("ISMAIL BETTOUMI", 132, 198, 31);
-  label("DEPARTURE / المغادرة", 571, 157);
+  label("DÉPART / المغادرة", 571, 157);
   value("0835", 571, 198, 31);
   label("DATE / التاريخ", 804, 157);
   value("21 SEP", 804, 198, 31);
@@ -655,38 +629,38 @@ function boardingPass(qatarLogo) {
     ctx.stroke();
   });
   const fields = [
-    ["BOARDING / البوابة", "0750", 132],
-    ["GATE / البوابة", "A12", 390],
-    ["SEAT / المقعد", "01A", 600],
-    ["FLIGHT / الرحلة", "QR", 802],
+    ["EMBARQUEMENT / الصعود", "0750", 132],
+    ["PORTE / البوابة", "A12", 390],
+    ["SIÈGE / المقعد", "01A", 600],
+    ["VOL / الرحلة", "AH", 802],
   ];
   fields.forEach(([l, v, px]) => {
     label(l, px, 303);
-    value(v, px, 382, v === "QR" ? 43 : 49);
+    value(v, px, 382, v === "AH" ? 43 : 49);
   });
   value("2026", 802, 438, 45);
   mono("SEQ–2017", 606, 453, 13, ink, 500);
 
-  ctx.fillStyle = "#eef1f3";
+  ctx.fillStyle = "#fcecea";
   ctx.fillRect(996, 274, 164, 210);
   label("FROM", 1018, 308);
   value("ALG", 1018, 348, 31);
   label("TO", 1018, 397);
   value("DOH", 1018, 437, 31);
-  mono("BUSINESS", 1018, 470, 13, burgundy, 500);
+  mono("AFFAIRES", 1018, 470, 13, airlineRed, 500);
 
-  mono("PLEASE SLIDE PASS ACROSS READER", 132, 545, 13, burgundy, 500);
+  mono("PLEASE SLIDE PASS ACROSS READER", 132, 545, 13, airlineRed, 500);
   mono("A JOURNEY THROUGH DIGITAL MARKETING & GROWTH", 132, 575, 12, muted, 500);
 
   // Detachable passenger stub.
-  mono("BUSINESS CLASS", 1231, 166, 18, ink, 500);
+  mono("AIR ALGÉRIE", 1231, 166, 18, airlineRed, 600);
   value("ISMAIL", 1231, 207, 22);
   value("BETTOUMI", 1231, 235, 22);
   mono("ALG–DOH", 1231, 283, 24, ink, 500);
   label("SEAT", 1231, 337);
   value("01A", 1231, 378, 30);
   label("FLIGHT", 1366, 337);
-  value("QR2026", 1366, 378, 27);
+  value("AH2026", 1366, 378, 27);
   label("DATE", 1231, 437);
   value("21 SEP", 1231, 476, 25);
   mono("SEQ 2017", 1231, 549, 13, muted, 500);

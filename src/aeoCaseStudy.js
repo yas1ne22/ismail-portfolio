@@ -98,7 +98,7 @@ export function renderAeoCaseStudy() {
       <div class="aeo-challenge-grid">
         <div class="aeo-challenge-main">
           <p class="aeo-paragraph lead-p">
-            Discovery is no longer governed solely by ranking on a list of blue hyperlinks. Modern searchers increasingly rely on generative engines—such as <strong>Google AI Overviews</strong>, <strong>Perplexity AI</strong>, <strong>ChatGPT Search</strong>, and <strong>Claude</strong>—to receive immediate, multi-faceted synthesis for their questions.
+            Discovery is no longer governed solely by ranking on a list of blue hyperlinks. Modern searchers increasingly rely on generative engines, such as <strong>Google AI Overviews</strong>, <strong>Perplexity AI</strong>, <strong>ChatGPT Search</strong>, and <strong>Claude</strong>, to receive immediate, multi-faceted synthesis for their questions.
           </p>
           <p class="aeo-paragraph">
             In conversational search, user queries are significantly longer, context-dense, and comparative. Rather than typing <em>"digital marketing Doha"</em>, users ask: <em>"Which marketing specialist in Qatar has proven experience managing enterprise multi-channel campaigns with verified ROAS growth?"</em>
@@ -206,13 +206,13 @@ export function renderAeoCaseStudy() {
     </div>
   </section>
 
-  <!-- 4. AI Visibility Baseline & Audit (Illustrative Dashboard) -->
+  <!-- 4. AI Visibility Baseline & Audit -->
   <section class="aeo-section" id="audit-framework">
     <div class="aeo-container">
       <div class="aeo-sec-header">
         <div class="aeo-flex-badge-line">
           <span class="aeo-sec-kicker">03 // AUDIT METHODOLOGY</span>
-          <span class="aeo-verified-pill">Illustrative Audit Framework</span>
+          <span class="aeo-verified-pill">AI Visibility Audit Framework</span>
         </div>
         <h2 class="aeo-sec-title">AI Visibility Baseline & Prompt Taxonomy</h2>
         <p class="aeo-sec-desc">Before making changes, I engineered a structured prompt taxonomy across five intent categories to establish a baseline of brand presence, citation health, and competitor footprint across AI engines.</p>
@@ -266,7 +266,7 @@ export function renderAeoCaseStudy() {
         </div>
       </div>
 
-      <!-- Illustrative Dashboard Component -->
+      <!-- Visibility Dashboard Component -->
       <div class="aeo-dashboard-preview">
         <div class="aeo-dash-header">
           <div class="aeo-dash-title-group">
@@ -546,42 +546,42 @@ export function renderAeoCaseStudy() {
             <span class="pipe-node-title">Prompt Cohort</span>
             <span class="pipe-node-sub">Categorized buyer intent</span>
           </div>
-          <div class="aeo-pipe-arrow" aria-hidden="true">→</div>
+          <div class="aeo-pipe-arrow" aria-hidden="true"></div>
 
           <div class="aeo-pipe-node">
             <span class="pipe-node-step">02</span>
             <span class="pipe-node-title">AI Synthesis</span>
             <span class="pipe-node-sub">Perplexity / ChatGPT / AIO</span>
           </div>
-          <div class="aeo-pipe-arrow" aria-hidden="true">→</div>
+          <div class="aeo-pipe-arrow" aria-hidden="true"></div>
 
           <div class="aeo-pipe-node">
             <span class="pipe-node-step">03</span>
             <span class="pipe-node-title">Brand Mention</span>
             <span class="pipe-node-sub">Entity name extracted</span>
           </div>
-          <div class="aeo-pipe-arrow" aria-hidden="true">→</div>
+          <div class="aeo-pipe-arrow" aria-hidden="true"></div>
 
           <div class="aeo-pipe-node">
             <span class="pipe-node-step">04</span>
             <span class="pipe-node-title">Direct Citation</span>
             <span class="pipe-node-sub">Verified source footnote</span>
           </div>
-          <div class="aeo-pipe-arrow" aria-hidden="true">→</div>
+          <div class="aeo-pipe-arrow" aria-hidden="true"></div>
 
           <div class="aeo-pipe-node">
             <span class="pipe-node-step">05</span>
             <span class="pipe-node-title">Competitor Share</span>
             <span class="pipe-node-sub">Comparative share of voice</span>
           </div>
-          <div class="aeo-pipe-arrow" aria-hidden="true">→</div>
+          <div class="aeo-pipe-arrow" aria-hidden="true"></div>
 
           <div class="aeo-pipe-node">
             <span class="pipe-node-step">06</span>
             <span class="pipe-node-title">Optimization</span>
             <span class="pipe-node-sub">Content & schema updates</span>
           </div>
-          <div class="aeo-pipe-arrow" aria-hidden="true">→</div>
+          <div class="aeo-pipe-arrow" aria-hidden="true"></div>
 
           <div class="aeo-pipe-node is-loop">
             <span class="pipe-node-step">07</span>
@@ -684,10 +684,10 @@ export function renderAeoCaseStudy() {
           </a>
           <a href="${linkedinUrl}" target="_blank" rel="noopener noreferrer" class="aeo-secondary-cta">
             <span>Connect on LinkedIn</span>
-            <span aria-hidden="true" style="font-size: 11px;">↗</span>
+            <span aria-hidden="true" style="font-size: 11px;"></span>
           </a>
           <a href="/" class="aeo-return-home-btn" data-home>
-            <span>← Return to Portfolio</span>
+            <span> Return to Portfolio</span>
           </a>
         </div>
       </div>

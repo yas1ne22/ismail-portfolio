@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vanta: Personal Finance UI | Ismail Bettoumi</title>
+  <meta name="description" content="Vanta is a high-contrast personal finance dashboard concept by Ismail Bettoumi.">
+  <link rel="stylesheet" href="/projects/ui-work/showcase.css">
+  <link rel="stylesheet" href="/no-arrows.css">
+<link rel="canonical" href="https://ismail-bettoumi.com/projects/vanta/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vanta: Personal Finance UI | Ismail Bettoumi">
+<meta property="og:description" content="Vanta is a high-contrast personal finance dashboard concept by Ismail Bettoumi.">
+<meta property="og:url" content="https://ismail-bettoumi.com/projects/vanta/">
+<meta property="og:image" content="https://ismail-bettoumi.com/assets/ismail-bettoumi-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vanta: Personal Finance UI | Ismail Bettoumi">
+<meta name="twitter:description" content="Vanta is a high-contrast personal finance dashboard concept by Ismail Bettoumi.">
+<meta name="twitter:image" content="https://ismail-bettoumi.com/assets/ismail-bettoumi-share.png">
+</head>
+<body class="vanta-page">
+<main class="vanta-showcase ui-work-section">
+  <div class="vanta-gallery" aria-label="Vanta finance app screens">
+  <section class="vanta-device" data-vanta data-screen="transactions" aria-label="Interactive Vanta finance app demo">
+    <div class="vanta-status"><strong>9:41</strong><span aria-label="Strong cellular signal, Wi-Fi connected, battery charged"><i data-lucide="signal-high"></i><i data-lucide="wifi"></i><i data-lucide="battery-full"></i></span></div>
+
+    <div class="vanta-screen vanta-transactions">
+      <div class="vanta-appbar"><span aria-hidden="true"></span><span>Transactions</span><button type="button" class="vanta-round vanta-filter" aria-label="Filter transactions"><i data-lucide="sliders-horizontal"></i></button></div>
+      <div class="vanta-section-head"><h2>Transaction Summary</h2><button type="button">Weekly</button></div>
+      <div class="vanta-chart" aria-label="Weekly balance chart from Sunday through Saturday">
+        <div class="vanta-y-axis" aria-hidden="true"><span>30k</span><span>20k</span><span>15k</span><span>10k</span><span>5k</span></div>
+        <svg viewBox="0 0 280 166" role="img" aria-label="Income and expense area chart">
+          <defs><linearGradient id="vantaArea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3f64c" stop-opacity=".84"/><stop offset=".48" stop-color="#9a8f8e" stop-opacity=".38"/><stop offset="1" stop-color="#17121f" stop-opacity=".05"/></linearGradient><linearGradient id="vantaLine" x1="20" y1="0" x2="255" y2="0"><stop stop-color="#817a95"/><stop offset=".48" stop-color="#f3ff76"/><stop offset="1" stop-color="#9c8d84"/></linearGradient></defs>
+          <path d="M20 128C36 92 46 84 61 98S83 78 92 38s19-30 27-8 19 84 36 86 30-58 47-82 28 25 41 28 20 5 25 65v25H20Z" fill="url(#vantaArea)"/>
+          <path d="M20 128C36 92 46 84 61 98S83 78 92 38s19-30 27-8 19 84 36 86 30-58 47-82 28 25 41 28 20 5 25 65" fill="none" stroke="url(#vantaLine)" stroke-width="2"/>
+          <path d="M20 112C48 80 63 76 80 81s27-36 40-16 18 72 37 74 31-74 48-64 20 56 37 49 19-25 26-35" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="2 2"/>
+          <path d="M112 20V146" stroke="#fff" stroke-opacity=".28"/>
+          <circle cx="112" cy="31" r="5" fill="#f5ff9c"/><circle cx="112" cy="58" r="5" fill="#fff"/>
+        </svg>
+        <div class="vanta-tooltip"><small>Tue, 23 Dec</small><strong><i></i>+$17,812.50</strong><strong><i></i>−$23,573.00</strong></div>
+        <div class="vanta-x-axis" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      </div>
+      <div class="vanta-metrics"><article><span>Income</span><strong>$1,532.84 <small>(+0.74%)</small></strong><p>This week</p></article><article><span>Expense</span><strong>$1,221.84 <small>(−0.82%)</small></strong><p>This week</p></article></div>
+      <div class="vanta-list-head"><h2>Recent Transactions</h2><button type="button">See all</button></div>
+      <div class="vanta-list">
+        <article><span class="vanta-avatar va-1">JS</span><p><strong>Jordan Sancho</strong><small>Outgoing</small></p><div><strong>−$2,320.50</strong><small>6:20 pm</small></div></article>
+        <article><span class="vanta-avatar va-2">PP</span><p><strong>Paul Pogba</strong><small>Incoming</small></p><div><strong>+$1,437.50</strong><small>5:36 pm</small></div></article>
+        <article><span class="vanta-avatar va-3">DV</span><p><strong>David Villa</strong><small>Incoming</small></p><div><strong>+$1,523.50</strong><small>5:36 pm</small></div></article>
+        <article><span class="vanta-avatar va-4">GM</span><p><strong>Gerard Martin</strong><small>Outgoing</small></p><div><strong>−$2,464.50</strong><small>4:08 pm</small></div></article>
+      </div>
+    </div>
+
+    <div class="vanta-screen vanta-balance" hidden>
+      <div class="vanta-profile"><span class="vanta-avatar va-3">F</span><p><small>Good morning,</small><strong>Fahim</strong></p><button class="vanta-round" aria-label="Notifications"><i data-lucide="bell"></i></button></div>
+      <div class="vanta-balance-total"><span>Your Balance</span><strong>$35,674<small>.00</small></strong><p>$15,376.50 <small>(1.6%)</small></p></div>
+      <div class="vanta-actions"><button type="button">Send</button><button type="button" class="vanta-add" aria-label="Add money"><i data-lucide="plus"></i></button><button type="button">Request</button></div>
+      <div class="vanta-metrics vanta-balance-metrics"><article><span>Income</span><strong>$2,353.50</strong><p>(+0.74%)</p></article><article><span>Expense</span><strong>$1,294.00</strong><p>(−0.82%)</p></article></div>
+      <div class="vanta-send"><h2>Send Again</h2><div><button type="button" aria-label="Add recipient"><i data-lucide="plus"></i></button><span><i class="vanta-avatar va-2">J</i><small>James</small></span><span><i class="vanta-avatar va-1">W</i><small>Walker</small></span><span><i class="vanta-avatar va-4">C</i><small>Cucurella</small></span><span><i class="vanta-avatar va-3">E</i><small>Endrick</small></span><span><i class="vanta-avatar va-5">R</i><small>Reece</small></span></div></div>
+      <div class="vanta-list-head"><h2>Recent Transactions</h2><button type="button">See all</button></div>
+      <div class="vanta-list"><article><span class="vanta-avatar va-3">AC</span><p><strong>Alvaro Carreras</strong><small>Incoming</small></p><div><strong>+$1,437.50</strong><small>5:36 pm</small></div></article><article><span class="vanta-avatar va-2">SU</span><p><strong>Samual Umtiti</strong><small>Outgoing</small></p><div><strong>−$1,637.50</strong><small>5:36 pm</small></div></article><article><span class="vanta-avatar va-4">JG</span><p><strong>Joan Garcia</strong><small>Incoming</small></p><div><strong>+$1,523.50</strong><small>5:36 pm</small></div></article></div>
+    </div>
+    <button class="vanta-fab" type="button" aria-label="Open Vanta assistant"><i data-lucide="sparkles"></i></button>
+  </section>
+  </div>
+</main>
+<script src="/vendor/lucide.min.js"></script>
+<script type="module">import {mountVanta} from '/projects/ui-work/showcase.js';
+mountVanta(document);
+const transactions = document.querySelector('[data-vanta]');
+const balance = transactions.cloneNode(true);
+balance.removeAttribute('data-vanta');
+balance.dataset.screen = 'balance';
+balance.setAttribute('aria-label', 'Vanta balance screen');
+transactions.querySelector('.vanta-balance')?.remove();
+balance.querySelector('.vanta-transactions')?.remove();
+balance.querySelector('.vanta-balance').hidden = false;
+balance.querySelector('.vanta-fab')?.remove();
+transactions.closest('.vanta-gallery').append(balance);
+window.lucide?.createIcons({attrs:{'aria-hidden':'true'}});
+</script>
+</body></html>

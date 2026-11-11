@@ -1,0 +1,91 @@
+/* Review improvements within the existing window-and-timeline portfolio. */
+.folio-intro { --reveal-opacity: 1; }
+.folio-sub a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.folio-sticky p, .folio-sticky .fs-phone { color: var(--folio-body); }
+#portfolio > .folio-footer .ff-link { color: var(--folio-body); }
+.folio-timeline > .tl-entry { order: 0; }
+#featured-case-studies .case { align-items: center; padding-block: 12px; }
+#featured-case-studies .case.classic-case-preview{display:block;padding:12px 15px 14px}
+.classic-case-heading{display:flex;align-items:center;gap:7px;min-width:0}
+.classic-project-status{display:block;margin-top:6px;color:var(--folio-body);font:400 13px/1.6 var(--folio-sans,system-ui);letter-spacing:0;overflow-wrap:anywhere}
+.classic-project-status time{white-space:normal}
+.classic-more-projects{margin:10px 15px 0;font:400 14px/1.6 var(--folio-sans,system-ui)}
+.classic-more-projects a{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--folio-body);text-decoration:underline;text-underline-offset:4px}
+.classic-more-projects a:focus-visible{outline:2px solid var(--folio-blue);outline-offset:4px}
+.classic-career-note p{margin:10px 0 0;color:var(--folio-body);font:400 14px/1.8 var(--folio-sans,system-ui);letter-spacing:0;overflow-wrap:anywhere}
+.classic-project-visual{margin:14px 0 0;min-width:0}
+.classic-preview-frame{display:block;position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--folio-rule);border-radius:10px;background:#f6f3ec}
+.classic-preview-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.classic-preview-nasaq{aspect-ratio:1510/1470;background:#faf9fc}
+.classic-preview-nasaq img{position:absolute;width:194.31%;max-width:none;height:auto;left:-47.68%;top:-18.37%;object-fit:initial}
+.classic-preview-flex img{object-position:center top}
+.classic-project-visual figcaption{margin-top:8px;color:var(--folio-body);font:400 11.5px/1.6 var(--folio-sans,system-ui);letter-spacing:0;overflow-wrap:anywhere}
+.classic-preview-frame.is-unavailable{display:flex;align-items:center;justify-content:center;padding:24px;color:#34312a;font:13px/1.6 var(--folio-sans,system-ui);text-align:center}
+@media(max-width:600px){
+ .classic-preview-andalus{aspect-ratio:2/3}
+ .classic-preview-andalus img{width:300%;max-width:none;margin-left:-100%;object-position:center}
+}
+
+.classic-email { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-block: 20px 12px; font-size: 14px; overflow-wrap: anywhere; }
+.classic-copy-email, .classic-load-assistant { font: inherit; color: var(--folio-ink); background: var(--surface-card); border: 1px solid var(--folio-rule); border-radius: 7px; min-height: 44px; padding: 9px 12px; cursor: pointer; }
+.classic-copy-status { flex-basis: 100%; font-size: 12px; }
+.classic-copy-status:empty { display: none; }
+.classic-assistant.interview-card { width: 240px; height: auto; padding: 0; }
+.classic-assistant details { padding: 14px; font-size: 13px; line-height: 1.7; }
+.classic-assistant summary { cursor: pointer; min-height: 24px; font-weight: 500; }
+.classic-assistant details p { margin-block: 10px; }
+.classic-assistant a { color: inherit; text-decoration: underline; }
+.classic-assistant elevenlabs-convai { position: static; display: block; }
+.classic-assistant:not(:has(details[open])) elevenlabs-convai { display: none; }
+.classic-fallback { max-width: 620px; margin: auto; padding: 48px 24px; color: var(--folio-ink, #17160f); font-family: var(--folio-sans, system-ui); line-height: 1.7; }
+.classic-fallback nav { display: flex; flex-wrap: wrap; gap: 20px; margin-block: 24px; }
+.classic-fallback a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.classic-fallback section, .classic-fallback article { margin-block: 32px; }
+.classic-fallback h1, .classic-fallback h2, .classic-fallback h3 { line-height: 1.3; margin-block: 16px; }
+#selected-work, #contact, [id^="work-"] { scroll-margin-top: 24px; }
+@media (max-width: 1100px) {
+  .classic-assistant.interview-card { position: static; width: min(100% - 3rem, 560px); margin: 24px auto 0; order: 1; }
+}
+@media (min-width: 1220px) and (max-height: 900px) {
+  .folio-col { padding-top: 24px; gap: 32px; }
+  .folio-window .plane-window { width: 140px; height: 210px; }
+}
+/* Keep the reading area clear when zoom or a small screen reduces its size. */
+@media (max-width: 760px), (max-height: 600px) {
+  #portfolio > .folio-footer-fx { display: none; }
+  #portfolio > .folio-col { padding-bottom: 32px; }
+  #portfolio > .folio-footer {
+    position: static;
+    order: 2;
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: 28px;
+    padding: 20px 24px max(20px, env(safe-area-inset-bottom));
+    border-top: 1px solid var(--folio-rule);
+    background: var(--folio-bg);
+  }
+  #portfolio > .folio-footer .ff-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 12px;
+    width: min(100%, 560px);
+    margin-inline: auto;
+  }
+  #portfolio > .folio-footer .ff-link {
+    justify-content: center;
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .folio .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+#contact a:not(.outro-whatsapp-cta){color:inherit;text-decoration:underline;text-underline-offset:4px}
+.classic-assistant summary:focus-visible,.classic-copy-email:focus-visible,.classic-load-assistant:focus-visible{outline:2px solid var(--folio-blue);outline-offset:4px}

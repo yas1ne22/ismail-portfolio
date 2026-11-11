@@ -1,0 +1,42 @@
+/* Portfolio-wide direction cleanup: links and controls keep their behavior and labels. */
+.case-arrow,
+.landing-page-arrow,
+.aeo-cta-arrow,
+.scan-arrow-svg,
+.path-tip,
+.case-demo-forward,
+.case-token-connector,
+.icon-arrow,
+.arrow-icon,
+.link-arrow,
+.nav-arrow,
+.back-arrow,
+.next-arrow,
+.prev-arrow,
+.aeo-pipe-arrow,
+.ecosystem-arrow,
+.ux-card-arrow,
+.ux-impact-icon,
+.qsp-arrow,
+svg[class*="arrow"],
+[class*="icon-arrow"],
+[class*="arrow-icon"],
+[class*="case-arrow"],
+[class*="cta-arrow"],
+[data-lucide*="arrow"],
+svg:has(use[href*="arrow"]) {
+  display: none !important;
+}
+
+img[src*="/arrow-"],
+img[src*="/arrow."],
+img[src*="-arrow.svg"] {
+  display: none !important;
+}
+
+/* Some arrow-only controls use pseudo-elements instead of markup. */
+[class*="arrow"]::before,
+[class*="arrow"]::after {
+  content: none !important;
+  display: none !important;
+}

@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Nasaq animated design system preview</title>
+  <desc id="description">A bilingual interface system with modular cards moving in three smooth columns.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf7ff"/>
+      <stop offset=".52" stop-color="#eee7ff"/>
+      <stop offset="1" stop-color="#d8cafa"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7b5be7"/>
+      <stop offset="1" stop-color="#5d38c8"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9ecff"/>
+      <stop offset="1" stop-color="#cfbaff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#352348" flood-opacity=".12"/>
+    </filter>
+    <clipPath id="showcase-clip">
+      <rect x="48" y="242" width="1104" height="385" rx="42"/>
+    </clipPath>
+    <style>
+      .track-a { animation: track-a 10s cubic-bezier(.45,0,.2,1) infinite alternate; }
+      .track-b { animation: track-b 12s cubic-bezier(.45,0,.2,1) infinite alternate; }
+      .track-c { animation: track-c 11s cubic-bezier(.45,0,.2,1) infinite alternate; }
+      .selector { animation: selector 7s cubic-bezier(.3,.8,.3,1) infinite; transform-box: fill-box; transform-origin: center; }
+      .mark { animation: mark 4.5s cubic-bezier(.3,.8,.3,1) infinite; transform-box: fill-box; transform-origin: center; }
+      .pulse { animation: pulse 3.6s ease-in-out infinite; }
+      @keyframes track-a {
+        0%, 12% { transform: translateY(0); }
+        48%, 60% { transform: translateY(-88px); }
+        100% { transform: translateY(-164px); }
+      }
+      @keyframes track-b {
+        0%, 16% { transform: translateY(-150px); }
+        52%, 66% { transform: translateY(-70px); }
+        100% { transform: translateY(0); }
+      }
+      @keyframes track-c {
+        0%, 10% { transform: translateY(-20px); }
+        46%, 62% { transform: translateY(-112px); }
+        100% { transform: translateY(-176px); }
+      }
+      @keyframes selector {
+        0%, 20% { transform: translateX(0); }
+        42%, 70% { transform: translateX(84px); }
+        88%, 100% { transform: translateX(0); }
+      }
+      @keyframes mark {
+        0%, 72%, 100% { transform: rotate(0deg) scale(1); }
+        82% { transform: rotate(8deg) scale(1.05); }
+        91% { transform: rotate(-4deg) scale(.98); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: .45; }
+        50% { opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .track-a, .track-b, .track-c, .selector, .mark, .pulse { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" rx="36" fill="url(#background)"/>
+  <circle cx="1082" cy="66" r="126" fill="#fff" opacity=".3"/>
+  <circle cx="113" cy="649" r="154" fill="#8f72e5" opacity=".09"/>
+
+  <g transform="translate(72 54)">
+    <g class="mark" fill="#6442cc">
+      <rect x="0" y="0" width="26" height="26" rx="7"/>
+      <rect x="38" y="0" width="26" height="26" rx="7"/>
+      <rect x="0" y="38" width="26" height="26" rx="7"/>
+      <rect x="38" y="38" width="26" height="26" rx="7"/>
+      <rect x="22" y="22" width="20" height="20" rx="6"/>
+    </g>
+    <text x="86" y="29" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="650" fill="#2b2433">Nasaq</text>
+    <text x="86" y="58" font-family="Arial, sans-serif" font-size="21" fill="#6b6272">نسق</text>
+  </g>
+
+  <text x="72" y="162" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="650" letter-spacing="-2.4" fill="#201d22">One system. Every direction.</text>
+  <text x="75" y="207" font-family="Inter, Arial, sans-serif" font-size="22" fill="#625d67">Components that feel natural in English and Arabic.</text>
+
+  <g transform="translate(930 82)">
+    <rect width="190" height="58" rx="29" fill="#fff" opacity=".72"/>
+    <rect class="selector" x="7" y="7" width="92" height="44" rx="22" fill="url(#violet)"/>
+    <text x="53" y="37" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="650" fill="#fff">LTR</text>
+    <text x="145" y="37" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="650" fill="#4d405b">RTL</text>
+  </g>
+
+  <rect x="48" y="242" width="1104" height="385" rx="42" fill="#cbbcf2"/>
+  <g clip-path="url(#showcase-clip)">
+    <g transform="translate(78 270)">
+      <g class="track-a">
+        <g filter="url(#shadow)">
+          <rect width="316" height="224" rx="30" fill="#282033"/>
+          <text x="30" y="41" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing=".7" fill="#d9c7ff">FOUNDATION</text>
+          <g transform="translate(105 65) scale(1.65)" fill="#d4bfff">
+            <rect width="25" height="25" rx="7"/>
+            <rect x="37" width="25" height="25" rx="7"/>
+            <rect y="37" width="25" height="25" rx="7"/>
+            <rect x="37" y="37" width="25" height="25" rx="7"/>
+            <rect x="21" y="21" width="20" height="20" rx="6"/>
+          </g>
+          <text x="30" y="195" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#fff">Built to connect.</text>
+        </g>
+        <g transform="translate(0 246)" filter="url(#shadow)">
+          <rect width="316" height="170" rx="30" fill="#f9f6ff"/>
+          <text x="28" y="44" font-family="Inter, Arial, sans-serif" font-size="14" fill="#685f70">COLOR TOKENS</text>
+          <rect x="28" y="70" width="70" height="70" rx="22" fill="#6442cc"/>
+          <rect x="110" y="70" width="70" height="70" rx="22" fill="#a9b68f"/>
+          <rect x="192" y="70" width="70" height="70" rx="22" fill="#e3bfb3"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(412 270)">
+      <g class="track-b">
+        <g filter="url(#shadow)">
+          <rect width="346" height="150" rx="30" fill="#f9f6ff"/>
+          <text x="28" y="42" font-family="Inter, Arial, sans-serif" font-size="14" fill="#685f70">TYPE SCALE</text>
+          <text x="28" y="112" font-family="Inter, Arial, sans-serif" font-size="72" letter-spacing="-3" fill="#352348">Aa</text>
+          <text x="210" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" fill="#6442cc">أبجد</text>
+        </g>
+        <g transform="translate(0 172)" filter="url(#shadow)">
+          <rect width="346" height="220" rx="30" fill="url(#glow)"/>
+          <text x="28" y="46" font-family="Inter, Arial, sans-serif" font-size="14" fill="#685f70">COMPONENT</text>
+          <rect x="28" y="72" width="290" height="62" rx="31" fill="url(#violet)"/>
+          <text x="173" y="111" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#fff">Your idea, your voice.</text>
+          <rect x="28" y="154" width="134" height="42" rx="21" fill="#fff" opacity=".72"/>
+          <rect x="176" y="154" width="142" height="42" rx="21" fill="#fff" opacity=".46"/>
+        </g>
+        <g transform="translate(0 414)" filter="url(#shadow)">
+          <rect width="346" height="150" rx="30" fill="#282033"/>
+          <text x="28" y="47" font-family="Inter, Arial, sans-serif" font-size="14" fill="#d9c7ff">SPACING</text>
+          <rect x="28" y="78" width="54" height="38" rx="12" fill="#d4bfff"/>
+          <rect x="96" y="68" width="76" height="48" rx="14" fill="#a98fe9"/>
+          <rect x="186" y="56" width="132" height="60" rx="18" fill="#7a5bd6"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(776 270)">
+      <g class="track-c">
+        <g filter="url(#shadow)">
+          <rect width="346" height="180" rx="30" fill="#f9f6ff"/>
+          <text x="28" y="44" font-family="Inter, Arial, sans-serif" font-size="14" fill="#685f70">DIRECTION</text>
+          <text x="28" y="99" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="650" fill="#352348">Hello</text>
+          <text x="318" y="99" text-anchor="end" font-family="Arial, sans-serif" font-size="31" font-weight="650" fill="#6442cc">مرحبا</text>
+          <rect x="28" y="126" width="290" height="10" rx="5" fill="#e0d7ed"/>
+          <rect class="pulse" x="28" y="126" width="178" height="10" rx="5" fill="#7a5bd6"/>
+        </g>
+        <g transform="translate(0 202)" filter="url(#shadow)">
+          <rect width="346" height="232" rx="30" fill="url(#violet)"/>
+          <text x="28" y="48" font-family="Inter, Arial, sans-serif" font-size="14" fill="#ddd0ff">ONE LANGUAGE</text>
+          <text x="28" y="110" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="650" fill="#fff">Two reading</text>
+          <text x="28" y="158" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="650" fill="#fff">directions.</text>
+          <circle cx="289" cy="183" r="28" fill="#fff" opacity=".16"/>
+          <circle cx="289" cy="183" r="11" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

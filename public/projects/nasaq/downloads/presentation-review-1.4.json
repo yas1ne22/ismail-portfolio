@@ -1,0 +1,143 @@
+{
+  "results": [
+    {
+      "viewport": 1440,
+      "caseAndLearning": "passed",
+      "popupCenteringAndFocus": "passed",
+      "headingColorAndImageFit": "passed"
+    },
+    {
+      "viewport": 390,
+      "caseAndLearning": "passed",
+      "popupCenteringAndFocus": "passed",
+      "headingColorAndImageFit": "passed"
+    },
+    {
+      "viewport": 320,
+      "caseAndLearning": "passed",
+      "popupCenteringAndFocus": "passed",
+      "headingColorAndImageFit": "passed"
+    },
+    {
+      "language": "en",
+      "format": "case",
+      "startingPoint": "icons",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "case",
+      "startingPoint": "decisions",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "case",
+      "startingPoint": "components",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "case",
+      "startingPoint": "language",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "case",
+      "startingPoint": "beginning",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "system",
+      "startingPoint": "icons",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "system",
+      "startingPoint": "decisions",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "system",
+      "startingPoint": "components",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "system",
+      "startingPoint": "language",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "en",
+      "format": "system",
+      "startingPoint": "beginning",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "case",
+      "startingPoint": "icons",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "case",
+      "startingPoint": "decisions",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "case",
+      "startingPoint": "components",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "case",
+      "startingPoint": "language",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "case",
+      "startingPoint": "beginning",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "system",
+      "startingPoint": "icons",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "system",
+      "startingPoint": "decisions",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "system",
+      "startingPoint": "components",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "system",
+      "startingPoint": "language",
+      "fullPageNavigation": "passed"
+    },
+    {
+      "language": "ar",
+      "format": "system",
+      "startingPoint": "beginning",
+      "fullPageNavigation": "passed"
+    }
+  ],
+  "errors": []
+}
