@@ -79,3 +79,11 @@ test('Arrangement changes preserve selection and honor tempo and reduced motion'
   assert.equal(reduced.animations.length, 0);
   assert.equal(reduced.document.querySelector('[data-kinetic]').dataset.layout, 'grid');
 });
+
+test('Focus Agents uses one artwork layer without repeating it as the page background', async () => {
+  const css = await fs.readFile(new URL('../public/projects/focus-agents/focus-agents.css', import.meta.url), 'utf8');
+  const bodyRule = css.match(/body\{([^}]+)\}/)?.[1] || '';
+  assert.doesNotMatch(bodyRule, /focus-agents-gradient-v2\.webp/);
+  assert.match(css, /\.focus-artwork img\{[^}]*object-fit:cover/);
+  assert.match(css, /@media\(min-aspect-ratio:3\/2\)\{\.focus-artwork img\{object-fit:contain\}\}/);
+});
